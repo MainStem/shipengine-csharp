@@ -31,32 +31,32 @@ namespace ShipEngine.ApiClient.Model
     public partial class RateResponse :  IEquatable<RateResponse>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets Status
+        /// Defines Status
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
             
             /// <summary>
-            /// Enum Working for "working"
+            /// Enum Working for value: working
             /// </summary>
             [EnumMember(Value = "working")]
             Working = 1,
             
             /// <summary>
-            /// Enum Completed for "completed"
+            /// Enum Completed for value: completed
             /// </summary>
             [EnumMember(Value = "completed")]
             Completed = 2,
             
             /// <summary>
-            /// Enum Partial for "partial"
+            /// Enum Partial for value: partial
             /// </summary>
             [EnumMember(Value = "partial")]
             Partial = 3,
             
             /// <summary>
-            /// Enum Error for "error"
+            /// Enum Error for value: error
             /// </summary>
             [EnumMember(Value = "error")]
             Error = 4
@@ -70,22 +70,22 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="RateResponse" /> class.
         /// </summary>
-        /// <param name="Rates">Rates.</param>
-        /// <param name="InvalidRates">InvalidRates.</param>
-        /// <param name="RateRequestId">RateRequestId.</param>
-        /// <param name="ShipmentId">ShipmentId.</param>
-        /// <param name="CreatedAt">CreatedAt.</param>
-        /// <param name="Status">Status.</param>
-        /// <param name="Errors">Errors.</param>
-        public RateResponse(List<Rate> Rates = default(List<Rate>), List<Rate> InvalidRates = default(List<Rate>), string RateRequestId = default(string), string ShipmentId = default(string), DateTime? CreatedAt = default(DateTime?), StatusEnum? Status = default(StatusEnum?), List<ProviderError> Errors = default(List<ProviderError>))
+        /// <param name="rates">rates.</param>
+        /// <param name="invalidRates">invalidRates.</param>
+        /// <param name="rateRequestId">rateRequestId.</param>
+        /// <param name="shipmentId">shipmentId.</param>
+        /// <param name="createdAt">createdAt.</param>
+        /// <param name="status">status.</param>
+        /// <param name="errors">errors.</param>
+        public RateResponse(List<Rate> rates = default(List<Rate>), List<Rate> invalidRates = default(List<Rate>), string rateRequestId = default(string), string shipmentId = default(string), DateTime? createdAt = default(DateTime?), StatusEnum? status = default(StatusEnum?), List<ProviderError> errors = default(List<ProviderError>))
         {
-            this.Rates = Rates;
-            this.InvalidRates = InvalidRates;
-            this.RateRequestId = RateRequestId;
-            this.ShipmentId = ShipmentId;
-            this.CreatedAt = CreatedAt;
-            this.Status = Status;
-            this.Errors = Errors;
+            this.Rates = rates;
+            this.InvalidRates = invalidRates;
+            this.RateRequestId = rateRequestId;
+            this.ShipmentId = shipmentId;
+            this.CreatedAt = createdAt;
+            this.Status = status;
+            this.Errors = errors;
         }
         
         /// <summary>
@@ -148,7 +148,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

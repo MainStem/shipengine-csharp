@@ -31,26 +31,26 @@ namespace ShipEngine.ApiClient.Model
     public partial class Batch :  IEquatable<Batch>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets LabelFormat
+        /// Defines LabelFormat
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum LabelFormatEnum
         {
             
             /// <summary>
-            /// Enum Pdf for "pdf"
+            /// Enum Pdf for value: pdf
             /// </summary>
             [EnumMember(Value = "pdf")]
             Pdf = 1,
             
             /// <summary>
-            /// Enum Zpl for "zpl"
+            /// Enum Zpl for value: zpl
             /// </summary>
             [EnumMember(Value = "zpl")]
             Zpl = 2,
             
             /// <summary>
-            /// Enum Png for "png"
+            /// Enum Png for value: png
             /// </summary>
             [EnumMember(Value = "png")]
             Png = 3
@@ -62,56 +62,56 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="label_format", EmitDefaultValue=false)]
         public LabelFormatEnum? LabelFormat { get; set; }
         /// <summary>
-        /// Gets or Sets Status
+        /// Defines Status
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
             
             /// <summary>
-            /// Enum Open for "open"
+            /// Enum Open for value: open
             /// </summary>
             [EnumMember(Value = "open")]
             Open = 1,
             
             /// <summary>
-            /// Enum Queued for "queued"
+            /// Enum Queued for value: queued
             /// </summary>
             [EnumMember(Value = "queued")]
             Queued = 2,
             
             /// <summary>
-            /// Enum Processing for "processing"
+            /// Enum Processing for value: processing
             /// </summary>
             [EnumMember(Value = "processing")]
             Processing = 3,
             
             /// <summary>
-            /// Enum Completed for "completed"
+            /// Enum Completed for value: completed
             /// </summary>
             [EnumMember(Value = "completed")]
             Completed = 4,
             
             /// <summary>
-            /// Enum Completedwitherrors for "completed_with_errors"
+            /// Enum Completedwitherrors for value: completed_with_errors
             /// </summary>
             [EnumMember(Value = "completed_with_errors")]
             Completedwitherrors = 5,
             
             /// <summary>
-            /// Enum Archived for "archived"
+            /// Enum Archived for value: archived
             /// </summary>
             [EnumMember(Value = "archived")]
             Archived = 6,
             
             /// <summary>
-            /// Enum Notifying for "notifying"
+            /// Enum Notifying for value: notifying
             /// </summary>
             [EnumMember(Value = "notifying")]
             Notifying = 7,
             
             /// <summary>
-            /// Enum Invalid for "invalid"
+            /// Enum Invalid for value: invalid
             /// </summary>
             [EnumMember(Value = "invalid")]
             Invalid = 8
@@ -125,44 +125,44 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Batch" /> class.
         /// </summary>
-        /// <param name="LabelLayout">LabelLayout.</param>
-        /// <param name="LabelFormat">LabelFormat.</param>
-        /// <param name="BatchId">BatchId.</param>
-        /// <param name="ExternalBatchId">ExternalBatchId.</param>
-        /// <param name="BatchNotes">BatchNotes.</param>
-        /// <param name="CreatedAt">CreatedAt.</param>
-        /// <param name="ProcessedAt">ProcessedAt.</param>
-        /// <param name="Errors">Errors.</param>
-        /// <param name="Warnings">Warnings.</param>
-        /// <param name="Completed">Completed.</param>
-        /// <param name="Forms">Forms.</param>
-        /// <param name="Count">Count.</param>
-        /// <param name="BatchShipmentsUrl">BatchShipmentsUrl.</param>
-        /// <param name="BatchLabelsUrl">BatchLabelsUrl.</param>
-        /// <param name="BatchErrorsUrl">BatchErrorsUrl.</param>
-        /// <param name="LabelDownload">LabelDownload.</param>
-        /// <param name="FormDownload">FormDownload.</param>
-        /// <param name="Status">Status.</param>
-        public Batch(string LabelLayout = default(string), LabelFormatEnum? LabelFormat = default(LabelFormatEnum?), string BatchId = default(string), string ExternalBatchId = default(string), string BatchNotes = default(string), DateTime? CreatedAt = default(DateTime?), DateTime? ProcessedAt = default(DateTime?), int? Errors = default(int?), int? Warnings = default(int?), int? Completed = default(int?), int? Forms = default(int?), int? Count = default(int?), LinkDTO BatchShipmentsUrl = default(LinkDTO), LinkDTO BatchLabelsUrl = default(LinkDTO), LinkDTO BatchErrorsUrl = default(LinkDTO), LinkDTO LabelDownload = default(LinkDTO), LinkDTO FormDownload = default(LinkDTO), StatusEnum? Status = default(StatusEnum?))
+        /// <param name="labelLayout">labelLayout.</param>
+        /// <param name="labelFormat">labelFormat.</param>
+        /// <param name="batchId">batchId.</param>
+        /// <param name="externalBatchId">externalBatchId.</param>
+        /// <param name="batchNotes">batchNotes.</param>
+        /// <param name="createdAt">createdAt.</param>
+        /// <param name="processedAt">processedAt.</param>
+        /// <param name="errors">errors.</param>
+        /// <param name="warnings">warnings.</param>
+        /// <param name="completed">completed.</param>
+        /// <param name="forms">forms.</param>
+        /// <param name="count">count.</param>
+        /// <param name="batchShipmentsUrl">batchShipmentsUrl.</param>
+        /// <param name="batchLabelsUrl">batchLabelsUrl.</param>
+        /// <param name="batchErrorsUrl">batchErrorsUrl.</param>
+        /// <param name="labelDownload">labelDownload.</param>
+        /// <param name="formDownload">formDownload.</param>
+        /// <param name="status">status.</param>
+        public Batch(string labelLayout = default(string), LabelFormatEnum? labelFormat = default(LabelFormatEnum?), string batchId = default(string), string externalBatchId = default(string), string batchNotes = default(string), DateTime? createdAt = default(DateTime?), DateTime? processedAt = default(DateTime?), int? errors = default(int?), int? warnings = default(int?), int? completed = default(int?), int? forms = default(int?), int? count = default(int?), LinkDTO batchShipmentsUrl = default(LinkDTO), LinkDTO batchLabelsUrl = default(LinkDTO), LinkDTO batchErrorsUrl = default(LinkDTO), LinkDTO labelDownload = default(LinkDTO), LinkDTO formDownload = default(LinkDTO), StatusEnum? status = default(StatusEnum?))
         {
-            this.LabelLayout = LabelLayout;
-            this.LabelFormat = LabelFormat;
-            this.BatchId = BatchId;
-            this.ExternalBatchId = ExternalBatchId;
-            this.BatchNotes = BatchNotes;
-            this.CreatedAt = CreatedAt;
-            this.ProcessedAt = ProcessedAt;
-            this.Errors = Errors;
-            this.Warnings = Warnings;
-            this.Completed = Completed;
-            this.Forms = Forms;
-            this.Count = Count;
-            this.BatchShipmentsUrl = BatchShipmentsUrl;
-            this.BatchLabelsUrl = BatchLabelsUrl;
-            this.BatchErrorsUrl = BatchErrorsUrl;
-            this.LabelDownload = LabelDownload;
-            this.FormDownload = FormDownload;
-            this.Status = Status;
+            this.LabelLayout = labelLayout;
+            this.LabelFormat = labelFormat;
+            this.BatchId = batchId;
+            this.ExternalBatchId = externalBatchId;
+            this.BatchNotes = batchNotes;
+            this.CreatedAt = createdAt;
+            this.ProcessedAt = processedAt;
+            this.Errors = errors;
+            this.Warnings = warnings;
+            this.Completed = completed;
+            this.Forms = forms;
+            this.Count = count;
+            this.BatchShipmentsUrl = batchShipmentsUrl;
+            this.BatchLabelsUrl = batchLabelsUrl;
+            this.BatchErrorsUrl = batchErrorsUrl;
+            this.LabelDownload = labelDownload;
+            this.FormDownload = formDownload;
+            this.Status = status;
         }
         
         /// <summary>
@@ -297,7 +297,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

@@ -33,18 +33,18 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="WarehouseDTO" /> class.
         /// </summary>
-        /// <param name="WarehouseId">WarehouseId.</param>
-        /// <param name="Name">Name.</param>
-        /// <param name="CreatedAt">CreatedAt.</param>
-        /// <param name="OriginAddress">OriginAddress.</param>
-        /// <param name="ReturnAddress">ReturnAddress.</param>
-        public WarehouseDTO(string WarehouseId = default(string), string Name = default(string), DateTime? CreatedAt = default(DateTime?), AddressDTO OriginAddress = default(AddressDTO), AddressDTO ReturnAddress = default(AddressDTO))
+        /// <param name="warehouseId">warehouseId.</param>
+        /// <param name="name">name.</param>
+        /// <param name="createdAt">createdAt.</param>
+        /// <param name="originAddress">originAddress.</param>
+        /// <param name="returnAddress">returnAddress.</param>
+        public WarehouseDTO(string warehouseId = default(string), string name = default(string), DateTime? createdAt = default(DateTime?), AddressDTO originAddress = default(AddressDTO), AddressDTO returnAddress = default(AddressDTO))
         {
-            this.WarehouseId = WarehouseId;
-            this.Name = Name;
-            this.CreatedAt = CreatedAt;
-            this.OriginAddress = OriginAddress;
-            this.ReturnAddress = ReturnAddress;
+            this.WarehouseId = warehouseId;
+            this.Name = name;
+            this.CreatedAt = createdAt;
+            this.OriginAddress = originAddress;
+            this.ReturnAddress = returnAddress;
         }
         
         /// <summary>
@@ -98,7 +98,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

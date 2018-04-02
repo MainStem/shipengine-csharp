@@ -33,20 +33,20 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CustomsItem" /> class.
         /// </summary>
-        /// <param name="CustomsItemId">CustomsItemId.</param>
-        /// <param name="Description">Description.</param>
-        /// <param name="Quantity">Quantity.</param>
-        /// <param name="Value">Value.</param>
-        /// <param name="HarmonizedTariffCode">HarmonizedTariffCode.</param>
-        /// <param name="CountryOfOrigin">CountryOfOrigin.</param>
-        public CustomsItem(string CustomsItemId = default(string), string Description = default(string), int? Quantity = default(int?), double? Value = default(double?), string HarmonizedTariffCode = default(string), string CountryOfOrigin = default(string))
+        /// <param name="customsItemId">customsItemId.</param>
+        /// <param name="description">description.</param>
+        /// <param name="quantity">quantity.</param>
+        /// <param name="value">value.</param>
+        /// <param name="harmonizedTariffCode">harmonizedTariffCode.</param>
+        /// <param name="countryOfOrigin">countryOfOrigin.</param>
+        public CustomsItem(string customsItemId = default(string), string description = default(string), int? quantity = default(int?), double? value = default(double?), string harmonizedTariffCode = default(string), string countryOfOrigin = default(string))
         {
-            this.CustomsItemId = CustomsItemId;
-            this.Description = Description;
-            this.Quantity = Quantity;
-            this.Value = Value;
-            this.HarmonizedTariffCode = HarmonizedTariffCode;
-            this.CountryOfOrigin = CountryOfOrigin;
+            this.CustomsItemId = customsItemId;
+            this.Description = description;
+            this.Quantity = quantity;
+            this.Value = value;
+            this.HarmonizedTariffCode = harmonizedTariffCode;
+            this.CountryOfOrigin = countryOfOrigin;
         }
         
         /// <summary>
@@ -107,7 +107,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

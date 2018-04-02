@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="tagsaddtag"></a>
 # **TagsAddTag**
-> void TagsAddTag (string tagName, string apiKey)
+> TagResponse TagsAddTag (string tagName, string apiKey)
 
 
 
@@ -41,7 +41,8 @@ namespace Example
 
             try
             {
-                apiInstance.TagsAddTag(tagName, apiKey);
+                TagResponse result = apiInstance.TagsAddTag(tagName, apiKey);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -61,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**TagResponse**](TagResponse.md)
 
 ### Authorization
 

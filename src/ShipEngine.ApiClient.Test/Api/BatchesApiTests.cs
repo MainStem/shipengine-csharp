@@ -113,8 +113,8 @@ namespace ShipEngine.ApiClient.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string externalBatchId = null;
             //string apiKey = null;
-            //instance.BatchesGetByExternalId(externalBatchId, apiKey);
-            
+            //var response = instance.BatchesGetByExternalId(externalBatchId, apiKey);
+            //Assert.IsInstanceOf<Batch> (response, "response is Batch");
         }
         
         /// <summary>

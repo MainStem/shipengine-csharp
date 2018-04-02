@@ -31,26 +31,26 @@ namespace ShipEngine.ApiClient.Model
     public partial class ProcessBatchRequest :  IEquatable<ProcessBatchRequest>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets LabelFormat
+        /// Defines LabelFormat
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum LabelFormatEnum
         {
             
             /// <summary>
-            /// Enum Pdf for "pdf"
+            /// Enum Pdf for value: pdf
             /// </summary>
             [EnumMember(Value = "pdf")]
             Pdf = 1,
             
             /// <summary>
-            /// Enum Zpl for "zpl"
+            /// Enum Zpl for value: zpl
             /// </summary>
             [EnumMember(Value = "zpl")]
             Zpl = 2,
             
             /// <summary>
-            /// Enum Png for "png"
+            /// Enum Png for value: png
             /// </summary>
             [EnumMember(Value = "png")]
             Png = 3
@@ -64,14 +64,14 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ProcessBatchRequest" /> class.
         /// </summary>
-        /// <param name="ShipDate">ShipDate.</param>
-        /// <param name="LabelLayout">LabelLayout.</param>
-        /// <param name="LabelFormat">LabelFormat.</param>
-        public ProcessBatchRequest(DateTime? ShipDate = default(DateTime?), string LabelLayout = default(string), LabelFormatEnum? LabelFormat = default(LabelFormatEnum?))
+        /// <param name="shipDate">shipDate.</param>
+        /// <param name="labelLayout">labelLayout.</param>
+        /// <param name="labelFormat">labelFormat.</param>
+        public ProcessBatchRequest(DateTime? shipDate = default(DateTime?), string labelLayout = default(string), LabelFormatEnum? labelFormat = default(LabelFormatEnum?))
         {
-            this.ShipDate = ShipDate;
-            this.LabelLayout = LabelLayout;
-            this.LabelFormat = LabelFormat;
+            this.ShipDate = shipDate;
+            this.LabelLayout = labelLayout;
+            this.LabelFormat = labelFormat;
         }
         
         /// <summary>
@@ -106,7 +106,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

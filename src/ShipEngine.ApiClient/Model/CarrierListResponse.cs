@@ -33,10 +33,10 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CarrierListResponse" /> class.
         /// </summary>
-        /// <param name="Carriers">Carriers.</param>
-        public CarrierListResponse(List<Carrier> Carriers = default(List<Carrier>))
+        /// <param name="carriers">carriers.</param>
+        public CarrierListResponse(List<Carrier> carriers = default(List<Carrier>))
         {
-            this.Carriers = Carriers;
+            this.Carriers = carriers;
         }
         
         /// <summary>
@@ -62,7 +62,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

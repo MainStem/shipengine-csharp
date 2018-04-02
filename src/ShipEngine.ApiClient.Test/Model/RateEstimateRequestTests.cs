@@ -75,6 +75,14 @@ namespace ShipEngine.ApiClient.Test
             // TODO unit test for the property 'CarrierId'
         }
         /// <summary>
+        /// Test the property 'CarrierIds'
+        /// </summary>
+        [Test]
+        public void CarrierIdsTest()
+        {
+            // TODO unit test for the property 'CarrierIds'
+        }
+        /// <summary>
         /// Test the property 'FromCountryCode'
         /// </summary>
         [Test]

@@ -33,28 +33,28 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="TrackingInformation" /> class.
         /// </summary>
-        /// <param name="TrackingNumber">TrackingNumber.</param>
-        /// <param name="StatusCode">StatusCode.</param>
-        /// <param name="StatusDescription">StatusDescription.</param>
-        /// <param name="CarrierStatusCode">CarrierStatusCode.</param>
-        /// <param name="CarrierStatusDescription">CarrierStatusDescription.</param>
-        /// <param name="ShipDate">ShipDate.</param>
-        /// <param name="EstimatedDeliveryDate">EstimatedDeliveryDate.</param>
-        /// <param name="ActualDeliveryDate">ActualDeliveryDate.</param>
-        /// <param name="ExceptionDescription">ExceptionDescription.</param>
-        /// <param name="Events">Events.</param>
-        public TrackingInformation(string TrackingNumber = default(string), string StatusCode = default(string), string StatusDescription = default(string), string CarrierStatusCode = default(string), string CarrierStatusDescription = default(string), DateTime? ShipDate = default(DateTime?), DateTime? EstimatedDeliveryDate = default(DateTime?), DateTime? ActualDeliveryDate = default(DateTime?), string ExceptionDescription = default(string), List<TrackEvent> Events = default(List<TrackEvent>))
+        /// <param name="trackingNumber">trackingNumber.</param>
+        /// <param name="statusCode">statusCode.</param>
+        /// <param name="statusDescription">statusDescription.</param>
+        /// <param name="carrierStatusCode">carrierStatusCode.</param>
+        /// <param name="carrierStatusDescription">carrierStatusDescription.</param>
+        /// <param name="shipDate">shipDate.</param>
+        /// <param name="estimatedDeliveryDate">estimatedDeliveryDate.</param>
+        /// <param name="actualDeliveryDate">actualDeliveryDate.</param>
+        /// <param name="exceptionDescription">exceptionDescription.</param>
+        /// <param name="events">events.</param>
+        public TrackingInformation(string trackingNumber = default(string), string statusCode = default(string), string statusDescription = default(string), string carrierStatusCode = default(string), string carrierStatusDescription = default(string), DateTime? shipDate = default(DateTime?), DateTime? estimatedDeliveryDate = default(DateTime?), DateTime? actualDeliveryDate = default(DateTime?), string exceptionDescription = default(string), List<TrackEvent> events = default(List<TrackEvent>))
         {
-            this.TrackingNumber = TrackingNumber;
-            this.StatusCode = StatusCode;
-            this.StatusDescription = StatusDescription;
-            this.CarrierStatusCode = CarrierStatusCode;
-            this.CarrierStatusDescription = CarrierStatusDescription;
-            this.ShipDate = ShipDate;
-            this.EstimatedDeliveryDate = EstimatedDeliveryDate;
-            this.ActualDeliveryDate = ActualDeliveryDate;
-            this.ExceptionDescription = ExceptionDescription;
-            this.Events = Events;
+            this.TrackingNumber = trackingNumber;
+            this.StatusCode = statusCode;
+            this.StatusDescription = statusDescription;
+            this.CarrierStatusCode = carrierStatusCode;
+            this.CarrierStatusDescription = carrierStatusDescription;
+            this.ShipDate = shipDate;
+            this.EstimatedDeliveryDate = estimatedDeliveryDate;
+            this.ActualDeliveryDate = actualDeliveryDate;
+            this.ExceptionDescription = exceptionDescription;
+            this.Events = events;
         }
         
         /// <summary>
@@ -143,7 +143,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

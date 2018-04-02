@@ -33,24 +33,24 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="TrackEvent" /> class.
         /// </summary>
-        /// <param name="OccurredAt">OccurredAt.</param>
-        /// <param name="Description">Description.</param>
-        /// <param name="CityLocality">CityLocality.</param>
-        /// <param name="StateProvince">StateProvince.</param>
-        /// <param name="PostalCode">PostalCode.</param>
-        /// <param name="CountryCode">CountryCode.</param>
-        /// <param name="CompanyName">CompanyName.</param>
-        /// <param name="Signer">Signer.</param>
-        public TrackEvent(DateTime? OccurredAt = default(DateTime?), string Description = default(string), string CityLocality = default(string), string StateProvince = default(string), string PostalCode = default(string), string CountryCode = default(string), string CompanyName = default(string), string Signer = default(string))
+        /// <param name="occurredAt">occurredAt.</param>
+        /// <param name="description">description.</param>
+        /// <param name="cityLocality">cityLocality.</param>
+        /// <param name="stateProvince">stateProvince.</param>
+        /// <param name="postalCode">postalCode.</param>
+        /// <param name="countryCode">countryCode.</param>
+        /// <param name="companyName">companyName.</param>
+        /// <param name="signer">signer.</param>
+        public TrackEvent(DateTime? occurredAt = default(DateTime?), string description = default(string), string cityLocality = default(string), string stateProvince = default(string), string postalCode = default(string), string countryCode = default(string), string companyName = default(string), string signer = default(string))
         {
-            this.OccurredAt = OccurredAt;
-            this.Description = Description;
-            this.CityLocality = CityLocality;
-            this.StateProvince = StateProvince;
-            this.PostalCode = PostalCode;
-            this.CountryCode = CountryCode;
-            this.CompanyName = CompanyName;
-            this.Signer = Signer;
+            this.OccurredAt = occurredAt;
+            this.Description = description;
+            this.CityLocality = cityLocality;
+            this.StateProvince = stateProvince;
+            this.PostalCode = postalCode;
+            this.CountryCode = countryCode;
+            this.CompanyName = companyName;
+            this.Signer = signer;
         }
         
         /// <summary>
@@ -125,7 +125,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

@@ -33,17 +33,33 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="DHLExpressAccountSettingsDTO" /> class.
         /// </summary>
-        /// <param name="ShouldHideAccountNumberOnArchiveDoc">ShouldHideAccountNumberOnArchiveDoc.</param>
-        public DHLExpressAccountSettingsDTO(bool? ShouldHideAccountNumberOnArchiveDoc = default(bool?))
+        /// <param name="nickname">nickname.</param>
+        /// <param name="shouldHideAccountNumberOnArchiveDoc">shouldHideAccountNumberOnArchiveDoc.</param>
+        /// <param name="isPrimaryAccount">isPrimaryAccount.</param>
+        public DHLExpressAccountSettingsDTO(string nickname = default(string), bool? shouldHideAccountNumberOnArchiveDoc = default(bool?), bool? isPrimaryAccount = default(bool?))
         {
-            this.ShouldHideAccountNumberOnArchiveDoc = ShouldHideAccountNumberOnArchiveDoc;
+            this.Nickname = nickname;
+            this.ShouldHideAccountNumberOnArchiveDoc = shouldHideAccountNumberOnArchiveDoc;
+            this.IsPrimaryAccount = isPrimaryAccount;
         }
         
+        /// <summary>
+        /// Gets or Sets Nickname
+        /// </summary>
+        [DataMember(Name="nickname", EmitDefaultValue=false)]
+        public string Nickname { get; set; }
+
         /// <summary>
         /// Gets or Sets ShouldHideAccountNumberOnArchiveDoc
         /// </summary>
         [DataMember(Name="should_hide_account_number_on_archive_doc", EmitDefaultValue=false)]
         public bool? ShouldHideAccountNumberOnArchiveDoc { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsPrimaryAccount
+        /// </summary>
+        [DataMember(Name="is_primary_account", EmitDefaultValue=false)]
+        public bool? IsPrimaryAccount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -53,7 +69,9 @@ namespace ShipEngine.ApiClient.Model
         {
             var sb = new StringBuilder();
             sb.Append("class DHLExpressAccountSettingsDTO {\n");
+            sb.Append("  Nickname: ").Append(Nickname).Append("\n");
             sb.Append("  ShouldHideAccountNumberOnArchiveDoc: ").Append(ShouldHideAccountNumberOnArchiveDoc).Append("\n");
+            sb.Append("  IsPrimaryAccount: ").Append(IsPrimaryAccount).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -62,7 +80,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }
@@ -89,9 +107,19 @@ namespace ShipEngine.ApiClient.Model
 
             return 
                 (
+                    this.Nickname == input.Nickname ||
+                    (this.Nickname != null &&
+                    this.Nickname.Equals(input.Nickname))
+                ) && 
+                (
                     this.ShouldHideAccountNumberOnArchiveDoc == input.ShouldHideAccountNumberOnArchiveDoc ||
                     (this.ShouldHideAccountNumberOnArchiveDoc != null &&
                     this.ShouldHideAccountNumberOnArchiveDoc.Equals(input.ShouldHideAccountNumberOnArchiveDoc))
+                ) && 
+                (
+                    this.IsPrimaryAccount == input.IsPrimaryAccount ||
+                    (this.IsPrimaryAccount != null &&
+                    this.IsPrimaryAccount.Equals(input.IsPrimaryAccount))
                 );
         }
 
@@ -104,8 +132,12 @@ namespace ShipEngine.ApiClient.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Nickname != null)
+                    hashCode = hashCode * 59 + this.Nickname.GetHashCode();
                 if (this.ShouldHideAccountNumberOnArchiveDoc != null)
                     hashCode = hashCode * 59 + this.ShouldHideAccountNumberOnArchiveDoc.GetHashCode();
+                if (this.IsPrimaryAccount != null)
+                    hashCode = hashCode * 59 + this.IsPrimaryAccount.GetHashCode();
                 return hashCode;
             }
         }

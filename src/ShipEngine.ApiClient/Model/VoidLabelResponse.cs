@@ -33,12 +33,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="VoidLabelResponse" /> class.
         /// </summary>
-        /// <param name="Approved">Approved.</param>
-        /// <param name="Message">Message.</param>
-        public VoidLabelResponse(bool? Approved = default(bool?), string Message = default(string))
+        /// <param name="approved">approved.</param>
+        /// <param name="message">message.</param>
+        public VoidLabelResponse(bool? approved = default(bool?), string message = default(string))
         {
-            this.Approved = Approved;
-            this.Message = Message;
+            this.Approved = approved;
+            this.Message = message;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

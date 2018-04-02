@@ -33,36 +33,38 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="FedExAccountInformationDTO" /> class.
         /// </summary>
-        /// <param name="AccountNumber">AccountNumber.</param>
-        /// <param name="Address1">Address1.</param>
-        /// <param name="Address2">Address2.</param>
-        /// <param name="City">City.</param>
-        /// <param name="Company">Company.</param>
-        /// <param name="CountryCode">CountryCode.</param>
-        /// <param name="Email">Email.</param>
-        /// <param name="FirstName">FirstName.</param>
-        /// <param name="LastName">LastName.</param>
-        /// <param name="Phone">Phone.</param>
-        /// <param name="PostalCode">PostalCode.</param>
-        /// <param name="State">State.</param>
-        /// <param name="Nickname">Nickname.</param>
-        /// <param name="AgreeToEula">AgreeToEula.</param>
-        public FedExAccountInformationDTO(string AccountNumber = default(string), string Address1 = default(string), string Address2 = default(string), string City = default(string), string Company = default(string), string CountryCode = default(string), string Email = default(string), string FirstName = default(string), string LastName = default(string), string Phone = default(string), string PostalCode = default(string), string State = default(string), string Nickname = default(string), bool? AgreeToEula = default(bool?))
+        /// <param name="accountNumber">accountNumber.</param>
+        /// <param name="address1">address1.</param>
+        /// <param name="address2">address2.</param>
+        /// <param name="city">city.</param>
+        /// <param name="company">company.</param>
+        /// <param name="countryCode">countryCode.</param>
+        /// <param name="email">email.</param>
+        /// <param name="firstName">firstName.</param>
+        /// <param name="lastName">lastName.</param>
+        /// <param name="phone">phone.</param>
+        /// <param name="postalCode">postalCode.</param>
+        /// <param name="state">state.</param>
+        /// <param name="nickname">nickname.</param>
+        /// <param name="agreeToEula">agreeToEula.</param>
+        /// <param name="meterNumber">meterNumber.</param>
+        public FedExAccountInformationDTO(string accountNumber = default(string), string address1 = default(string), string address2 = default(string), string city = default(string), string company = default(string), string countryCode = default(string), string email = default(string), string firstName = default(string), string lastName = default(string), string phone = default(string), string postalCode = default(string), string state = default(string), string nickname = default(string), bool? agreeToEula = default(bool?), string meterNumber = default(string))
         {
-            this.AccountNumber = AccountNumber;
-            this.Address1 = Address1;
-            this.Address2 = Address2;
-            this.City = City;
-            this.Company = Company;
-            this.CountryCode = CountryCode;
-            this.Email = Email;
-            this.FirstName = FirstName;
-            this.LastName = LastName;
-            this.Phone = Phone;
-            this.PostalCode = PostalCode;
-            this.State = State;
-            this.Nickname = Nickname;
-            this.AgreeToEula = AgreeToEula;
+            this.AccountNumber = accountNumber;
+            this.Address1 = address1;
+            this.Address2 = address2;
+            this.City = city;
+            this.Company = company;
+            this.CountryCode = countryCode;
+            this.Email = email;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.Phone = phone;
+            this.PostalCode = postalCode;
+            this.State = state;
+            this.Nickname = nickname;
+            this.AgreeToEula = agreeToEula;
+            this.MeterNumber = meterNumber;
         }
         
         /// <summary>
@@ -150,6 +152,12 @@ namespace ShipEngine.ApiClient.Model
         public bool? AgreeToEula { get; set; }
 
         /// <summary>
+        /// Gets or Sets MeterNumber
+        /// </summary>
+        [DataMember(Name="meter_number", EmitDefaultValue=false)]
+        public string MeterNumber { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -171,6 +179,7 @@ namespace ShipEngine.ApiClient.Model
             sb.Append("  State: ").Append(State).Append("\n");
             sb.Append("  Nickname: ").Append(Nickname).Append("\n");
             sb.Append("  AgreeToEula: ").Append(AgreeToEula).Append("\n");
+            sb.Append("  MeterNumber: ").Append(MeterNumber).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -179,7 +188,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }
@@ -274,6 +283,11 @@ namespace ShipEngine.ApiClient.Model
                     this.AgreeToEula == input.AgreeToEula ||
                     (this.AgreeToEula != null &&
                     this.AgreeToEula.Equals(input.AgreeToEula))
+                ) && 
+                (
+                    this.MeterNumber == input.MeterNumber ||
+                    (this.MeterNumber != null &&
+                    this.MeterNumber.Equals(input.MeterNumber))
                 );
         }
 
@@ -314,6 +328,8 @@ namespace ShipEngine.ApiClient.Model
                     hashCode = hashCode * 59 + this.Nickname.GetHashCode();
                 if (this.AgreeToEula != null)
                     hashCode = hashCode * 59 + this.AgreeToEula.GetHashCode();
+                if (this.MeterNumber != null)
+                    hashCode = hashCode * 59 + this.MeterNumber.GetHashCode();
                 return hashCode;
             }
         }

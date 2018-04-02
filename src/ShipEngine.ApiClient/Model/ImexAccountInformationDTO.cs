@@ -33,14 +33,14 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ImexAccountInformationDTO" /> class.
         /// </summary>
-        /// <param name="Nickname">Nickname.</param>
-        /// <param name="Username">Username.</param>
-        /// <param name="Password">Password.</param>
-        public ImexAccountInformationDTO(string Nickname = default(string), string Username = default(string), string Password = default(string))
+        /// <param name="nickname">nickname.</param>
+        /// <param name="username">username.</param>
+        /// <param name="password">password.</param>
+        public ImexAccountInformationDTO(string nickname = default(string), string username = default(string), string password = default(string))
         {
-            this.Nickname = Nickname;
-            this.Username = Username;
-            this.Password = Password;
+            this.Nickname = nickname;
+            this.Username = username;
+            this.Password = password;
         }
         
         /// <summary>
@@ -80,7 +80,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

@@ -33,12 +33,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="LinkDTO" /> class.
         /// </summary>
-        /// <param name="Href">Href.</param>
-        /// <param name="Type">Type.</param>
-        public LinkDTO(string Href = default(string), string Type = default(string))
+        /// <param name="href">href.</param>
+        /// <param name="type">type.</param>
+        public LinkDTO(string href = default(string), string type = default(string))
         {
-            this.Href = Href;
-            this.Type = Type;
+            this.Href = href;
+            this.Type = type;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

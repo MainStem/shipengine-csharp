@@ -169,6 +169,19 @@ namespace ShipEngine.ApiClient.Test
         }
         
         /// <summary>
+        /// Test DHLExpressAccountCarrierGetSettings
+        /// </summary>
+        [Test]
+        public void DHLExpressAccountCarrierGetSettingsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string carrierId = null;
+            //string apiKey = null;
+            //var response = instance.DHLExpressAccountCarrierGetSettings(carrierId, apiKey);
+            //Assert.IsInstanceOf<UPSAccountSettingsDTO> (response, "response is UPSAccountSettingsDTO");
+        }
+        
+        /// <summary>
         /// Test DHLExpressAccountCarrierUpdateSettings
         /// </summary>
         [Test]
@@ -232,6 +245,19 @@ namespace ShipEngine.ApiClient.Test
             //string apiKey = null;
             //instance.FedExAccountCarrierDisconnectAccount(carrierId, apiKey);
             
+        }
+        
+        /// <summary>
+        /// Test FedExAccountCarrierGetSettings
+        /// </summary>
+        [Test]
+        public void FedExAccountCarrierGetSettingsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string carrierId = null;
+            //string apiKey = null;
+            //var response = instance.FedExAccountCarrierGetSettings(carrierId, apiKey);
+            //Assert.IsInstanceOf<UPSAccountSettingsDTO> (response, "response is UPSAccountSettingsDTO");
         }
         
         /// <summary>
@@ -445,6 +471,20 @@ namespace ShipEngine.ApiClient.Test
         }
         
         /// <summary>
+        /// Test StampsAccountCarrierGetAccountUrl
+        /// </summary>
+        [Test]
+        public void StampsAccountCarrierGetAccountUrlTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string carrierId = null;
+            //StampsAccountUrlsRequest stampsAccountUrlsRequest = null;
+            //string apiKey = null;
+            //var response = instance.StampsAccountCarrierGetAccountUrl(carrierId, stampsAccountUrlsRequest, apiKey);
+            //Assert.IsInstanceOf<StampsAccountUrlsResponse> (response, "response is StampsAccountUrlsResponse");
+        }
+        
+        /// <summary>
         /// Test UPSAccountCarrierConnectAccount
         /// </summary>
         [Test]
@@ -468,6 +508,19 @@ namespace ShipEngine.ApiClient.Test
             //string apiKey = null;
             //instance.UPSAccountCarrierDisconnectAccount(carrierId, apiKey);
             
+        }
+        
+        /// <summary>
+        /// Test UPSAccountCarrierGetSettings
+        /// </summary>
+        [Test]
+        public void UPSAccountCarrierGetSettingsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string carrierId = null;
+            //string apiKey = null;
+            //var response = instance.UPSAccountCarrierGetSettings(carrierId, apiKey);
+            //Assert.IsInstanceOf<UPSAccountSettingsDTO> (response, "response is UPSAccountSettingsDTO");
         }
         
         /// <summary>

@@ -33,14 +33,14 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="OnTracAccountInformationDTO" /> class.
         /// </summary>
-        /// <param name="Nickname">Nickname.</param>
-        /// <param name="AccountNumber">AccountNumber.</param>
-        /// <param name="Password">Password.</param>
-        public OnTracAccountInformationDTO(string Nickname = default(string), string AccountNumber = default(string), string Password = default(string))
+        /// <param name="nickname">nickname.</param>
+        /// <param name="accountNumber">accountNumber.</param>
+        /// <param name="password">password.</param>
+        public OnTracAccountInformationDTO(string nickname = default(string), string accountNumber = default(string), string password = default(string))
         {
-            this.Nickname = Nickname;
-            this.AccountNumber = AccountNumber;
-            this.Password = Password;
+            this.Nickname = nickname;
+            this.AccountNumber = accountNumber;
+            this.Password = password;
         }
         
         /// <summary>
@@ -80,7 +80,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

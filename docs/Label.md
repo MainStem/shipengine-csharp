@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **InsuranceCost** | [**MoneyDTO**](MoneyDTO.md) |  | [optional] 
 **TrackingNumber** | **string** |  | [optional] 
 **IsReturnLabel** | **bool?** |  | [optional] 
+**RmaNumber** | **string** |  | [optional] 
 **IsInternational** | **bool?** |  | [optional] 
 **BatchId** | **string** |  | [optional] 
 **CarrierId** | **string** |  | [optional] 

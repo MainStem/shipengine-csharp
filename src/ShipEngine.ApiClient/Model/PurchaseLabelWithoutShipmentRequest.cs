@@ -31,26 +31,26 @@ namespace ShipEngine.ApiClient.Model
     public partial class PurchaseLabelWithoutShipmentRequest :  IEquatable<PurchaseLabelWithoutShipmentRequest>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets ValidateAddress
+        /// Defines ValidateAddress
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ValidateAddressEnum
         {
             
             /// <summary>
-            /// Enum NoValidation for "noValidation"
+            /// Enum NoValidation for value: noValidation
             /// </summary>
             [EnumMember(Value = "noValidation")]
             NoValidation = 1,
             
             /// <summary>
-            /// Enum ValidateOnly for "validateOnly"
+            /// Enum ValidateOnly for value: validateOnly
             /// </summary>
             [EnumMember(Value = "validateOnly")]
             ValidateOnly = 2,
             
             /// <summary>
-            /// Enum ValidateAndClean for "validateAndClean"
+            /// Enum ValidateAndClean for value: validateAndClean
             /// </summary>
             [EnumMember(Value = "validateAndClean")]
             ValidateAndClean = 3
@@ -62,26 +62,26 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="validate_address", EmitDefaultValue=false)]
         public ValidateAddressEnum? ValidateAddress { get; set; }
         /// <summary>
-        /// Gets or Sets LabelFormat
+        /// Defines LabelFormat
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum LabelFormatEnum
         {
             
             /// <summary>
-            /// Enum Pdf for "pdf"
+            /// Enum Pdf for value: pdf
             /// </summary>
             [EnumMember(Value = "pdf")]
             Pdf = 1,
             
             /// <summary>
-            /// Enum Zpl for "zpl"
+            /// Enum Zpl for value: zpl
             /// </summary>
             [EnumMember(Value = "zpl")]
             Zpl = 2,
             
             /// <summary>
-            /// Enum Png for "png"
+            /// Enum Png for value: png
             /// </summary>
             [EnumMember(Value = "png")]
             Png = 3
@@ -95,16 +95,16 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="PurchaseLabelWithoutShipmentRequest" /> class.
         /// </summary>
-        /// <param name="TestLabel">TestLabel.</param>
-        /// <param name="ValidateAddress">ValidateAddress.</param>
-        /// <param name="LabelLayout">LabelLayout.</param>
-        /// <param name="LabelFormat">LabelFormat.</param>
-        public PurchaseLabelWithoutShipmentRequest(bool? TestLabel = default(bool?), ValidateAddressEnum? ValidateAddress = default(ValidateAddressEnum?), string LabelLayout = default(string), LabelFormatEnum? LabelFormat = default(LabelFormatEnum?))
+        /// <param name="testLabel">testLabel.</param>
+        /// <param name="validateAddress">validateAddress.</param>
+        /// <param name="labelLayout">labelLayout.</param>
+        /// <param name="labelFormat">labelFormat.</param>
+        public PurchaseLabelWithoutShipmentRequest(bool? testLabel = default(bool?), ValidateAddressEnum? validateAddress = default(ValidateAddressEnum?), string labelLayout = default(string), LabelFormatEnum? labelFormat = default(LabelFormatEnum?))
         {
-            this.TestLabel = TestLabel;
-            this.ValidateAddress = ValidateAddress;
-            this.LabelLayout = LabelLayout;
-            this.LabelFormat = LabelFormat;
+            this.TestLabel = testLabel;
+            this.ValidateAddress = validateAddress;
+            this.LabelLayout = labelLayout;
+            this.LabelFormat = labelFormat;
         }
         
         /// <summary>
@@ -141,7 +141,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

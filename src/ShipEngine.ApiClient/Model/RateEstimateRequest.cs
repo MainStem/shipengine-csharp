@@ -31,38 +31,38 @@ namespace ShipEngine.ApiClient.Model
     public partial class RateEstimateRequest :  IEquatable<RateEstimateRequest>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets Confirmation
+        /// Defines Confirmation
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ConfirmationEnum
         {
             
             /// <summary>
-            /// Enum None for "none"
+            /// Enum None for value: none
             /// </summary>
             [EnumMember(Value = "none")]
             None = 1,
             
             /// <summary>
-            /// Enum Delivery for "delivery"
+            /// Enum Delivery for value: delivery
             /// </summary>
             [EnumMember(Value = "delivery")]
             Delivery = 2,
             
             /// <summary>
-            /// Enum Signature for "signature"
+            /// Enum Signature for value: signature
             /// </summary>
             [EnumMember(Value = "signature")]
             Signature = 3,
             
             /// <summary>
-            /// Enum Adultsignature for "adult_signature"
+            /// Enum Adultsignature for value: adult_signature
             /// </summary>
             [EnumMember(Value = "adult_signature")]
             Adultsignature = 4,
             
             /// <summary>
-            /// Enum Directsignature for "direct_signature"
+            /// Enum Directsignature for value: direct_signature
             /// </summary>
             [EnumMember(Value = "direct_signature")]
             Directsignature = 5
@@ -74,26 +74,26 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="confirmation", EmitDefaultValue=false)]
         public ConfirmationEnum? Confirmation { get; set; }
         /// <summary>
-        /// Gets or Sets AddressResidentialIndicator
+        /// Defines AddressResidentialIndicator
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum AddressResidentialIndicatorEnum
         {
             
             /// <summary>
-            /// Enum Unknown for "unknown"
+            /// Enum Unknown for value: unknown
             /// </summary>
             [EnumMember(Value = "unknown")]
             Unknown = 1,
             
             /// <summary>
-            /// Enum Yes for "yes"
+            /// Enum Yes for value: yes
             /// </summary>
             [EnumMember(Value = "yes")]
             Yes = 2,
             
             /// <summary>
-            /// Enum No for "no"
+            /// Enum No for value: no
             /// </summary>
             [EnumMember(Value = "no")]
             No = 3
@@ -107,45 +107,34 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="RateEstimateRequest" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected RateEstimateRequest() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="RateEstimateRequest" /> class.
-        /// </summary>
-        /// <param name="CarrierId">CarrierId (required).</param>
-        /// <param name="FromCountryCode">FromCountryCode.</param>
-        /// <param name="FromPostalCode">FromPostalCode.</param>
-        /// <param name="ToCountryCode">ToCountryCode.</param>
-        /// <param name="ToPostalCode">ToPostalCode.</param>
-        /// <param name="ToCityLocality">ToCityLocality.</param>
-        /// <param name="ToStateProvince">ToStateProvince.</param>
-        /// <param name="Weight">Weight.</param>
-        /// <param name="Dimensions">Dimensions.</param>
-        /// <param name="Confirmation">Confirmation.</param>
-        /// <param name="AddressResidentialIndicator">AddressResidentialIndicator.</param>
-        /// <param name="ShipDate">ShipDate.</param>
-        public RateEstimateRequest(string CarrierId = default(string), string FromCountryCode = default(string), string FromPostalCode = default(string), string ToCountryCode = default(string), string ToPostalCode = default(string), string ToCityLocality = default(string), string ToStateProvince = default(string), Weight Weight = default(Weight), Dimensions Dimensions = default(Dimensions), ConfirmationEnum? Confirmation = default(ConfirmationEnum?), AddressResidentialIndicatorEnum? AddressResidentialIndicator = default(AddressResidentialIndicatorEnum?), DateTime? ShipDate = default(DateTime?))
+        /// <param name="carrierId">carrierId.</param>
+        /// <param name="carrierIds">carrierIds.</param>
+        /// <param name="fromCountryCode">fromCountryCode.</param>
+        /// <param name="fromPostalCode">fromPostalCode.</param>
+        /// <param name="toCountryCode">toCountryCode.</param>
+        /// <param name="toPostalCode">toPostalCode.</param>
+        /// <param name="toCityLocality">toCityLocality.</param>
+        /// <param name="toStateProvince">toStateProvince.</param>
+        /// <param name="weight">weight.</param>
+        /// <param name="dimensions">dimensions.</param>
+        /// <param name="confirmation">confirmation.</param>
+        /// <param name="addressResidentialIndicator">addressResidentialIndicator.</param>
+        /// <param name="shipDate">shipDate.</param>
+        public RateEstimateRequest(string carrierId = default(string), List<string> carrierIds = default(List<string>), string fromCountryCode = default(string), string fromPostalCode = default(string), string toCountryCode = default(string), string toPostalCode = default(string), string toCityLocality = default(string), string toStateProvince = default(string), Weight weight = default(Weight), Dimensions dimensions = default(Dimensions), ConfirmationEnum? confirmation = default(ConfirmationEnum?), AddressResidentialIndicatorEnum? addressResidentialIndicator = default(AddressResidentialIndicatorEnum?), DateTime? shipDate = default(DateTime?))
         {
-            // to ensure "CarrierId" is required (not null)
-            if (CarrierId == null)
-            {
-                throw new InvalidDataException("CarrierId is a required property for RateEstimateRequest and cannot be null");
-            }
-            else
-            {
-                this.CarrierId = CarrierId;
-            }
-            this.FromCountryCode = FromCountryCode;
-            this.FromPostalCode = FromPostalCode;
-            this.ToCountryCode = ToCountryCode;
-            this.ToPostalCode = ToPostalCode;
-            this.ToCityLocality = ToCityLocality;
-            this.ToStateProvince = ToStateProvince;
-            this.Weight = Weight;
-            this.Dimensions = Dimensions;
-            this.Confirmation = Confirmation;
-            this.AddressResidentialIndicator = AddressResidentialIndicator;
-            this.ShipDate = ShipDate;
+            this.CarrierId = carrierId;
+            this.CarrierIds = carrierIds;
+            this.FromCountryCode = fromCountryCode;
+            this.FromPostalCode = fromPostalCode;
+            this.ToCountryCode = toCountryCode;
+            this.ToPostalCode = toPostalCode;
+            this.ToCityLocality = toCityLocality;
+            this.ToStateProvince = toStateProvince;
+            this.Weight = weight;
+            this.Dimensions = dimensions;
+            this.Confirmation = confirmation;
+            this.AddressResidentialIndicator = addressResidentialIndicator;
+            this.ShipDate = shipDate;
         }
         
         /// <summary>
@@ -153,6 +142,12 @@ namespace ShipEngine.ApiClient.Model
         /// </summary>
         [DataMember(Name="carrier_id", EmitDefaultValue=false)]
         public string CarrierId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CarrierIds
+        /// </summary>
+        [DataMember(Name="carrier_ids", EmitDefaultValue=false)]
+        public List<string> CarrierIds { get; set; }
 
         /// <summary>
         /// Gets or Sets FromCountryCode
@@ -219,6 +214,7 @@ namespace ShipEngine.ApiClient.Model
             var sb = new StringBuilder();
             sb.Append("class RateEstimateRequest {\n");
             sb.Append("  CarrierId: ").Append(CarrierId).Append("\n");
+            sb.Append("  CarrierIds: ").Append(CarrierIds).Append("\n");
             sb.Append("  FromCountryCode: ").Append(FromCountryCode).Append("\n");
             sb.Append("  FromPostalCode: ").Append(FromPostalCode).Append("\n");
             sb.Append("  ToCountryCode: ").Append(ToCountryCode).Append("\n");
@@ -238,7 +234,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }
@@ -268,6 +264,11 @@ namespace ShipEngine.ApiClient.Model
                     this.CarrierId == input.CarrierId ||
                     (this.CarrierId != null &&
                     this.CarrierId.Equals(input.CarrierId))
+                ) && 
+                (
+                    this.CarrierIds == input.CarrierIds ||
+                    this.CarrierIds != null &&
+                    this.CarrierIds.SequenceEqual(input.CarrierIds)
                 ) && 
                 (
                     this.FromCountryCode == input.FromCountryCode ||
@@ -337,6 +338,8 @@ namespace ShipEngine.ApiClient.Model
                 int hashCode = 41;
                 if (this.CarrierId != null)
                     hashCode = hashCode * 59 + this.CarrierId.GetHashCode();
+                if (this.CarrierIds != null)
+                    hashCode = hashCode * 59 + this.CarrierIds.GetHashCode();
                 if (this.FromCountryCode != null)
                     hashCode = hashCode * 59 + this.FromCountryCode.GetHashCode();
                 if (this.FromPostalCode != null)

@@ -74,7 +74,7 @@ namespace ShipEngine.ApiClient.Test
             //CreateManifestRequest request = null;
             //string apiKey = null;
             //var response = instance.ManifestsCreate(request, apiKey);
-            //Assert.IsInstanceOf<Manifest> (response, "response is Manifest");
+            //Assert.IsInstanceOf<ManifestResponse> (response, "response is ManifestResponse");
         }
         
         /// <summary>
@@ -87,7 +87,7 @@ namespace ShipEngine.ApiClient.Test
             //string manifestId = null;
             //string apiKey = null;
             //var response = instance.ManifestsGet(manifestId, apiKey);
-            //Assert.IsInstanceOf<Manifest> (response, "response is Manifest");
+            //Assert.IsInstanceOf<ManifestResponse> (response, "response is ManifestResponse");
         }
         
         /// <summary>
@@ -107,7 +107,7 @@ namespace ShipEngine.ApiClient.Test
             //int? page = null;
             //int? pageSize = null;
             //var response = instance.ManifestsList(apiKey, warehouseId, shipDateStart, shipDateEnd, createdAtStart, createdAtEnd, carrierId, page, pageSize);
-            //Assert.IsInstanceOf<ManifestsListResponse> (response, "response is ManifestsListResponse");
+            //Assert.IsInstanceOf<ListManifestsResponse> (response, "response is ListManifestsResponse");
         }
         
     }

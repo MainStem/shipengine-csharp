@@ -33,10 +33,10 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateShipmentsRequest" /> class.
         /// </summary>
-        /// <param name="Shipments">Shipments.</param>
-        public CreateShipmentsRequest(List<AddressValidatingShipment> Shipments = default(List<AddressValidatingShipment>))
+        /// <param name="shipments">shipments.</param>
+        public CreateShipmentsRequest(List<AddressValidatingShipment> shipments = default(List<AddressValidatingShipment>))
         {
-            this.Shipments = Shipments;
+            this.Shipments = shipments;
         }
         
         /// <summary>
@@ -62,7 +62,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

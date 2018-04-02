@@ -33,16 +33,16 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="WarehouseRequest" /> class.
         /// </summary>
-        /// <param name="WarehouseId">WarehouseId.</param>
-        /// <param name="Name">Name.</param>
-        /// <param name="OriginAddress">OriginAddress.</param>
-        /// <param name="ReturnAddress">ReturnAddress.</param>
-        public WarehouseRequest(string WarehouseId = default(string), string Name = default(string), AddressDTO OriginAddress = default(AddressDTO), AddressDTO ReturnAddress = default(AddressDTO))
+        /// <param name="warehouseId">warehouseId.</param>
+        /// <param name="name">name.</param>
+        /// <param name="originAddress">originAddress.</param>
+        /// <param name="returnAddress">returnAddress.</param>
+        public WarehouseRequest(string warehouseId = default(string), string name = default(string), AddressDTO originAddress = default(AddressDTO), AddressDTO returnAddress = default(AddressDTO))
         {
-            this.WarehouseId = WarehouseId;
-            this.Name = Name;
-            this.OriginAddress = OriginAddress;
-            this.ReturnAddress = ReturnAddress;
+            this.WarehouseId = warehouseId;
+            this.Name = name;
+            this.OriginAddress = originAddress;
+            this.ReturnAddress = returnAddress;
         }
         
         /// <summary>
@@ -89,7 +89,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

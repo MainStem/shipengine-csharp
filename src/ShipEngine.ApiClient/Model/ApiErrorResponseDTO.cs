@@ -33,12 +33,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiErrorResponseDTO" /> class.
         /// </summary>
-        /// <param name="RequestId">RequestId.</param>
-        /// <param name="Errors">Errors.</param>
-        public ApiErrorResponseDTO(Guid? RequestId = default(Guid?), List<ApiErrorDTO> Errors = default(List<ApiErrorDTO>))
+        /// <param name="requestId">requestId.</param>
+        /// <param name="errors">errors.</param>
+        public ApiErrorResponseDTO(Guid? requestId = default(Guid?), List<ApiErrorDTO> errors = default(List<ApiErrorDTO>))
         {
-            this.RequestId = RequestId;
-            this.Errors = Errors;
+            this.RequestId = requestId;
+            this.Errors = errors;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

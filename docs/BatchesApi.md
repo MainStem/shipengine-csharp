@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 
 <a name="batchesgetbyexternalid"></a>
 # **BatchesGetByExternalId**
-> void BatchesGetByExternalId (string externalBatchId, string apiKey)
+> Batch BatchesGetByExternalId (string externalBatchId, string apiKey)
 
 
 
@@ -241,7 +241,8 @@ namespace Example
 
             try
             {
-                apiInstance.BatchesGetByExternalId(externalBatchId, apiKey);
+                Batch result = apiInstance.BatchesGetByExternalId(externalBatchId, apiKey);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -261,7 +262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**Batch**](Batch.md)
 
 ### Authorization
 

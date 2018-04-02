@@ -33,16 +33,16 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="FirstMileAccountInformationDTO" /> class.
         /// </summary>
-        /// <param name="Nickname">Nickname.</param>
-        /// <param name="MailerId">MailerId.</param>
-        /// <param name="ProfileName">ProfileName.</param>
-        /// <param name="Password">Password.</param>
-        public FirstMileAccountInformationDTO(string Nickname = default(string), string MailerId = default(string), string ProfileName = default(string), string Password = default(string))
+        /// <param name="nickname">nickname.</param>
+        /// <param name="mailerId">mailerId.</param>
+        /// <param name="profileName">profileName.</param>
+        /// <param name="password">password.</param>
+        public FirstMileAccountInformationDTO(string nickname = default(string), string mailerId = default(string), string profileName = default(string), string password = default(string))
         {
-            this.Nickname = Nickname;
-            this.MailerId = MailerId;
-            this.ProfileName = ProfileName;
-            this.Password = Password;
+            this.Nickname = nickname;
+            this.MailerId = mailerId;
+            this.ProfileName = profileName;
+            this.Password = password;
         }
         
         /// <summary>
@@ -89,7 +89,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

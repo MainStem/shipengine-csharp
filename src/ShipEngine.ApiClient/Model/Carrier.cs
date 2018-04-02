@@ -33,34 +33,34 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Carrier" /> class.
         /// </summary>
-        /// <param name="CarrierId">CarrierId.</param>
-        /// <param name="CarrierCode">CarrierCode.</param>
-        /// <param name="AccountNumber">AccountNumber.</param>
-        /// <param name="RequiresFundedAmount">RequiresFundedAmount.</param>
-        /// <param name="Balance">Balance.</param>
-        /// <param name="Nickname">Nickname.</param>
-        /// <param name="FriendlyName">FriendlyName.</param>
-        /// <param name="Primary">Primary.</param>
-        /// <param name="HasMultiPackageSupportingServices">HasMultiPackageSupportingServices.</param>
-        /// <param name="SupportsLabelMessages">SupportsLabelMessages.</param>
-        /// <param name="Services">Services.</param>
-        /// <param name="Packages">Packages.</param>
-        /// <param name="Options">Options.</param>
-        public Carrier(string CarrierId = default(string), string CarrierCode = default(string), string AccountNumber = default(string), bool? RequiresFundedAmount = default(bool?), double? Balance = default(double?), string Nickname = default(string), string FriendlyName = default(string), bool? Primary = default(bool?), bool? HasMultiPackageSupportingServices = default(bool?), bool? SupportsLabelMessages = default(bool?), List<Service> Services = default(List<Service>), List<Package> Packages = default(List<Package>), List<CarrierAdvancedOption> Options = default(List<CarrierAdvancedOption>))
+        /// <param name="carrierId">carrierId.</param>
+        /// <param name="carrierCode">carrierCode.</param>
+        /// <param name="accountNumber">accountNumber.</param>
+        /// <param name="requiresFundedAmount">requiresFundedAmount.</param>
+        /// <param name="balance">balance.</param>
+        /// <param name="nickname">nickname.</param>
+        /// <param name="friendlyName">friendlyName.</param>
+        /// <param name="primary">primary.</param>
+        /// <param name="hasMultiPackageSupportingServices">hasMultiPackageSupportingServices.</param>
+        /// <param name="supportsLabelMessages">supportsLabelMessages.</param>
+        /// <param name="services">services.</param>
+        /// <param name="packages">packages.</param>
+        /// <param name="options">options.</param>
+        public Carrier(string carrierId = default(string), string carrierCode = default(string), string accountNumber = default(string), bool? requiresFundedAmount = default(bool?), double? balance = default(double?), string nickname = default(string), string friendlyName = default(string), bool? primary = default(bool?), bool? hasMultiPackageSupportingServices = default(bool?), bool? supportsLabelMessages = default(bool?), List<Service> services = default(List<Service>), List<Package> packages = default(List<Package>), List<CarrierAdvancedOption> options = default(List<CarrierAdvancedOption>))
         {
-            this.CarrierId = CarrierId;
-            this.CarrierCode = CarrierCode;
-            this.AccountNumber = AccountNumber;
-            this.RequiresFundedAmount = RequiresFundedAmount;
-            this.Balance = Balance;
-            this.Nickname = Nickname;
-            this.FriendlyName = FriendlyName;
-            this.Primary = Primary;
-            this.HasMultiPackageSupportingServices = HasMultiPackageSupportingServices;
-            this.SupportsLabelMessages = SupportsLabelMessages;
-            this.Services = Services;
-            this.Packages = Packages;
-            this.Options = Options;
+            this.CarrierId = carrierId;
+            this.CarrierCode = carrierCode;
+            this.AccountNumber = accountNumber;
+            this.RequiresFundedAmount = requiresFundedAmount;
+            this.Balance = balance;
+            this.Nickname = nickname;
+            this.FriendlyName = friendlyName;
+            this.Primary = primary;
+            this.HasMultiPackageSupportingServices = hasMultiPackageSupportingServices;
+            this.SupportsLabelMessages = supportsLabelMessages;
+            this.Services = services;
+            this.Packages = packages;
+            this.Options = options;
         }
         
         /// <summary>
@@ -170,7 +170,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

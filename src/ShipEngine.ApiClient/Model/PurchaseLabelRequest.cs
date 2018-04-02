@@ -31,26 +31,26 @@ namespace ShipEngine.ApiClient.Model
     public partial class PurchaseLabelRequest :  IEquatable<PurchaseLabelRequest>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets ValidateAddress
+        /// Defines ValidateAddress
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ValidateAddressEnum
         {
             
             /// <summary>
-            /// Enum NoValidation for "noValidation"
+            /// Enum NoValidation for value: noValidation
             /// </summary>
             [EnumMember(Value = "noValidation")]
             NoValidation = 1,
             
             /// <summary>
-            /// Enum ValidateOnly for "validateOnly"
+            /// Enum ValidateOnly for value: validateOnly
             /// </summary>
             [EnumMember(Value = "validateOnly")]
             ValidateOnly = 2,
             
             /// <summary>
-            /// Enum ValidateAndClean for "validateAndClean"
+            /// Enum ValidateAndClean for value: validateAndClean
             /// </summary>
             [EnumMember(Value = "validateAndClean")]
             ValidateAndClean = 3
@@ -62,26 +62,26 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="validate_address", EmitDefaultValue=false)]
         public ValidateAddressEnum? ValidateAddress { get; set; }
         /// <summary>
-        /// Gets or Sets LabelFormat
+        /// Defines LabelFormat
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum LabelFormatEnum
         {
             
             /// <summary>
-            /// Enum Pdf for "pdf"
+            /// Enum Pdf for value: pdf
             /// </summary>
             [EnumMember(Value = "pdf")]
             Pdf = 1,
             
             /// <summary>
-            /// Enum Zpl for "zpl"
+            /// Enum Zpl for value: zpl
             /// </summary>
             [EnumMember(Value = "zpl")]
             Zpl = 2,
             
             /// <summary>
-            /// Enum Png for "png"
+            /// Enum Png for value: png
             /// </summary>
             [EnumMember(Value = "png")]
             Png = 3
@@ -95,18 +95,22 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="PurchaseLabelRequest" /> class.
         /// </summary>
-        /// <param name="Shipment">Shipment.</param>
-        /// <param name="TestLabel">TestLabel.</param>
-        /// <param name="ValidateAddress">ValidateAddress.</param>
-        /// <param name="LabelLayout">LabelLayout.</param>
-        /// <param name="LabelFormat">LabelFormat.</param>
-        public PurchaseLabelRequest(Shipment Shipment = default(Shipment), bool? TestLabel = default(bool?), ValidateAddressEnum? ValidateAddress = default(ValidateAddressEnum?), string LabelLayout = default(string), LabelFormatEnum? LabelFormat = default(LabelFormatEnum?))
+        /// <param name="shipment">shipment.</param>
+        /// <param name="isReturnLabel">isReturnLabel.</param>
+        /// <param name="rmaNumber">rmaNumber.</param>
+        /// <param name="testLabel">testLabel.</param>
+        /// <param name="validateAddress">validateAddress.</param>
+        /// <param name="labelLayout">labelLayout.</param>
+        /// <param name="labelFormat">labelFormat.</param>
+        public PurchaseLabelRequest(Shipment shipment = default(Shipment), bool? isReturnLabel = default(bool?), string rmaNumber = default(string), bool? testLabel = default(bool?), ValidateAddressEnum? validateAddress = default(ValidateAddressEnum?), string labelLayout = default(string), LabelFormatEnum? labelFormat = default(LabelFormatEnum?))
         {
-            this.Shipment = Shipment;
-            this.TestLabel = TestLabel;
-            this.ValidateAddress = ValidateAddress;
-            this.LabelLayout = LabelLayout;
-            this.LabelFormat = LabelFormat;
+            this.Shipment = shipment;
+            this.IsReturnLabel = isReturnLabel;
+            this.RmaNumber = rmaNumber;
+            this.TestLabel = testLabel;
+            this.ValidateAddress = validateAddress;
+            this.LabelLayout = labelLayout;
+            this.LabelFormat = labelFormat;
         }
         
         /// <summary>
@@ -114,6 +118,18 @@ namespace ShipEngine.ApiClient.Model
         /// </summary>
         [DataMember(Name="shipment", EmitDefaultValue=false)]
         public Shipment Shipment { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsReturnLabel
+        /// </summary>
+        [DataMember(Name="is_return_label", EmitDefaultValue=false)]
+        public bool? IsReturnLabel { get; set; }
+
+        /// <summary>
+        /// Gets or Sets RmaNumber
+        /// </summary>
+        [DataMember(Name="rma_number", EmitDefaultValue=false)]
+        public string RmaNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets TestLabel
@@ -138,6 +154,8 @@ namespace ShipEngine.ApiClient.Model
             var sb = new StringBuilder();
             sb.Append("class PurchaseLabelRequest {\n");
             sb.Append("  Shipment: ").Append(Shipment).Append("\n");
+            sb.Append("  IsReturnLabel: ").Append(IsReturnLabel).Append("\n");
+            sb.Append("  RmaNumber: ").Append(RmaNumber).Append("\n");
             sb.Append("  TestLabel: ").Append(TestLabel).Append("\n");
             sb.Append("  ValidateAddress: ").Append(ValidateAddress).Append("\n");
             sb.Append("  LabelLayout: ").Append(LabelLayout).Append("\n");
@@ -150,7 +168,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }
@@ -180,6 +198,16 @@ namespace ShipEngine.ApiClient.Model
                     this.Shipment == input.Shipment ||
                     (this.Shipment != null &&
                     this.Shipment.Equals(input.Shipment))
+                ) && 
+                (
+                    this.IsReturnLabel == input.IsReturnLabel ||
+                    (this.IsReturnLabel != null &&
+                    this.IsReturnLabel.Equals(input.IsReturnLabel))
+                ) && 
+                (
+                    this.RmaNumber == input.RmaNumber ||
+                    (this.RmaNumber != null &&
+                    this.RmaNumber.Equals(input.RmaNumber))
                 ) && 
                 (
                     this.TestLabel == input.TestLabel ||
@@ -214,6 +242,10 @@ namespace ShipEngine.ApiClient.Model
                 int hashCode = 41;
                 if (this.Shipment != null)
                     hashCode = hashCode * 59 + this.Shipment.GetHashCode();
+                if (this.IsReturnLabel != null)
+                    hashCode = hashCode * 59 + this.IsReturnLabel.GetHashCode();
+                if (this.RmaNumber != null)
+                    hashCode = hashCode * 59 + this.RmaNumber.GetHashCode();
                 if (this.TestLabel != null)
                     hashCode = hashCode * 59 + this.TestLabel.GetHashCode();
                 if (this.ValidateAddress != null)

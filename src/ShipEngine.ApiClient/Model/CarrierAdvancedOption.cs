@@ -33,14 +33,14 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CarrierAdvancedOption" /> class.
         /// </summary>
-        /// <param name="Name">Name.</param>
-        /// <param name="DefaultValue">DefaultValue.</param>
-        /// <param name="Description">Description.</param>
-        public CarrierAdvancedOption(string Name = default(string), string DefaultValue = default(string), string Description = default(string))
+        /// <param name="name">name.</param>
+        /// <param name="defaultValue">defaultValue.</param>
+        /// <param name="description">description.</param>
+        public CarrierAdvancedOption(string name = default(string), string defaultValue = default(string), string description = default(string))
         {
-            this.Name = Name;
-            this.DefaultValue = DefaultValue;
-            this.Description = Description;
+            this.Name = name;
+            this.DefaultValue = defaultValue;
+            this.Description = description;
         }
         
         /// <summary>
@@ -80,7 +80,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

@@ -33,14 +33,14 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="EndiciaAccountInformationDTO" /> class.
         /// </summary>
-        /// <param name="Nickname">Nickname.</param>
-        /// <param name="Account">Account.</param>
-        /// <param name="Passphrase">Passphrase.</param>
-        public EndiciaAccountInformationDTO(string Nickname = default(string), string Account = default(string), string Passphrase = default(string))
+        /// <param name="nickname">nickname.</param>
+        /// <param name="account">account.</param>
+        /// <param name="passphrase">passphrase.</param>
+        public EndiciaAccountInformationDTO(string nickname = default(string), string account = default(string), string passphrase = default(string))
         {
-            this.Nickname = Nickname;
-            this.Account = Account;
-            this.Passphrase = Passphrase;
+            this.Nickname = nickname;
+            this.Account = account;
+            this.Passphrase = passphrase;
         }
         
         /// <summary>
@@ -80,7 +80,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

@@ -33,10 +33,10 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ConnectAccountResponseDTO" /> class.
         /// </summary>
-        /// <param name="CarrierId">CarrierId.</param>
-        public ConnectAccountResponseDTO(string CarrierId = default(string))
+        /// <param name="carrierId">carrierId.</param>
+        public ConnectAccountResponseDTO(string carrierId = default(string))
         {
-            this.CarrierId = CarrierId;
+            this.CarrierId = carrierId;
         }
         
         /// <summary>
@@ -62,7 +62,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

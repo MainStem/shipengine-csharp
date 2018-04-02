@@ -33,16 +33,16 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="NewgisticsAccountInformationDTO" /> class.
         /// </summary>
-        /// <param name="MerchantId">MerchantId.</param>
-        /// <param name="MailerId">MailerId.</param>
-        /// <param name="InductionSite">InductionSite.</param>
-        /// <param name="Nickname">Nickname.</param>
-        public NewgisticsAccountInformationDTO(int? MerchantId = default(int?), int? MailerId = default(int?), string InductionSite = default(string), string Nickname = default(string))
+        /// <param name="merchantId">merchantId.</param>
+        /// <param name="mailerId">mailerId.</param>
+        /// <param name="inductionSite">inductionSite.</param>
+        /// <param name="nickname">nickname.</param>
+        public NewgisticsAccountInformationDTO(int? merchantId = default(int?), int? mailerId = default(int?), string inductionSite = default(string), string nickname = default(string))
         {
-            this.MerchantId = MerchantId;
-            this.MailerId = MailerId;
-            this.InductionSite = InductionSite;
-            this.Nickname = Nickname;
+            this.MerchantId = merchantId;
+            this.MailerId = mailerId;
+            this.InductionSite = inductionSite;
+            this.Nickname = nickname;
         }
         
         /// <summary>
@@ -89,7 +89,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

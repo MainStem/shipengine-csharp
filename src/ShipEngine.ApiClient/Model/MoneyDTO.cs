@@ -31,38 +31,38 @@ namespace ShipEngine.ApiClient.Model
     public partial class MoneyDTO :  IEquatable<MoneyDTO>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets Currency
+        /// Defines Currency
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum CurrencyEnum
         {
             
             /// <summary>
-            /// Enum USD for "uSD"
+            /// Enum USD for value: uSD
             /// </summary>
             [EnumMember(Value = "uSD")]
             USD = 1,
             
             /// <summary>
-            /// Enum CAD for "cAD"
+            /// Enum CAD for value: cAD
             /// </summary>
             [EnumMember(Value = "cAD")]
             CAD = 2,
             
             /// <summary>
-            /// Enum AUD for "aUD"
+            /// Enum AUD for value: aUD
             /// </summary>
             [EnumMember(Value = "aUD")]
             AUD = 3,
             
             /// <summary>
-            /// Enum GBP for "gBP"
+            /// Enum GBP for value: gBP
             /// </summary>
             [EnumMember(Value = "gBP")]
             GBP = 4,
             
             /// <summary>
-            /// Enum EUR for "eUR"
+            /// Enum EUR for value: eUR
             /// </summary>
             [EnumMember(Value = "eUR")]
             EUR = 5
@@ -76,12 +76,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="MoneyDTO" /> class.
         /// </summary>
-        /// <param name="Currency">Currency.</param>
-        /// <param name="Amount">Amount.</param>
-        public MoneyDTO(CurrencyEnum? Currency = default(CurrencyEnum?), double? Amount = default(double?))
+        /// <param name="currency">currency.</param>
+        /// <param name="amount">amount.</param>
+        public MoneyDTO(CurrencyEnum? currency = default(CurrencyEnum?), double? amount = default(double?))
         {
-            this.Currency = Currency;
-            this.Amount = Amount;
+            this.Currency = currency;
+            this.Amount = amount;
         }
         
 
@@ -109,7 +109,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

@@ -33,14 +33,14 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="LabelMessages" /> class.
         /// </summary>
-        /// <param name="Reference1">Reference1.</param>
-        /// <param name="Reference2">Reference2.</param>
-        /// <param name="Reference3">Reference3.</param>
-        public LabelMessages(string Reference1 = default(string), string Reference2 = default(string), string Reference3 = default(string))
+        /// <param name="reference1">reference1.</param>
+        /// <param name="reference2">reference2.</param>
+        /// <param name="reference3">reference3.</param>
+        public LabelMessages(string reference1 = default(string), string reference2 = default(string), string reference3 = default(string))
         {
-            this.Reference1 = Reference1;
-            this.Reference2 = Reference2;
-            this.Reference3 = Reference3;
+            this.Reference1 = reference1;
+            this.Reference2 = reference2;
+            this.Reference3 = reference3;
         }
         
         /// <summary>
@@ -80,7 +80,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

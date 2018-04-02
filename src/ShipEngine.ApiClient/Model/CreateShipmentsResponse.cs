@@ -33,12 +33,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateShipmentsResponse" /> class.
         /// </summary>
-        /// <param name="HasErrors">HasErrors.</param>
-        /// <param name="Shipments">Shipments.</param>
-        public CreateShipmentsResponse(bool? HasErrors = default(bool?), List<CreateShipmentResponse> Shipments = default(List<CreateShipmentResponse>))
+        /// <param name="hasErrors">hasErrors.</param>
+        /// <param name="shipments">shipments.</param>
+        public CreateShipmentsResponse(bool? hasErrors = default(bool?), List<CreateShipmentResponse> shipments = default(List<CreateShipmentResponse>))
         {
-            this.HasErrors = HasErrors;
-            this.Shipments = Shipments;
+            this.HasErrors = hasErrors;
+            this.Shipments = shipments;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

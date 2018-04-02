@@ -33,22 +33,22 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Service" /> class.
         /// </summary>
-        /// <param name="CarrierId">CarrierId.</param>
-        /// <param name="CarrierCode">CarrierCode.</param>
-        /// <param name="ServiceCode">ServiceCode.</param>
-        /// <param name="Name">Name.</param>
-        /// <param name="Domestic">Domestic.</param>
-        /// <param name="International">International.</param>
-        /// <param name="IsMultiPackageSupported">IsMultiPackageSupported.</param>
-        public Service(string CarrierId = default(string), string CarrierCode = default(string), string ServiceCode = default(string), string Name = default(string), bool? Domestic = default(bool?), bool? International = default(bool?), bool? IsMultiPackageSupported = default(bool?))
+        /// <param name="carrierId">carrierId.</param>
+        /// <param name="carrierCode">carrierCode.</param>
+        /// <param name="serviceCode">serviceCode.</param>
+        /// <param name="name">name.</param>
+        /// <param name="domestic">domestic.</param>
+        /// <param name="international">international.</param>
+        /// <param name="isMultiPackageSupported">isMultiPackageSupported.</param>
+        public Service(string carrierId = default(string), string carrierCode = default(string), string serviceCode = default(string), string name = default(string), bool? domestic = default(bool?), bool? international = default(bool?), bool? isMultiPackageSupported = default(bool?))
         {
-            this.CarrierId = CarrierId;
-            this.CarrierCode = CarrierCode;
-            this.ServiceCode = ServiceCode;
-            this.Name = Name;
-            this.Domestic = Domestic;
-            this.International = International;
-            this.IsMultiPackageSupported = IsMultiPackageSupported;
+            this.CarrierId = carrierId;
+            this.CarrierCode = carrierCode;
+            this.ServiceCode = serviceCode;
+            this.Name = name;
+            this.Domestic = domestic;
+            this.International = international;
+            this.IsMultiPackageSupported = isMultiPackageSupported;
         }
         
         /// <summary>
@@ -116,7 +116,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

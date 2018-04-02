@@ -33,12 +33,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ModifyBatchRequest" /> class.
         /// </summary>
-        /// <param name="ShipmentIds">ShipmentIds.</param>
-        /// <param name="RateIds">RateIds.</param>
-        public ModifyBatchRequest(List<string> ShipmentIds = default(List<string>), List<string> RateIds = default(List<string>))
+        /// <param name="shipmentIds">shipmentIds.</param>
+        /// <param name="rateIds">rateIds.</param>
+        public ModifyBatchRequest(List<string> shipmentIds = default(List<string>), List<string> rateIds = default(List<string>))
         {
-            this.ShipmentIds = ShipmentIds;
-            this.RateIds = RateIds;
+            this.ShipmentIds = shipmentIds;
+            this.RateIds = rateIds;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

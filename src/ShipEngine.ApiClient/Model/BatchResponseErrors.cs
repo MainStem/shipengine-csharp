@@ -33,12 +33,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BatchResponseErrors" /> class.
         /// </summary>
-        /// <param name="Errors">Errors.</param>
-        /// <param name="Links">Links.</param>
-        public BatchResponseErrors(List<BatchResponseError> Errors = default(List<BatchResponseError>), PaginationLinkDTO Links = default(PaginationLinkDTO))
+        /// <param name="errors">errors.</param>
+        /// <param name="links">links.</param>
+        public BatchResponseErrors(List<BatchResponseError> errors = default(List<BatchResponseError>), PaginationLinkDTO links = default(PaginationLinkDTO))
         {
-            this.Errors = Errors;
-            this.Links = Links;
+            this.Errors = errors;
+            this.Links = links;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

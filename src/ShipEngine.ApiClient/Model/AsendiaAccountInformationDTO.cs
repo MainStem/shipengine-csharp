@@ -33,16 +33,16 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="AsendiaAccountInformationDTO" /> class.
         /// </summary>
-        /// <param name="Nickname">Nickname.</param>
-        /// <param name="AccountNumber">AccountNumber.</param>
-        /// <param name="FtpUsername">FtpUsername.</param>
-        /// <param name="FtpPassword">FtpPassword.</param>
-        public AsendiaAccountInformationDTO(string Nickname = default(string), string AccountNumber = default(string), string FtpUsername = default(string), string FtpPassword = default(string))
+        /// <param name="nickname">nickname.</param>
+        /// <param name="accountNumber">accountNumber.</param>
+        /// <param name="ftpUsername">ftpUsername.</param>
+        /// <param name="ftpPassword">ftpPassword.</param>
+        public AsendiaAccountInformationDTO(string nickname = default(string), string accountNumber = default(string), string ftpUsername = default(string), string ftpPassword = default(string))
         {
-            this.Nickname = Nickname;
-            this.AccountNumber = AccountNumber;
-            this.FtpUsername = FtpUsername;
-            this.FtpPassword = FtpPassword;
+            this.Nickname = nickname;
+            this.AccountNumber = accountNumber;
+            this.FtpUsername = ftpUsername;
+            this.FtpPassword = ftpPassword;
         }
         
         /// <summary>
@@ -89,7 +89,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

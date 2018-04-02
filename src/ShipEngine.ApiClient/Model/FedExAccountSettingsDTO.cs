@@ -31,44 +31,44 @@ namespace ShipEngine.ApiClient.Model
     public partial class FedExAccountSettingsDTO :  IEquatable<FedExAccountSettingsDTO>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets PickupType
+        /// Defines PickupType
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum PickupTypeEnum
         {
             
             /// <summary>
-            /// Enum None for "none"
+            /// Enum None for value: none
             /// </summary>
             [EnumMember(Value = "none")]
             None = 1,
             
             /// <summary>
-            /// Enum Regularpickup for "regular_pickup"
+            /// Enum Regularpickup for value: regular_pickup
             /// </summary>
             [EnumMember(Value = "regular_pickup")]
             Regularpickup = 2,
             
             /// <summary>
-            /// Enum Requestcourier for "request_courier"
+            /// Enum Requestcourier for value: request_courier
             /// </summary>
             [EnumMember(Value = "request_courier")]
             Requestcourier = 3,
             
             /// <summary>
-            /// Enum Dropbox for "drop_box"
+            /// Enum Dropbox for value: drop_box
             /// </summary>
             [EnumMember(Value = "drop_box")]
             Dropbox = 4,
             
             /// <summary>
-            /// Enum Businessservicecenter for "business_service_center"
+            /// Enum Businessservicecenter for value: business_service_center
             /// </summary>
             [EnumMember(Value = "business_service_center")]
             Businessservicecenter = 5,
             
             /// <summary>
-            /// Enum Station for "station"
+            /// Enum Station for value: station
             /// </summary>
             [EnumMember(Value = "station")]
             Station = 6
@@ -80,212 +80,212 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="pickup_type", EmitDefaultValue=false)]
         public PickupTypeEnum? PickupType { get; set; }
         /// <summary>
-        /// Gets or Sets SmartPostHub
+        /// Defines SmartPostHub
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum SmartPostHubEnum
         {
             
             /// <summary>
-            /// Enum None for "none"
+            /// Enum None for value: none
             /// </summary>
             [EnumMember(Value = "none")]
             None = 1,
             
             /// <summary>
-            /// Enum Allentownpa for "allentown_pa"
+            /// Enum Allentownpa for value: allentown_pa
             /// </summary>
             [EnumMember(Value = "allentown_pa")]
             Allentownpa = 2,
             
             /// <summary>
-            /// Enum Atlantaga for "atlanta_ga"
+            /// Enum Atlantaga for value: atlanta_ga
             /// </summary>
             [EnumMember(Value = "atlanta_ga")]
             Atlantaga = 3,
             
             /// <summary>
-            /// Enum Baltimoremd for "baltimore_md"
+            /// Enum Baltimoremd for value: baltimore_md
             /// </summary>
             [EnumMember(Value = "baltimore_md")]
             Baltimoremd = 4,
             
             /// <summary>
-            /// Enum Charlottenc for "charlotte_nc"
+            /// Enum Charlottenc for value: charlotte_nc
             /// </summary>
             [EnumMember(Value = "charlotte_nc")]
             Charlottenc = 5,
             
             /// <summary>
-            /// Enum Chinoca for "chino_ca"
+            /// Enum Chinoca for value: chino_ca
             /// </summary>
             [EnumMember(Value = "chino_ca")]
             Chinoca = 6,
             
             /// <summary>
-            /// Enum Dallastx for "dallas_tx"
+            /// Enum Dallastx for value: dallas_tx
             /// </summary>
             [EnumMember(Value = "dallas_tx")]
             Dallastx = 7,
             
             /// <summary>
-            /// Enum Denverco for "denver_co"
+            /// Enum Denverco for value: denver_co
             /// </summary>
             [EnumMember(Value = "denver_co")]
             Denverco = 8,
             
             /// <summary>
-            /// Enum Detroitmi for "detroit_mi"
+            /// Enum Detroitmi for value: detroit_mi
             /// </summary>
             [EnumMember(Value = "detroit_mi")]
             Detroitmi = 9,
             
             /// <summary>
-            /// Enum Edisonnj for "edison_nj"
+            /// Enum Edisonnj for value: edison_nj
             /// </summary>
             [EnumMember(Value = "edison_nj")]
             Edisonnj = 10,
             
             /// <summary>
-            /// Enum Grovecityoh for "grove_city_oh"
+            /// Enum Grovecityoh for value: grove_city_oh
             /// </summary>
             [EnumMember(Value = "grove_city_oh")]
             Grovecityoh = 11,
             
             /// <summary>
-            /// Enum Groveportoh for "groveport_oh"
+            /// Enum Groveportoh for value: groveport_oh
             /// </summary>
             [EnumMember(Value = "groveport_oh")]
             Groveportoh = 12,
             
             /// <summary>
-            /// Enum Houstontx for "houston_tx"
+            /// Enum Houstontx for value: houston_tx
             /// </summary>
             [EnumMember(Value = "houston_tx")]
             Houstontx = 13,
             
             /// <summary>
-            /// Enum Indianapolisin for "indianapolis_in"
+            /// Enum Indianapolisin for value: indianapolis_in
             /// </summary>
             [EnumMember(Value = "indianapolis_in")]
             Indianapolisin = 14,
             
             /// <summary>
-            /// Enum Kansascityks for "kansas_city_ks"
+            /// Enum Kansascityks for value: kansas_city_ks
             /// </summary>
             [EnumMember(Value = "kansas_city_ks")]
             Kansascityks = 15,
             
             /// <summary>
-            /// Enum Losangelesca for "los_angeles_ca"
+            /// Enum Losangelesca for value: los_angeles_ca
             /// </summary>
             [EnumMember(Value = "los_angeles_ca")]
             Losangelesca = 16,
             
             /// <summary>
-            /// Enum Martinsburgwv for "martinsburg_wv"
+            /// Enum Martinsburgwv for value: martinsburg_wv
             /// </summary>
             [EnumMember(Value = "martinsburg_wv")]
             Martinsburgwv = 17,
             
             /// <summary>
-            /// Enum Memphistn for "memphis_tn"
+            /// Enum Memphistn for value: memphis_tn
             /// </summary>
             [EnumMember(Value = "memphis_tn")]
             Memphistn = 18,
             
             /// <summary>
-            /// Enum Minneapolismn for "minneapolis_mn"
+            /// Enum Minneapolismn for value: minneapolis_mn
             /// </summary>
             [EnumMember(Value = "minneapolis_mn")]
             Minneapolismn = 19,
             
             /// <summary>
-            /// Enum Newberlinwi for "new_berlin_wi"
+            /// Enum Newberlinwi for value: new_berlin_wi
             /// </summary>
             [EnumMember(Value = "new_berlin_wi")]
             Newberlinwi = 20,
             
             /// <summary>
-            /// Enum Northboroughma for "northborough_ma"
+            /// Enum Northboroughma for value: northborough_ma
             /// </summary>
             [EnumMember(Value = "northborough_ma")]
             Northboroughma = 21,
             
             /// <summary>
-            /// Enum Orlandofl for "orlando_fl"
+            /// Enum Orlandofl for value: orlando_fl
             /// </summary>
             [EnumMember(Value = "orlando_fl")]
             Orlandofl = 22,
             
             /// <summary>
-            /// Enum Phoneixaz for "phoneix_az"
+            /// Enum Phoneixaz for value: phoneix_az
             /// </summary>
             [EnumMember(Value = "phoneix_az")]
             Phoneixaz = 23,
             
             /// <summary>
-            /// Enum Pittsburghpa for "pittsburgh_pa"
+            /// Enum Pittsburghpa for value: pittsburgh_pa
             /// </summary>
             [EnumMember(Value = "pittsburgh_pa")]
             Pittsburghpa = 24,
             
             /// <summary>
-            /// Enum Renonv for "reno_nv"
+            /// Enum Renonv for value: reno_nv
             /// </summary>
             [EnumMember(Value = "reno_nv")]
             Renonv = 25,
             
             /// <summary>
-            /// Enum Sacramentoca for "sacramento_ca"
+            /// Enum Sacramentoca for value: sacramento_ca
             /// </summary>
             [EnumMember(Value = "sacramento_ca")]
             Sacramentoca = 26,
             
             /// <summary>
-            /// Enum Saltlakecityut for "salt_lake_city_ut"
+            /// Enum Saltlakecityut for value: salt_lake_city_ut
             /// </summary>
             [EnumMember(Value = "salt_lake_city_ut")]
             Saltlakecityut = 27,
             
             /// <summary>
-            /// Enum Seattlewa for "seattle_wa"
+            /// Enum Seattlewa for value: seattle_wa
             /// </summary>
             [EnumMember(Value = "seattle_wa")]
             Seattlewa = 28,
             
             /// <summary>
-            /// Enum Stlouismo for "st_louis_mo"
+            /// Enum Stlouismo for value: st_louis_mo
             /// </summary>
             [EnumMember(Value = "st_louis_mo")]
             Stlouismo = 29,
             
             /// <summary>
-            /// Enum Windsorct for "windsor_ct"
+            /// Enum Windsorct for value: windsor_ct
             /// </summary>
             [EnumMember(Value = "windsor_ct")]
             Windsorct = 30,
             
             /// <summary>
-            /// Enum Newarkny for "newark_ny"
+            /// Enum Newarkny for value: newark_ny
             /// </summary>
             [EnumMember(Value = "newark_ny")]
             Newarkny = 31,
             
             /// <summary>
-            /// Enum Southbrunswicknj for "south_brunswick_nj"
+            /// Enum Southbrunswicknj for value: south_brunswick_nj
             /// </summary>
             [EnumMember(Value = "south_brunswick_nj")]
             Southbrunswicknj = 32,
             
             /// <summary>
-            /// Enum Scrantonpa for "scranton_pa"
+            /// Enum Scrantonpa for value: scranton_pa
             /// </summary>
             [EnumMember(Value = "scranton_pa")]
             Scrantonpa = 33,
             
             /// <summary>
-            /// Enum Wheelingil for "wheeling_il"
+            /// Enum Wheelingil for value: wheeling_il
             /// </summary>
             [EnumMember(Value = "wheeling_il")]
             Wheelingil = 34
@@ -297,44 +297,44 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="smart_post_hub", EmitDefaultValue=false)]
         public SmartPostHubEnum? SmartPostHub { get; set; }
         /// <summary>
-        /// Gets or Sets SmartPostEndorsement
+        /// Defines SmartPostEndorsement
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum SmartPostEndorsementEnum
         {
             
             /// <summary>
-            /// Enum None for "none"
+            /// Enum None for value: none
             /// </summary>
             [EnumMember(Value = "none")]
             None = 1,
             
             /// <summary>
-            /// Enum Returnservicerequested for "return_service_requested"
+            /// Enum Returnservicerequested for value: return_service_requested
             /// </summary>
             [EnumMember(Value = "return_service_requested")]
             Returnservicerequested = 2,
             
             /// <summary>
-            /// Enum Forwardingservicerequested for "forwarding_service_requested"
+            /// Enum Forwardingservicerequested for value: forwarding_service_requested
             /// </summary>
             [EnumMember(Value = "forwarding_service_requested")]
             Forwardingservicerequested = 3,
             
             /// <summary>
-            /// Enum Addressservicerequested for "address_service_requested"
+            /// Enum Addressservicerequested for value: address_service_requested
             /// </summary>
             [EnumMember(Value = "address_service_requested")]
             Addressservicerequested = 4,
             
             /// <summary>
-            /// Enum Changeservicerequested for "change_service_requested"
+            /// Enum Changeservicerequested for value: change_service_requested
             /// </summary>
             [EnumMember(Value = "change_service_requested")]
             Changeservicerequested = 5,
             
             /// <summary>
-            /// Enum Leaveifnoresponse for "leave_if_no_response"
+            /// Enum Leaveifnoresponse for value: leave_if_no_response
             /// </summary>
             [EnumMember(Value = "leave_if_no_response")]
             Leaveifnoresponse = 6
@@ -348,18 +348,18 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="FedExAccountSettingsDTO" /> class.
         /// </summary>
-        /// <param name="Nickname">Nickname.</param>
-        /// <param name="PickupType">PickupType.</param>
-        /// <param name="SmartPostHub">SmartPostHub.</param>
-        /// <param name="SmartPostEndorsement">SmartPostEndorsement.</param>
-        /// <param name="IsPrimaryAccount">IsPrimaryAccount.</param>
-        public FedExAccountSettingsDTO(string Nickname = default(string), PickupTypeEnum? PickupType = default(PickupTypeEnum?), SmartPostHubEnum? SmartPostHub = default(SmartPostHubEnum?), SmartPostEndorsementEnum? SmartPostEndorsement = default(SmartPostEndorsementEnum?), bool? IsPrimaryAccount = default(bool?))
+        /// <param name="nickname">nickname.</param>
+        /// <param name="pickupType">pickupType.</param>
+        /// <param name="smartPostHub">smartPostHub.</param>
+        /// <param name="smartPostEndorsement">smartPostEndorsement.</param>
+        /// <param name="isPrimaryAccount">isPrimaryAccount.</param>
+        public FedExAccountSettingsDTO(string nickname = default(string), PickupTypeEnum? pickupType = default(PickupTypeEnum?), SmartPostHubEnum? smartPostHub = default(SmartPostHubEnum?), SmartPostEndorsementEnum? smartPostEndorsement = default(SmartPostEndorsementEnum?), bool? isPrimaryAccount = default(bool?))
         {
-            this.Nickname = Nickname;
-            this.PickupType = PickupType;
-            this.SmartPostHub = SmartPostHub;
-            this.SmartPostEndorsement = SmartPostEndorsement;
-            this.IsPrimaryAccount = IsPrimaryAccount;
+            this.Nickname = nickname;
+            this.PickupType = pickupType;
+            this.SmartPostHub = smartPostHub;
+            this.SmartPostEndorsement = smartPostEndorsement;
+            this.IsPrimaryAccount = isPrimaryAccount;
         }
         
         /// <summary>
@@ -398,7 +398,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

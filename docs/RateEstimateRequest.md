@@ -3,7 +3,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CarrierId** | **string** |  | 
+**CarrierId** | **string** |  | [optional] 
+**CarrierIds** | **List&lt;string&gt;** |  | [optional] 
 **FromCountryCode** | **string** |  | [optional] 
 **FromPostalCode** | **string** |  | [optional] 
 **ToCountryCode** | **string** |  | [optional] 

@@ -31,32 +31,32 @@ namespace ShipEngine.ApiClient.Model
     public partial class Weight :  IEquatable<Weight>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets Unit
+        /// Defines Unit
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum UnitEnum
         {
             
             /// <summary>
-            /// Enum Pound for "pound"
+            /// Enum Pound for value: pound
             /// </summary>
             [EnumMember(Value = "pound")]
             Pound = 1,
             
             /// <summary>
-            /// Enum Ounce for "ounce"
+            /// Enum Ounce for value: ounce
             /// </summary>
             [EnumMember(Value = "ounce")]
             Ounce = 2,
             
             /// <summary>
-            /// Enum Gram for "gram"
+            /// Enum Gram for value: gram
             /// </summary>
             [EnumMember(Value = "gram")]
             Gram = 3,
             
             /// <summary>
-            /// Enum Kilogram for "kilogram"
+            /// Enum Kilogram for value: kilogram
             /// </summary>
             [EnumMember(Value = "kilogram")]
             Kilogram = 4
@@ -70,12 +70,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Weight" /> class.
         /// </summary>
-        /// <param name="Value">Value.</param>
-        /// <param name="Unit">Unit.</param>
-        public Weight(double? Value = default(double?), UnitEnum? Unit = default(UnitEnum?))
+        /// <param name="value">value.</param>
+        /// <param name="unit">unit.</param>
+        public Weight(double? value = default(double?), UnitEnum? unit = default(UnitEnum?))
         {
-            this.Value = Value;
-            this.Unit = Unit;
+            this.Value = value;
+            this.Unit = unit;
         }
         
         /// <summary>
@@ -103,7 +103,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

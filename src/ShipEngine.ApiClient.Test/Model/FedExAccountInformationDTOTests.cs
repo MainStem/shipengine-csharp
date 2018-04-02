@@ -178,6 +178,14 @@ namespace ShipEngine.ApiClient.Test
         {
             // TODO unit test for the property 'AgreeToEula'
         }
+        /// <summary>
+        /// Test the property 'MeterNumber'
+        /// </summary>
+        [Test]
+        public void MeterNumberTest()
+        {
+            // TODO unit test for the property 'MeterNumber'
+        }
 
     }
 

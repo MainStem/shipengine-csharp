@@ -33,12 +33,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiErrorDTO" /> class.
         /// </summary>
-        /// <param name="ErrorCode">ErrorCode.</param>
-        /// <param name="Message">Message.</param>
-        public ApiErrorDTO(string ErrorCode = default(string), string Message = default(string))
+        /// <param name="errorCode">errorCode.</param>
+        /// <param name="message">message.</param>
+        public ApiErrorDTO(string errorCode = default(string), string message = default(string))
         {
-            this.ErrorCode = ErrorCode;
-            this.Message = Message;
+            this.ErrorCode = errorCode;
+            this.Message = message;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

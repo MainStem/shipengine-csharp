@@ -12,11 +12,13 @@ Method | HTTP request | Description
 [**AsendiaAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#asendiaaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/asendia/{carrier_id} | 
 [**DHLExpressAccountCarrierConnectAccount**](CarrierAccountsApi.md#dhlexpressaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/dhl_express | 
 [**DHLExpressAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#dhlexpressaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/dhl_express/{carrier_id} | 
+[**DHLExpressAccountCarrierGetSettings**](CarrierAccountsApi.md#dhlexpressaccountcarriergetsettings) | **GET** /v1/connections/carriers/dhl_express/{carrier_id}/settings | 
 [**DHLExpressAccountCarrierUpdateSettings**](CarrierAccountsApi.md#dhlexpressaccountcarrierupdatesettings) | **PUT** /v1/connections/carriers/dhl_express/{carrier_id}/settings | 
 [**EndiciaAccountCarrierConnectAccount**](CarrierAccountsApi.md#endiciaaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/endicia | 
 [**EndiciaAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#endiciaaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/endicia/{carrier_id} | 
 [**FedExAccountCarrierConnectAccount**](CarrierAccountsApi.md#fedexaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/fedex | 
 [**FedExAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#fedexaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/fedex/{carrier_id} | 
+[**FedExAccountCarrierGetSettings**](CarrierAccountsApi.md#fedexaccountcarriergetsettings) | **GET** /v1/connections/carriers/fedex/{carrier_id}/settings | 
 [**FedExAccountCarrierUpdateSettings**](CarrierAccountsApi.md#fedexaccountcarrierupdatesettings) | **PUT** /v1/connections/carriers/fedex/{carrier_id}/settings | 
 [**FirstMileAccountCarrierConnectAccount**](CarrierAccountsApi.md#firstmileaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/firstmile | 
 [**FirstMileAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#firstmileaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/firstmile/{carrier_id} | 
@@ -33,8 +35,10 @@ Method | HTTP request | Description
 [**RrDonnelleyAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#rrdonnelleyaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/rr_donnelley/{carrier_id} | 
 [**StampsAccountCarrierConnectAccount**](CarrierAccountsApi.md#stampsaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/stamps_com | 
 [**StampsAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#stampsaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/stamps_com/{carrier_id} | 
+[**StampsAccountCarrierGetAccountUrl**](CarrierAccountsApi.md#stampsaccountcarriergetaccounturl) | **PUT** /v1/connections/carriers/stamps_com/{carrier_id}/request_account_url | 
 [**UPSAccountCarrierConnectAccount**](CarrierAccountsApi.md#upsaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/ups | 
 [**UPSAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#upsaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/ups/{carrier_id} | 
+[**UPSAccountCarrierGetSettings**](CarrierAccountsApi.md#upsaccountcarriergetsettings) | **GET** /v1/connections/carriers/ups/{carrier_id}/settings | 
 [**UPSAccountCarrierUpdateSettings**](CarrierAccountsApi.md#upsaccountcarrierupdatesettings) | **PUT** /v1/connections/carriers/ups/{carrier_id}/settings | 
 
 
@@ -554,6 +558,71 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="dhlexpressaccountcarriergetsettings"></a>
+# **DHLExpressAccountCarrierGetSettings**
+> UPSAccountSettingsDTO DHLExpressAccountCarrierGetSettings (string carrierId, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class DHLExpressAccountCarrierGetSettingsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var carrierId = carrierId_example;  // string | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                UPSAccountSettingsDTO result = apiInstance.DHLExpressAccountCarrierGetSettings(carrierId, apiKey);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.DHLExpressAccountCarrierGetSettings: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **carrierId** | **string**|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+[**UPSAccountSettingsDTO**](UPSAccountSettingsDTO.md)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="dhlexpressaccountcarrierupdatesettings"></a>
 # **DHLExpressAccountCarrierUpdateSettings**
 > void DHLExpressAccountCarrierUpdateSettings (string carrierId, DHLExpressAccountSettingsDTO settings, string apiKey)
@@ -866,6 +935,71 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="fedexaccountcarriergetsettings"></a>
+# **FedExAccountCarrierGetSettings**
+> UPSAccountSettingsDTO FedExAccountCarrierGetSettings (string carrierId, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class FedExAccountCarrierGetSettingsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var carrierId = carrierId_example;  // string | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                UPSAccountSettingsDTO result = apiInstance.FedExAccountCarrierGetSettings(carrierId, apiKey);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.FedExAccountCarrierGetSettings: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **carrierId** | **string**|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+[**UPSAccountSettingsDTO**](UPSAccountSettingsDTO.md)
 
 ### Authorization
 
@@ -1913,6 +2047,73 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="stampsaccountcarriergetaccounturl"></a>
+# **StampsAccountCarrierGetAccountUrl**
+> StampsAccountUrlsResponse StampsAccountCarrierGetAccountUrl (string carrierId, StampsAccountUrlsRequest stampsAccountUrlsRequest, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class StampsAccountCarrierGetAccountUrlExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var carrierId = carrierId_example;  // string | 
+            var stampsAccountUrlsRequest = new StampsAccountUrlsRequest(); // StampsAccountUrlsRequest | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                StampsAccountUrlsResponse result = apiInstance.StampsAccountCarrierGetAccountUrl(carrierId, stampsAccountUrlsRequest, apiKey);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.StampsAccountCarrierGetAccountUrl: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **carrierId** | **string**|  | 
+ **stampsAccountUrlsRequest** | [**StampsAccountUrlsRequest**](StampsAccountUrlsRequest.md)|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+[**StampsAccountUrlsResponse**](StampsAccountUrlsResponse.md)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="upsaccountcarrierconnectaccount"></a>
 # **UPSAccountCarrierConnectAccount**
 > ConnectAccountResponseDTO UPSAccountCarrierConnectAccount (UPSAccountInformationDTO model, string apiKey)
@@ -2030,6 +2231,71 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="upsaccountcarriergetsettings"></a>
+# **UPSAccountCarrierGetSettings**
+> UPSAccountSettingsDTO UPSAccountCarrierGetSettings (string carrierId, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class UPSAccountCarrierGetSettingsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var carrierId = carrierId_example;  // string | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                UPSAccountSettingsDTO result = apiInstance.UPSAccountCarrierGetSettings(carrierId, apiKey);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.UPSAccountCarrierGetSettings: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **carrierId** | **string**|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+[**UPSAccountSettingsDTO**](UPSAccountSettingsDTO.md)
 
 ### Authorization
 

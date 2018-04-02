@@ -33,16 +33,16 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateManifestRequest" /> class.
         /// </summary>
-        /// <param name="CarrierId">CarrierId.</param>
-        /// <param name="ExcludedLabelIds">ExcludedLabelIds.</param>
-        /// <param name="WarehouseId">WarehouseId.</param>
-        /// <param name="ShipDate">ShipDate.</param>
-        public CreateManifestRequest(string CarrierId = default(string), List<string> ExcludedLabelIds = default(List<string>), string WarehouseId = default(string), DateTime? ShipDate = default(DateTime?))
+        /// <param name="carrierId">carrierId.</param>
+        /// <param name="excludedLabelIds">excludedLabelIds.</param>
+        /// <param name="warehouseId">warehouseId.</param>
+        /// <param name="shipDate">shipDate.</param>
+        public CreateManifestRequest(string carrierId = default(string), List<string> excludedLabelIds = default(List<string>), string warehouseId = default(string), DateTime? shipDate = default(DateTime?))
         {
-            this.CarrierId = CarrierId;
-            this.ExcludedLabelIds = ExcludedLabelIds;
-            this.WarehouseId = WarehouseId;
-            this.ShipDate = ShipDate;
+            this.CarrierId = carrierId;
+            this.ExcludedLabelIds = excludedLabelIds;
+            this.WarehouseId = warehouseId;
+            this.ShipDate = shipDate;
         }
         
         /// <summary>
@@ -89,7 +89,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

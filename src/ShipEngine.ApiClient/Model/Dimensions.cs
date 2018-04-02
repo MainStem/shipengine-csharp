@@ -31,20 +31,20 @@ namespace ShipEngine.ApiClient.Model
     public partial class Dimensions :  IEquatable<Dimensions>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets Unit
+        /// Defines Unit
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum UnitEnum
         {
             
             /// <summary>
-            /// Enum Inch for "inch"
+            /// Enum Inch for value: inch
             /// </summary>
             [EnumMember(Value = "inch")]
             Inch = 1,
             
             /// <summary>
-            /// Enum Centimeter for "centimeter"
+            /// Enum Centimeter for value: centimeter
             /// </summary>
             [EnumMember(Value = "centimeter")]
             Centimeter = 2
@@ -58,16 +58,16 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Dimensions" /> class.
         /// </summary>
-        /// <param name="Unit">Unit.</param>
-        /// <param name="Length">Length.</param>
-        /// <param name="Width">Width.</param>
-        /// <param name="Height">Height.</param>
-        public Dimensions(UnitEnum? Unit = default(UnitEnum?), double? Length = default(double?), double? Width = default(double?), double? Height = default(double?))
+        /// <param name="unit">unit.</param>
+        /// <param name="length">length.</param>
+        /// <param name="width">width.</param>
+        /// <param name="height">height.</param>
+        public Dimensions(UnitEnum? unit = default(UnitEnum?), double? length = default(double?), double? width = default(double?), double? height = default(double?))
         {
-            this.Unit = Unit;
-            this.Length = Length;
-            this.Width = Width;
-            this.Height = Height;
+            this.Unit = unit;
+            this.Length = length;
+            this.Width = width;
+            this.Height = height;
         }
         
 
@@ -109,7 +109,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

@@ -33,14 +33,14 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ShipmentResponseError" /> class.
         /// </summary>
-        /// <param name="Error">Error.</param>
-        /// <param name="ShipmentId">ShipmentId.</param>
-        /// <param name="ExternalShipmentId">ExternalShipmentId.</param>
-        public ShipmentResponseError(string Error = default(string), string ShipmentId = default(string), string ExternalShipmentId = default(string))
+        /// <param name="error">error.</param>
+        /// <param name="shipmentId">shipmentId.</param>
+        /// <param name="externalShipmentId">externalShipmentId.</param>
+        public ShipmentResponseError(string error = default(string), string shipmentId = default(string), string externalShipmentId = default(string))
         {
-            this.Error = Error;
-            this.ShipmentId = ShipmentId;
-            this.ExternalShipmentId = ExternalShipmentId;
+            this.Error = error;
+            this.ShipmentId = shipmentId;
+            this.ExternalShipmentId = externalShipmentId;
         }
         
         /// <summary>
@@ -80,7 +80,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

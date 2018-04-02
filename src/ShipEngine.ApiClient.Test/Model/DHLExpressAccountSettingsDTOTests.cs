@@ -67,12 +67,28 @@ namespace ShipEngine.ApiClient.Test
 
 
         /// <summary>
+        /// Test the property 'Nickname'
+        /// </summary>
+        [Test]
+        public void NicknameTest()
+        {
+            // TODO unit test for the property 'Nickname'
+        }
+        /// <summary>
         /// Test the property 'ShouldHideAccountNumberOnArchiveDoc'
         /// </summary>
         [Test]
         public void ShouldHideAccountNumberOnArchiveDocTest()
         {
             // TODO unit test for the property 'ShouldHideAccountNumberOnArchiveDoc'
+        }
+        /// <summary>
+        /// Test the property 'IsPrimaryAccount'
+        /// </summary>
+        [Test]
+        public void IsPrimaryAccountTest()
+        {
+            // TODO unit test for the property 'IsPrimaryAccount'
         }
 
     }

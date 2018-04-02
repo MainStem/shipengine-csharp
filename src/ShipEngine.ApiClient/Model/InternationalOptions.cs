@@ -31,38 +31,38 @@ namespace ShipEngine.ApiClient.Model
     public partial class InternationalOptions :  IEquatable<InternationalOptions>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets Contents
+        /// Defines Contents
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ContentsEnum
         {
             
             /// <summary>
-            /// Enum Merchandise for "merchandise"
+            /// Enum Merchandise for value: merchandise
             /// </summary>
             [EnumMember(Value = "merchandise")]
             Merchandise = 1,
             
             /// <summary>
-            /// Enum Documents for "documents"
+            /// Enum Documents for value: documents
             /// </summary>
             [EnumMember(Value = "documents")]
             Documents = 2,
             
             /// <summary>
-            /// Enum Gift for "gift"
+            /// Enum Gift for value: gift
             /// </summary>
             [EnumMember(Value = "gift")]
             Gift = 3,
             
             /// <summary>
-            /// Enum Returnedgoods for "returned_goods"
+            /// Enum Returnedgoods for value: returned_goods
             /// </summary>
             [EnumMember(Value = "returned_goods")]
             Returnedgoods = 4,
             
             /// <summary>
-            /// Enum Sample for "sample"
+            /// Enum Sample for value: sample
             /// </summary>
             [EnumMember(Value = "sample")]
             Sample = 5
@@ -74,20 +74,20 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="contents", EmitDefaultValue=false)]
         public ContentsEnum? Contents { get; set; }
         /// <summary>
-        /// Gets or Sets NonDelivery
+        /// Defines NonDelivery
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum NonDeliveryEnum
         {
             
             /// <summary>
-            /// Enum Returntosender for "return_to_sender"
+            /// Enum Returntosender for value: return_to_sender
             /// </summary>
             [EnumMember(Value = "return_to_sender")]
             Returntosender = 1,
             
             /// <summary>
-            /// Enum Treatasabandoned for "treat_as_abandoned"
+            /// Enum Treatasabandoned for value: treat_as_abandoned
             /// </summary>
             [EnumMember(Value = "treat_as_abandoned")]
             Treatasabandoned = 2
@@ -101,14 +101,14 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="InternationalOptions" /> class.
         /// </summary>
-        /// <param name="Contents">Contents.</param>
-        /// <param name="CustomsItems">CustomsItems.</param>
-        /// <param name="NonDelivery">NonDelivery.</param>
-        public InternationalOptions(ContentsEnum? Contents = default(ContentsEnum?), List<CustomsItem> CustomsItems = default(List<CustomsItem>), NonDeliveryEnum? NonDelivery = default(NonDeliveryEnum?))
+        /// <param name="contents">contents.</param>
+        /// <param name="customsItems">customsItems.</param>
+        /// <param name="nonDelivery">nonDelivery.</param>
+        public InternationalOptions(ContentsEnum? contents = default(ContentsEnum?), List<CustomsItem> customsItems = default(List<CustomsItem>), NonDeliveryEnum? nonDelivery = default(NonDeliveryEnum?))
         {
-            this.Contents = Contents;
-            this.CustomsItems = CustomsItems;
-            this.NonDelivery = NonDelivery;
+            this.Contents = contents;
+            this.CustomsItems = customsItems;
+            this.NonDelivery = nonDelivery;
         }
         
 
@@ -138,7 +138,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

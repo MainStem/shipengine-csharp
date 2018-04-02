@@ -73,8 +73,8 @@ namespace ShipEngine.ApiClient.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string tagName = null;
             //string apiKey = null;
-            //instance.TagsAddTag(tagName, apiKey);
-            
+            //var response = instance.TagsAddTag(tagName, apiKey);
+            //Assert.IsInstanceOf<TagResponse> (response, "response is TagResponse");
         }
         
         /// <summary>

@@ -33,12 +33,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="NewgisticsAccountSettingsDTO" /> class.
         /// </summary>
-        /// <param name="IncludeBarcodeWithOrderNumber">IncludeBarcodeWithOrderNumber.</param>
-        /// <param name="ReceiveEmailOnManifestProcessing">ReceiveEmailOnManifestProcessing.</param>
-        public NewgisticsAccountSettingsDTO(bool? IncludeBarcodeWithOrderNumber = default(bool?), bool? ReceiveEmailOnManifestProcessing = default(bool?))
+        /// <param name="includeBarcodeWithOrderNumber">includeBarcodeWithOrderNumber.</param>
+        /// <param name="receiveEmailOnManifestProcessing">receiveEmailOnManifestProcessing.</param>
+        public NewgisticsAccountSettingsDTO(bool? includeBarcodeWithOrderNumber = default(bool?), bool? receiveEmailOnManifestProcessing = default(bool?))
         {
-            this.IncludeBarcodeWithOrderNumber = IncludeBarcodeWithOrderNumber;
-            this.ReceiveEmailOnManifestProcessing = ReceiveEmailOnManifestProcessing;
+            this.IncludeBarcodeWithOrderNumber = includeBarcodeWithOrderNumber;
+            this.ReceiveEmailOnManifestProcessing = receiveEmailOnManifestProcessing;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

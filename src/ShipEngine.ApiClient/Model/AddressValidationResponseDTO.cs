@@ -31,32 +31,32 @@ namespace ShipEngine.ApiClient.Model
     public partial class AddressValidationResponseDTO :  IEquatable<AddressValidationResponseDTO>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets Status
+        /// Defines Status
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
             
             /// <summary>
-            /// Enum Unverified for "unverified"
+            /// Enum Unverified for value: unverified
             /// </summary>
             [EnumMember(Value = "unverified")]
             Unverified = 1,
             
             /// <summary>
-            /// Enum Verified for "verified"
+            /// Enum Verified for value: verified
             /// </summary>
             [EnumMember(Value = "verified")]
             Verified = 2,
             
             /// <summary>
-            /// Enum Warning for "warning"
+            /// Enum Warning for value: warning
             /// </summary>
             [EnumMember(Value = "warning")]
             Warning = 3,
             
             /// <summary>
-            /// Enum Error for "error"
+            /// Enum Error for value: error
             /// </summary>
             [EnumMember(Value = "error")]
             Error = 4
@@ -70,20 +70,20 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="AddressValidationResponseDTO" /> class.
         /// </summary>
-        /// <param name="Status">Status.</param>
-        /// <param name="OriginalAddress">OriginalAddress.</param>
-        /// <param name="MatchedAddress">MatchedAddress.</param>
-        /// <param name="Messages">Messages.</param>
-        /// <param name="NativeMatchedParsedAddress">NativeMatchedParsedAddress.</param>
-        /// <param name="OutputNotes">OutputNotes.</param>
-        public AddressValidationResponseDTO(StatusEnum? Status = default(StatusEnum?), AddressDTO OriginalAddress = default(AddressDTO), AddressDTO MatchedAddress = default(AddressDTO), List<ResponseMessageDTO> Messages = default(List<ResponseMessageDTO>), Object NativeMatchedParsedAddress = default(Object), string OutputNotes = default(string))
+        /// <param name="status">status.</param>
+        /// <param name="originalAddress">originalAddress.</param>
+        /// <param name="matchedAddress">matchedAddress.</param>
+        /// <param name="messages">messages.</param>
+        /// <param name="nativeMatchedParsedAddress">nativeMatchedParsedAddress.</param>
+        /// <param name="outputNotes">outputNotes.</param>
+        public AddressValidationResponseDTO(StatusEnum? status = default(StatusEnum?), AddressDTO originalAddress = default(AddressDTO), AddressDTO matchedAddress = default(AddressDTO), List<ResponseMessageDTO> messages = default(List<ResponseMessageDTO>), Object nativeMatchedParsedAddress = default(Object), string outputNotes = default(string))
         {
-            this.Status = Status;
-            this.OriginalAddress = OriginalAddress;
-            this.MatchedAddress = MatchedAddress;
-            this.Messages = Messages;
-            this.NativeMatchedParsedAddress = NativeMatchedParsedAddress;
-            this.OutputNotes = OutputNotes;
+            this.Status = status;
+            this.OriginalAddress = originalAddress;
+            this.MatchedAddress = matchedAddress;
+            this.Messages = messages;
+            this.NativeMatchedParsedAddress = nativeMatchedParsedAddress;
+            this.OutputNotes = outputNotes;
         }
         
 
@@ -139,7 +139,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Shipments** | [**List&lt;Shipment&gt;**](Shipment.md) |  | [optional] 
-**Total** | **int?** |  | [optional] 
+**Total** | **long?** |  | [optional] 
 **Page** | **int?** |  | [optional] 
 **Pages** | **int?** |  | [optional] 
 **Links** | [**PaginationLinkDTO**](PaginationLinkDTO.md) |  | [optional] 

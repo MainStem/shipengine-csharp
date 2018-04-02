@@ -211,30 +211,6 @@ namespace ShipEngine.ApiClient.Test
             // TODO unit test for the property 'Trackable'
         }
         /// <summary>
-        /// Test the property 'ValidationStatus'
-        /// </summary>
-        [Test]
-        public void ValidationStatusTest()
-        {
-            // TODO unit test for the property 'ValidationStatus'
-        }
-        /// <summary>
-        /// Test the property 'WarningMessages'
-        /// </summary>
-        [Test]
-        public void WarningMessagesTest()
-        {
-            // TODO unit test for the property 'WarningMessages'
-        }
-        /// <summary>
-        /// Test the property 'ErrorMessages'
-        /// </summary>
-        [Test]
-        public void ErrorMessagesTest()
-        {
-            // TODO unit test for the property 'ErrorMessages'
-        }
-        /// <summary>
         /// Test the property 'CarrierCode'
         /// </summary>
         [Test]
@@ -257,6 +233,30 @@ namespace ShipEngine.ApiClient.Test
         public void CarrierFriendlyNameTest()
         {
             // TODO unit test for the property 'CarrierFriendlyName'
+        }
+        /// <summary>
+        /// Test the property 'ValidationStatus'
+        /// </summary>
+        [Test]
+        public void ValidationStatusTest()
+        {
+            // TODO unit test for the property 'ValidationStatus'
+        }
+        /// <summary>
+        /// Test the property 'WarningMessages'
+        /// </summary>
+        [Test]
+        public void WarningMessagesTest()
+        {
+            // TODO unit test for the property 'WarningMessages'
+        }
+        /// <summary>
+        /// Test the property 'ErrorMessages'
+        /// </summary>
+        [Test]
+        public void ErrorMessagesTest()
+        {
+            // TODO unit test for the property 'ErrorMessages'
         }
 
     }

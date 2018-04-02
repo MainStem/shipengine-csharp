@@ -33,18 +33,18 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ShipmentPackage" /> class.
         /// </summary>
-        /// <param name="PackageCode">PackageCode.</param>
-        /// <param name="Weight">Weight.</param>
-        /// <param name="Dimensions">Dimensions.</param>
-        /// <param name="InsuredValue">InsuredValue.</param>
-        /// <param name="LabelMessages">LabelMessages.</param>
-        public ShipmentPackage(string PackageCode = default(string), Weight Weight = default(Weight), Dimensions Dimensions = default(Dimensions), MoneyDTO InsuredValue = default(MoneyDTO), LabelMessages LabelMessages = default(LabelMessages))
+        /// <param name="packageCode">packageCode.</param>
+        /// <param name="weight">weight.</param>
+        /// <param name="dimensions">dimensions.</param>
+        /// <param name="insuredValue">insuredValue.</param>
+        /// <param name="labelMessages">labelMessages.</param>
+        public ShipmentPackage(string packageCode = default(string), Weight weight = default(Weight), Dimensions dimensions = default(Dimensions), MoneyDTO insuredValue = default(MoneyDTO), LabelMessages labelMessages = default(LabelMessages))
         {
-            this.PackageCode = PackageCode;
-            this.Weight = Weight;
-            this.Dimensions = Dimensions;
-            this.InsuredValue = InsuredValue;
-            this.LabelMessages = LabelMessages;
+            this.PackageCode = packageCode;
+            this.Weight = weight;
+            this.Dimensions = dimensions;
+            this.InsuredValue = insuredValue;
+            this.LabelMessages = labelMessages;
         }
         
         /// <summary>
@@ -98,7 +98,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

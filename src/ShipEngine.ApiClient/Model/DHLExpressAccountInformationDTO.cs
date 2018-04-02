@@ -33,12 +33,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="DHLExpressAccountInformationDTO" /> class.
         /// </summary>
-        /// <param name="Nickname">Nickname.</param>
-        /// <param name="AccountNumber">AccountNumber.</param>
-        public DHLExpressAccountInformationDTO(string Nickname = default(string), string AccountNumber = default(string))
+        /// <param name="nickname">nickname.</param>
+        /// <param name="accountNumber">accountNumber.</param>
+        public DHLExpressAccountInformationDTO(string nickname = default(string), string accountNumber = default(string))
         {
-            this.Nickname = Nickname;
-            this.AccountNumber = AccountNumber;
+            this.Nickname = nickname;
+            this.AccountNumber = accountNumber;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

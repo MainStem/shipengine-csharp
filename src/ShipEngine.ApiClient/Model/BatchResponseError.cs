@@ -33,12 +33,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BatchResponseError" /> class.
         /// </summary>
-        /// <param name="Error">Error.</param>
-        /// <param name="ShipmentId">ShipmentId.</param>
-        public BatchResponseError(string Error = default(string), string ShipmentId = default(string))
+        /// <param name="error">error.</param>
+        /// <param name="shipmentId">shipmentId.</param>
+        public BatchResponseError(string error = default(string), string shipmentId = default(string))
         {
-            this.Error = Error;
-            this.ShipmentId = ShipmentId;
+            this.Error = error;
+            this.ShipmentId = shipmentId;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

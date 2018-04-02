@@ -33,10 +33,10 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BalanceResponse" /> class.
         /// </summary>
-        /// <param name="Balance">Balance.</param>
-        public BalanceResponse(MoneyDTO Balance = default(MoneyDTO))
+        /// <param name="balance">balance.</param>
+        public BalanceResponse(MoneyDTO balance = default(MoneyDTO))
         {
-            this.Balance = Balance;
+            this.Balance = balance;
         }
         
         /// <summary>
@@ -62,7 +62,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

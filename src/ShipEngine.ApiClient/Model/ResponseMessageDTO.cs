@@ -31,74 +31,74 @@ namespace ShipEngine.ApiClient.Model
     public partial class ResponseMessageDTO :  IEquatable<ResponseMessageDTO>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets Code
+        /// Defines Code
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum CodeEnum
         {
             
             /// <summary>
-            /// Enum A1000 for "a1000"
+            /// Enum A1000 for value: a1000
             /// </summary>
             [EnumMember(Value = "a1000")]
             A1000 = 1,
             
             /// <summary>
-            /// Enum A1001 for "a1001"
+            /// Enum A1001 for value: a1001
             /// </summary>
             [EnumMember(Value = "a1001")]
             A1001 = 2,
             
             /// <summary>
-            /// Enum A1002 for "a1002"
+            /// Enum A1002 for value: a1002
             /// </summary>
             [EnumMember(Value = "a1002")]
             A1002 = 3,
             
             /// <summary>
-            /// Enum A1003 for "a1003"
+            /// Enum A1003 for value: a1003
             /// </summary>
             [EnumMember(Value = "a1003")]
             A1003 = 4,
             
             /// <summary>
-            /// Enum A1004 for "a1004"
+            /// Enum A1004 for value: a1004
             /// </summary>
             [EnumMember(Value = "a1004")]
             A1004 = 5,
             
             /// <summary>
-            /// Enum A1005 for "a1005"
+            /// Enum A1005 for value: a1005
             /// </summary>
             [EnumMember(Value = "a1005")]
             A1005 = 6,
             
             /// <summary>
-            /// Enum A1006 for "a1006"
+            /// Enum A1006 for value: a1006
             /// </summary>
             [EnumMember(Value = "a1006")]
             A1006 = 7,
             
             /// <summary>
-            /// Enum R1000 for "r1000"
+            /// Enum R1000 for value: r1000
             /// </summary>
             [EnumMember(Value = "r1000")]
             R1000 = 8,
             
             /// <summary>
-            /// Enum R1001 for "r1001"
+            /// Enum R1001 for value: r1001
             /// </summary>
             [EnumMember(Value = "r1001")]
             R1001 = 9,
             
             /// <summary>
-            /// Enum R1002 for "r1002"
+            /// Enum R1002 for value: r1002
             /// </summary>
             [EnumMember(Value = "r1002")]
             R1002 = 10,
             
             /// <summary>
-            /// Enum R1003 for "r1003"
+            /// Enum R1003 for value: r1003
             /// </summary>
             [EnumMember(Value = "r1003")]
             R1003 = 11
@@ -110,26 +110,26 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="code", EmitDefaultValue=false)]
         public CodeEnum? Code { get; set; }
         /// <summary>
-        /// Gets or Sets Type
+        /// Defines Type
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum TypeEnum
         {
             
             /// <summary>
-            /// Enum Error for "error"
+            /// Enum Error for value: error
             /// </summary>
             [EnumMember(Value = "error")]
             Error = 1,
             
             /// <summary>
-            /// Enum Warning for "warning"
+            /// Enum Warning for value: warning
             /// </summary>
             [EnumMember(Value = "warning")]
             Warning = 2,
             
             /// <summary>
-            /// Enum Info for "info"
+            /// Enum Info for value: info
             /// </summary>
             [EnumMember(Value = "info")]
             Info = 3
@@ -143,14 +143,14 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ResponseMessageDTO" /> class.
         /// </summary>
-        /// <param name="Code">Code.</param>
-        /// <param name="Message">Message.</param>
-        /// <param name="Type">Type.</param>
-        public ResponseMessageDTO(CodeEnum? Code = default(CodeEnum?), string Message = default(string), TypeEnum? Type = default(TypeEnum?))
+        /// <param name="code">code.</param>
+        /// <param name="message">message.</param>
+        /// <param name="type">type.</param>
+        public ResponseMessageDTO(CodeEnum? code = default(CodeEnum?), string message = default(string), TypeEnum? type = default(TypeEnum?))
         {
-            this.Code = Code;
-            this.Message = Message;
-            this.Type = Type;
+            this.Code = code;
+            this.Message = message;
+            this.Type = type;
         }
         
 
@@ -180,7 +180,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

@@ -33,20 +33,20 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="PaginationLinkDTO" /> class.
         /// </summary>
-        /// <param name="First">First.</param>
-        /// <param name="Last">Last.</param>
-        /// <param name="Prev">Prev.</param>
-        /// <param name="Next">Next.</param>
-        /// <param name="Href">Href.</param>
-        /// <param name="Type">Type.</param>
-        public PaginationLinkDTO(LinkDTO First = default(LinkDTO), LinkDTO Last = default(LinkDTO), LinkDTO Prev = default(LinkDTO), LinkDTO Next = default(LinkDTO), string Href = default(string), string Type = default(string))
+        /// <param name="first">first.</param>
+        /// <param name="last">last.</param>
+        /// <param name="prev">prev.</param>
+        /// <param name="next">next.</param>
+        /// <param name="href">href.</param>
+        /// <param name="type">type.</param>
+        public PaginationLinkDTO(LinkDTO first = default(LinkDTO), LinkDTO last = default(LinkDTO), LinkDTO prev = default(LinkDTO), LinkDTO next = default(LinkDTO), string href = default(string), string type = default(string))
         {
-            this.First = First;
-            this.Last = Last;
-            this.Prev = Prev;
-            this.Next = Next;
-            this.Href = Href;
-            this.Type = Type;
+            this.First = first;
+            this.Last = last;
+            this.Prev = prev;
+            this.Next = next;
+            this.Href = href;
+            this.Type = type;
         }
         
         /// <summary>
@@ -107,7 +107,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

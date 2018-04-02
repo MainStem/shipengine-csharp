@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="environmentcreatewebhook"></a>
 # **EnvironmentCreateWebhook**
-> WebhookDTO EnvironmentCreateWebhook (CreateWebhookDTO createWebhookDto, string apiKey)
+> WebhookResponse EnvironmentCreateWebhook (CreateWebhookRequest createWebhookRequest, string apiKey)
 
 
 
@@ -38,12 +38,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
 
             var apiInstance = new EnvironmentApi();
-            var createWebhookDto = new CreateWebhookDTO(); // CreateWebhookDTO | 
+            var createWebhookRequest = new CreateWebhookRequest(); // CreateWebhookRequest | 
             var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
 
             try
             {
-                WebhookDTO result = apiInstance.EnvironmentCreateWebhook(createWebhookDto, apiKey);
+                WebhookResponse result = apiInstance.EnvironmentCreateWebhook(createWebhookRequest, apiKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -59,12 +59,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **createWebhookDto** | [**CreateWebhookDTO**](CreateWebhookDTO.md)|  | 
+ **createWebhookRequest** | [**CreateWebhookRequest**](CreateWebhookRequest.md)|  | 
  **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
 
 ### Return type
 
-[**WebhookDTO**](WebhookDTO.md)
+[**WebhookResponse**](WebhookResponse.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ void (empty response body)
 
 <a name="environmentgetwebhookbyid"></a>
 # **EnvironmentGetWebhookById**
-> WebhookDTO EnvironmentGetWebhookById (string webhookId, string apiKey)
+> WebhookResponse EnvironmentGetWebhookById (string webhookId, string apiKey)
 
 
 
@@ -172,7 +172,7 @@ namespace Example
 
             try
             {
-                WebhookDTO result = apiInstance.EnvironmentGetWebhookById(webhookId, apiKey);
+                WebhookResponse result = apiInstance.EnvironmentGetWebhookById(webhookId, apiKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**WebhookDTO**](WebhookDTO.md)
+[**WebhookResponse**](WebhookResponse.md)
 
 ### Authorization
 
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 <a name="environmentupdatewebhook"></a>
 # **EnvironmentUpdateWebhook**
-> void EnvironmentUpdateWebhook (string webhookId, UpdateWebhookDTO updateWebhookDto, string apiKey)
+> void EnvironmentUpdateWebhook (string webhookId, UpdateWebhookRequest updateWebhookRequest, string apiKey)
 
 
 
@@ -233,12 +233,12 @@ namespace Example
 
             var apiInstance = new EnvironmentApi();
             var webhookId = webhookId_example;  // string | 
-            var updateWebhookDto = new UpdateWebhookDTO(); // UpdateWebhookDTO | 
+            var updateWebhookRequest = new UpdateWebhookRequest(); // UpdateWebhookRequest | 
             var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
 
             try
             {
-                apiInstance.EnvironmentUpdateWebhook(webhookId, updateWebhookDto, apiKey);
+                apiInstance.EnvironmentUpdateWebhook(webhookId, updateWebhookRequest, apiKey);
             }
             catch (Exception e)
             {
@@ -254,7 +254,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **webhookId** | **string**|  | 
- **updateWebhookDto** | [**UpdateWebhookDTO**](UpdateWebhookDTO.md)|  | 
+ **updateWebhookRequest** | [**UpdateWebhookRequest**](UpdateWebhookRequest.md)|  | 
  **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
 
 ### Return type
@@ -274,7 +274,7 @@ void (empty response body)
 
 <a name="environmentwebhooks"></a>
 # **EnvironmentWebhooks**
-> List<WebhookDTO> EnvironmentWebhooks (string apiKey)
+> List<WebhookResponse> EnvironmentWebhooks (string apiKey)
 
 
 
@@ -302,7 +302,7 @@ namespace Example
 
             try
             {
-                List&lt;WebhookDTO&gt; result = apiInstance.EnvironmentWebhooks(apiKey);
+                List&lt;WebhookResponse&gt; result = apiInstance.EnvironmentWebhooks(apiKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<WebhookDTO>**](WebhookDTO.md)
+[**List<WebhookResponse>**](WebhookResponse.md)
 
 ### Authorization
 
@@ -337,7 +337,7 @@ Name | Type | Description  | Notes
 
 <a name="environmentwhoami"></a>
 # **EnvironmentWhoami**
-> Object EnvironmentWhoami (string apiKey)
+> Dictionary<string, string> EnvironmentWhoami (string apiKey)
 
 
 
@@ -365,7 +365,7 @@ namespace Example
 
             try
             {
-                Object result = apiInstance.EnvironmentWhoami(apiKey);
+                Dictionary&lt;string, string&gt; result = apiInstance.EnvironmentWhoami(apiKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -385,7 +385,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**Dictionary<string, string>**
 
 ### Authorization
 

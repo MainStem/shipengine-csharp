@@ -33,16 +33,16 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UPSInvoiceDTO" /> class.
         /// </summary>
-        /// <param name="InvoiceDate">InvoiceDate.</param>
-        /// <param name="InvoiceNumber">InvoiceNumber.</param>
-        /// <param name="ControlId">ControlId.</param>
-        /// <param name="InvoiceAmount">InvoiceAmount.</param>
-        public UPSInvoiceDTO(DateTime? InvoiceDate = default(DateTime?), string InvoiceNumber = default(string), string ControlId = default(string), double? InvoiceAmount = default(double?))
+        /// <param name="invoiceDate">invoiceDate.</param>
+        /// <param name="invoiceNumber">invoiceNumber.</param>
+        /// <param name="controlId">controlId.</param>
+        /// <param name="invoiceAmount">invoiceAmount.</param>
+        public UPSInvoiceDTO(DateTime? invoiceDate = default(DateTime?), string invoiceNumber = default(string), string controlId = default(string), double? invoiceAmount = default(double?))
         {
-            this.InvoiceDate = InvoiceDate;
-            this.InvoiceNumber = InvoiceNumber;
-            this.ControlId = ControlId;
-            this.InvoiceAmount = InvoiceAmount;
+            this.InvoiceDate = invoiceDate;
+            this.InvoiceNumber = invoiceNumber;
+            this.ControlId = controlId;
+            this.InvoiceAmount = invoiceAmount;
         }
         
         /// <summary>
@@ -89,7 +89,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

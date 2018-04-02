@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="manifestscreate"></a>
 # **ManifestsCreate**
-> Manifest ManifestsCreate (CreateManifestRequest request, string apiKey)
+> ManifestResponse ManifestsCreate (CreateManifestRequest request, string apiKey)
 
 
 
@@ -40,7 +40,7 @@ namespace Example
 
             try
             {
-                Manifest result = apiInstance.ManifestsCreate(request, apiKey);
+                ManifestResponse result = apiInstance.ManifestsCreate(request, apiKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Manifest**](Manifest.md)
+[**ManifestResponse**](ManifestResponse.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 
 <a name="manifestsget"></a>
 # **ManifestsGet**
-> Manifest ManifestsGet (string manifestId, string apiKey)
+> ManifestResponse ManifestsGet (string manifestId, string apiKey)
 
 
 
@@ -105,7 +105,7 @@ namespace Example
 
             try
             {
-                Manifest result = apiInstance.ManifestsGet(manifestId, apiKey);
+                ManifestResponse result = apiInstance.ManifestsGet(manifestId, apiKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -126,7 +126,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Manifest**](Manifest.md)
+[**ManifestResponse**](ManifestResponse.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 
 <a name="manifestslist"></a>
 # **ManifestsList**
-> ManifestsListResponse ManifestsList (string apiKey, string warehouseId = null, DateTime? shipDateStart = null, DateTime? shipDateEnd = null, DateTime? createdAtStart = null, DateTime? createdAtEnd = null, string carrierId = null, int? page = null, int? pageSize = null)
+> ListManifestsResponse ManifestsList (string apiKey, string warehouseId = null, DateTime? shipDateStart = null, DateTime? shipDateEnd = null, DateTime? createdAtStart = null, DateTime? createdAtEnd = null, string carrierId = null, int? page = null, int? pageSize = null)
 
 
 
@@ -177,7 +177,7 @@ namespace Example
 
             try
             {
-                ManifestsListResponse result = apiInstance.ManifestsList(apiKey, warehouseId, shipDateStart, shipDateEnd, createdAtStart, createdAtEnd, carrierId, page, pageSize);
+                ListManifestsResponse result = apiInstance.ManifestsList(apiKey, warehouseId, shipDateStart, shipDateEnd, createdAtStart, createdAtEnd, carrierId, page, pageSize);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -205,7 +205,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ManifestsListResponse**](ManifestsListResponse.md)
+[**ListManifestsResponse**](ListManifestsResponse.md)
 
 ### Authorization
 

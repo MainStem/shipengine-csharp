@@ -33,16 +33,16 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateBatchRequest" /> class.
         /// </summary>
-        /// <param name="ExternalBatchId">ExternalBatchId.</param>
-        /// <param name="BatchNotes">BatchNotes.</param>
-        /// <param name="ShipmentIds">ShipmentIds.</param>
-        /// <param name="RateIds">RateIds.</param>
-        public CreateBatchRequest(string ExternalBatchId = default(string), string BatchNotes = default(string), List<string> ShipmentIds = default(List<string>), List<string> RateIds = default(List<string>))
+        /// <param name="externalBatchId">externalBatchId.</param>
+        /// <param name="batchNotes">batchNotes.</param>
+        /// <param name="shipmentIds">shipmentIds.</param>
+        /// <param name="rateIds">rateIds.</param>
+        public CreateBatchRequest(string externalBatchId = default(string), string batchNotes = default(string), List<string> shipmentIds = default(List<string>), List<string> rateIds = default(List<string>))
         {
-            this.ExternalBatchId = ExternalBatchId;
-            this.BatchNotes = BatchNotes;
-            this.ShipmentIds = ShipmentIds;
-            this.RateIds = RateIds;
+            this.ExternalBatchId = externalBatchId;
+            this.BatchNotes = batchNotes;
+            this.ShipmentIds = shipmentIds;
+            this.RateIds = rateIds;
         }
         
         /// <summary>
@@ -89,7 +89,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

@@ -31,26 +31,26 @@ namespace ShipEngine.ApiClient.Model
     public partial class UPSAccountSettingsDTO :  IEquatable<UPSAccountSettingsDTO>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets PickupType
+        /// Defines PickupType
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum PickupTypeEnum
         {
             
             /// <summary>
-            /// Enum DailyPickup for "dailyPickup"
+            /// Enum DailyPickup for value: dailyPickup
             /// </summary>
             [EnumMember(Value = "dailyPickup")]
             DailyPickup = 1,
             
             /// <summary>
-            /// Enum OccasionalPickup for "occasionalPickup"
+            /// Enum OccasionalPickup for value: occasionalPickup
             /// </summary>
             [EnumMember(Value = "occasionalPickup")]
             OccasionalPickup = 2,
             
             /// <summary>
-            /// Enum CustomerCounter for "customerCounter"
+            /// Enum CustomerCounter for value: customerCounter
             /// </summary>
             [EnumMember(Value = "customerCounter")]
             CustomerCounter = 3
@@ -62,44 +62,44 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="pickup_type", EmitDefaultValue=false)]
         public PickupTypeEnum? PickupType { get; set; }
         /// <summary>
-        /// Gets or Sets MailInnovationsEndorsement
+        /// Defines MailInnovationsEndorsement
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum MailInnovationsEndorsementEnum
         {
             
             /// <summary>
-            /// Enum None for "none"
+            /// Enum None for value: none
             /// </summary>
             [EnumMember(Value = "none")]
             None = 1,
             
             /// <summary>
-            /// Enum Returnservicerequested for "return_service_requested"
+            /// Enum Returnservicerequested for value: return_service_requested
             /// </summary>
             [EnumMember(Value = "return_service_requested")]
             Returnservicerequested = 2,
             
             /// <summary>
-            /// Enum Forwardingservicerequested for "forwarding_service_requested"
+            /// Enum Forwardingservicerequested for value: forwarding_service_requested
             /// </summary>
             [EnumMember(Value = "forwarding_service_requested")]
             Forwardingservicerequested = 3,
             
             /// <summary>
-            /// Enum Addressservicerequested for "address_service_requested"
+            /// Enum Addressservicerequested for value: address_service_requested
             /// </summary>
             [EnumMember(Value = "address_service_requested")]
             Addressservicerequested = 4,
             
             /// <summary>
-            /// Enum Changeservicerequested for "change_service_requested"
+            /// Enum Changeservicerequested for value: change_service_requested
             /// </summary>
             [EnumMember(Value = "change_service_requested")]
             Changeservicerequested = 5,
             
             /// <summary>
-            /// Enum Leaveifnoresponse for "leave_if_no_response"
+            /// Enum Leaveifnoresponse for value: leave_if_no_response
             /// </summary>
             [EnumMember(Value = "leave_if_no_response")]
             Leaveifnoresponse = 6
@@ -113,32 +113,32 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UPSAccountSettingsDTO" /> class.
         /// </summary>
-        /// <param name="Nickname">Nickname.</param>
-        /// <param name="IsPrimaryAccount">IsPrimaryAccount.</param>
-        /// <param name="PickupType">PickupType.</param>
-        /// <param name="UseCarbonNeutralShippingProgram">UseCarbonNeutralShippingProgram.</param>
-        /// <param name="UseGroundFreightPricing">UseGroundFreightPricing.</param>
-        /// <param name="UseConsolidationServices">UseConsolidationServices.</param>
-        /// <param name="UseOrderNumberOnMailInnovationsLabels">UseOrderNumberOnMailInnovationsLabels.</param>
-        /// <param name="MailInnovationsEndorsement">MailInnovationsEndorsement.</param>
-        /// <param name="MailInnovationsCostCenter">MailInnovationsCostCenter.</param>
-        /// <param name="UseNegotiatedRates">UseNegotiatedRates.</param>
-        /// <param name="AccountPostalCode">AccountPostalCode.</param>
-        /// <param name="Invoice">Invoice.</param>
-        public UPSAccountSettingsDTO(string Nickname = default(string), bool? IsPrimaryAccount = default(bool?), PickupTypeEnum? PickupType = default(PickupTypeEnum?), bool? UseCarbonNeutralShippingProgram = default(bool?), bool? UseGroundFreightPricing = default(bool?), bool? UseConsolidationServices = default(bool?), bool? UseOrderNumberOnMailInnovationsLabels = default(bool?), MailInnovationsEndorsementEnum? MailInnovationsEndorsement = default(MailInnovationsEndorsementEnum?), string MailInnovationsCostCenter = default(string), bool? UseNegotiatedRates = default(bool?), string AccountPostalCode = default(string), UPSInvoiceDTO Invoice = default(UPSInvoiceDTO))
+        /// <param name="nickname">nickname.</param>
+        /// <param name="isPrimaryAccount">isPrimaryAccount.</param>
+        /// <param name="pickupType">pickupType.</param>
+        /// <param name="useCarbonNeutralShippingProgram">useCarbonNeutralShippingProgram.</param>
+        /// <param name="useGroundFreightPricing">useGroundFreightPricing.</param>
+        /// <param name="useConsolidationServices">useConsolidationServices.</param>
+        /// <param name="useOrderNumberOnMailInnovationsLabels">useOrderNumberOnMailInnovationsLabels.</param>
+        /// <param name="mailInnovationsEndorsement">mailInnovationsEndorsement.</param>
+        /// <param name="mailInnovationsCostCenter">mailInnovationsCostCenter.</param>
+        /// <param name="useNegotiatedRates">useNegotiatedRates.</param>
+        /// <param name="accountPostalCode">accountPostalCode.</param>
+        /// <param name="invoice">invoice.</param>
+        public UPSAccountSettingsDTO(string nickname = default(string), bool? isPrimaryAccount = default(bool?), PickupTypeEnum? pickupType = default(PickupTypeEnum?), bool? useCarbonNeutralShippingProgram = default(bool?), bool? useGroundFreightPricing = default(bool?), bool? useConsolidationServices = default(bool?), bool? useOrderNumberOnMailInnovationsLabels = default(bool?), MailInnovationsEndorsementEnum? mailInnovationsEndorsement = default(MailInnovationsEndorsementEnum?), string mailInnovationsCostCenter = default(string), bool? useNegotiatedRates = default(bool?), string accountPostalCode = default(string), UPSInvoiceDTO invoice = default(UPSInvoiceDTO))
         {
-            this.Nickname = Nickname;
-            this.IsPrimaryAccount = IsPrimaryAccount;
-            this.PickupType = PickupType;
-            this.UseCarbonNeutralShippingProgram = UseCarbonNeutralShippingProgram;
-            this.UseGroundFreightPricing = UseGroundFreightPricing;
-            this.UseConsolidationServices = UseConsolidationServices;
-            this.UseOrderNumberOnMailInnovationsLabels = UseOrderNumberOnMailInnovationsLabels;
-            this.MailInnovationsEndorsement = MailInnovationsEndorsement;
-            this.MailInnovationsCostCenter = MailInnovationsCostCenter;
-            this.UseNegotiatedRates = UseNegotiatedRates;
-            this.AccountPostalCode = AccountPostalCode;
-            this.Invoice = Invoice;
+            this.Nickname = nickname;
+            this.IsPrimaryAccount = isPrimaryAccount;
+            this.PickupType = pickupType;
+            this.UseCarbonNeutralShippingProgram = useCarbonNeutralShippingProgram;
+            this.UseGroundFreightPricing = useGroundFreightPricing;
+            this.UseConsolidationServices = useConsolidationServices;
+            this.UseOrderNumberOnMailInnovationsLabels = useOrderNumberOnMailInnovationsLabels;
+            this.MailInnovationsEndorsement = mailInnovationsEndorsement;
+            this.MailInnovationsCostCenter = mailInnovationsCostCenter;
+            this.UseNegotiatedRates = useNegotiatedRates;
+            this.AccountPostalCode = accountPostalCode;
+            this.Invoice = invoice;
         }
         
         /// <summary>
@@ -231,7 +231,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

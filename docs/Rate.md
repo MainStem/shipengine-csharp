@@ -21,12 +21,12 @@ Name | Type | Description | Notes
 **ServiceType** | **string** |  | [optional] 
 **ServiceCode** | **string** |  | [optional] 
 **Trackable** | **bool?** |  | [optional] 
-**ValidationStatus** | **string** |  | [optional] 
-**WarningMessages** | **List&lt;string&gt;** |  | [optional] 
-**ErrorMessages** | **List&lt;string&gt;** |  | [optional] 
 **CarrierCode** | **string** |  | [optional] 
 **CarrierNickname** | **string** |  | [optional] 
 **CarrierFriendlyName** | **string** |  | [optional] 
+**ValidationStatus** | **string** |  | [optional] 
+**WarningMessages** | **List&lt;string&gt;** |  | [optional] 
+**ErrorMessages** | **List&lt;string&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

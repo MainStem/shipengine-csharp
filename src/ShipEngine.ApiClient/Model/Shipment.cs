@@ -31,32 +31,32 @@ namespace ShipEngine.ApiClient.Model
     public partial class Shipment :  IEquatable<Shipment>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets ShipmentStatus
+        /// Defines ShipmentStatus
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ShipmentStatusEnum
         {
             
             /// <summary>
-            /// Enum Pending for "pending"
+            /// Enum Pending for value: pending
             /// </summary>
             [EnumMember(Value = "pending")]
             Pending = 1,
             
             /// <summary>
-            /// Enum Processing for "processing"
+            /// Enum Processing for value: processing
             /// </summary>
             [EnumMember(Value = "processing")]
             Processing = 2,
             
             /// <summary>
-            /// Enum Labelpurchased for "label_purchased"
+            /// Enum Labelpurchased for value: label_purchased
             /// </summary>
             [EnumMember(Value = "label_purchased")]
             Labelpurchased = 3,
             
             /// <summary>
-            /// Enum Cancelled for "cancelled"
+            /// Enum Cancelled for value: cancelled
             /// </summary>
             [EnumMember(Value = "cancelled")]
             Cancelled = 4
@@ -68,38 +68,38 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="shipment_status", EmitDefaultValue=false)]
         public ShipmentStatusEnum? ShipmentStatus { get; set; }
         /// <summary>
-        /// Gets or Sets Confirmation
+        /// Defines Confirmation
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ConfirmationEnum
         {
             
             /// <summary>
-            /// Enum None for "none"
+            /// Enum None for value: none
             /// </summary>
             [EnumMember(Value = "none")]
             None = 1,
             
             /// <summary>
-            /// Enum Delivery for "delivery"
+            /// Enum Delivery for value: delivery
             /// </summary>
             [EnumMember(Value = "delivery")]
             Delivery = 2,
             
             /// <summary>
-            /// Enum Signature for "signature"
+            /// Enum Signature for value: signature
             /// </summary>
             [EnumMember(Value = "signature")]
             Signature = 3,
             
             /// <summary>
-            /// Enum Adultsignature for "adult_signature"
+            /// Enum Adultsignature for value: adult_signature
             /// </summary>
             [EnumMember(Value = "adult_signature")]
             Adultsignature = 4,
             
             /// <summary>
-            /// Enum Directsignature for "direct_signature"
+            /// Enum Directsignature for value: direct_signature
             /// </summary>
             [EnumMember(Value = "direct_signature")]
             Directsignature = 5
@@ -111,26 +111,26 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="confirmation", EmitDefaultValue=false)]
         public ConfirmationEnum? Confirmation { get; set; }
         /// <summary>
-        /// Gets or Sets InsuranceProvider
+        /// Defines InsuranceProvider
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum InsuranceProviderEnum
         {
             
             /// <summary>
-            /// Enum None for "none"
+            /// Enum None for value: none
             /// </summary>
             [EnumMember(Value = "none")]
             None = 1,
             
             /// <summary>
-            /// Enum Shipsurance for "shipsurance"
+            /// Enum Shipsurance for value: shipsurance
             /// </summary>
             [EnumMember(Value = "shipsurance")]
             Shipsurance = 2,
             
             /// <summary>
-            /// Enum Carrier for "carrier"
+            /// Enum Carrier for value: carrier
             /// </summary>
             [EnumMember(Value = "carrier")]
             Carrier = 3
@@ -144,46 +144,44 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Shipment" /> class.
         /// </summary>
-        /// <param name="ShipmentId">ShipmentId.</param>
-        /// <param name="CarrierId">CarrierId.</param>
-        /// <param name="ServiceCode">ServiceCode.</param>
-        /// <param name="ExternalShipmentId">ExternalShipmentId.</param>
-        /// <param name="ShipDate">ShipDate.</param>
-        /// <param name="CreatedAt">CreatedAt.</param>
-        /// <param name="ModifiedAt">ModifiedAt.</param>
-        /// <param name="ShipmentStatus">ShipmentStatus.</param>
-        /// <param name="ShipTo">ShipTo.</param>
-        /// <param name="ShipFrom">ShipFrom.</param>
-        /// <param name="WarehouseId">WarehouseId.</param>
-        /// <param name="ReturnTo">ReturnTo.</param>
-        /// <param name="Confirmation">Confirmation.</param>
-        /// <param name="Customs">Customs.</param>
-        /// <param name="AdvancedOptions">AdvancedOptions.</param>
-        /// <param name="InsuranceProvider">InsuranceProvider.</param>
-        /// <param name="Tags">Tags.</param>
-        /// <param name="Packages">Packages.</param>
-        /// <param name="TotalWeight">TotalWeight.</param>
-        public Shipment(string ShipmentId = default(string), string CarrierId = default(string), string ServiceCode = default(string), string ExternalShipmentId = default(string), DateTime? ShipDate = default(DateTime?), DateTime? CreatedAt = default(DateTime?), DateTime? ModifiedAt = default(DateTime?), ShipmentStatusEnum? ShipmentStatus = default(ShipmentStatusEnum?), AddressDTO ShipTo = default(AddressDTO), AddressDTO ShipFrom = default(AddressDTO), string WarehouseId = default(string), AddressDTO ReturnTo = default(AddressDTO), ConfirmationEnum? Confirmation = default(ConfirmationEnum?), InternationalOptions Customs = default(InternationalOptions), Dictionary<string, Object> AdvancedOptions = default(Dictionary<string, Object>), InsuranceProviderEnum? InsuranceProvider = default(InsuranceProviderEnum?), List<TagResponse> Tags = default(List<TagResponse>), List<ShipmentPackage> Packages = default(List<ShipmentPackage>), Weight TotalWeight = default(Weight))
+        /// <param name="shipmentId">shipmentId.</param>
+        /// <param name="carrierId">carrierId.</param>
+        /// <param name="serviceCode">serviceCode.</param>
+        /// <param name="externalShipmentId">externalShipmentId.</param>
+        /// <param name="shipDate">shipDate.</param>
+        /// <param name="createdAt">createdAt.</param>
+        /// <param name="modifiedAt">modifiedAt.</param>
+        /// <param name="shipmentStatus">shipmentStatus.</param>
+        /// <param name="shipTo">shipTo.</param>
+        /// <param name="shipFrom">shipFrom.</param>
+        /// <param name="warehouseId">warehouseId.</param>
+        /// <param name="returnTo">returnTo.</param>
+        /// <param name="confirmation">confirmation.</param>
+        /// <param name="customs">customs.</param>
+        /// <param name="advancedOptions">advancedOptions.</param>
+        /// <param name="insuranceProvider">insuranceProvider.</param>
+        /// <param name="tags">tags.</param>
+        /// <param name="packages">packages.</param>
+        public Shipment(string shipmentId = default(string), string carrierId = default(string), string serviceCode = default(string), string externalShipmentId = default(string), DateTime? shipDate = default(DateTime?), DateTime? createdAt = default(DateTime?), DateTime? modifiedAt = default(DateTime?), ShipmentStatusEnum? shipmentStatus = default(ShipmentStatusEnum?), AddressDTO shipTo = default(AddressDTO), AddressDTO shipFrom = default(AddressDTO), string warehouseId = default(string), AddressDTO returnTo = default(AddressDTO), ConfirmationEnum? confirmation = default(ConfirmationEnum?), InternationalOptions customs = default(InternationalOptions), AdvancedOptions advancedOptions = default(AdvancedOptions), InsuranceProviderEnum? insuranceProvider = default(InsuranceProviderEnum?), List<TagResponse> tags = default(List<TagResponse>), List<ShipmentPackage> packages = default(List<ShipmentPackage>))
         {
-            this.ShipmentId = ShipmentId;
-            this.CarrierId = CarrierId;
-            this.ServiceCode = ServiceCode;
-            this.ExternalShipmentId = ExternalShipmentId;
-            this.ShipDate = ShipDate;
-            this.CreatedAt = CreatedAt;
-            this.ModifiedAt = ModifiedAt;
-            this.ShipmentStatus = ShipmentStatus;
-            this.ShipTo = ShipTo;
-            this.ShipFrom = ShipFrom;
-            this.WarehouseId = WarehouseId;
-            this.ReturnTo = ReturnTo;
-            this.Confirmation = Confirmation;
-            this.Customs = Customs;
-            this.AdvancedOptions = AdvancedOptions;
-            this.InsuranceProvider = InsuranceProvider;
-            this.Tags = Tags;
-            this.Packages = Packages;
-            this.TotalWeight = TotalWeight;
+            this.ShipmentId = shipmentId;
+            this.CarrierId = carrierId;
+            this.ServiceCode = serviceCode;
+            this.ExternalShipmentId = externalShipmentId;
+            this.ShipDate = shipDate;
+            this.CreatedAt = createdAt;
+            this.ModifiedAt = modifiedAt;
+            this.ShipmentStatus = shipmentStatus;
+            this.ShipTo = shipTo;
+            this.ShipFrom = shipFrom;
+            this.WarehouseId = warehouseId;
+            this.ReturnTo = returnTo;
+            this.Confirmation = confirmation;
+            this.Customs = customs;
+            this.AdvancedOptions = advancedOptions;
+            this.InsuranceProvider = insuranceProvider;
+            this.Tags = tags;
+            this.Packages = packages;
         }
         
         /// <summary>
@@ -264,7 +262,7 @@ namespace ShipEngine.ApiClient.Model
         /// Gets or Sets AdvancedOptions
         /// </summary>
         [DataMember(Name="advanced_options", EmitDefaultValue=false)]
-        public Dictionary<string, Object> AdvancedOptions { get; set; }
+        public AdvancedOptions AdvancedOptions { get; set; }
 
 
         /// <summary>
@@ -283,7 +281,7 @@ namespace ShipEngine.ApiClient.Model
         /// Gets or Sets TotalWeight
         /// </summary>
         [DataMember(Name="total_weight", EmitDefaultValue=false)]
-        public Weight TotalWeight { get; set; }
+        public Weight TotalWeight { get; private set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -320,7 +318,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }
@@ -418,8 +416,8 @@ namespace ShipEngine.ApiClient.Model
                 ) && 
                 (
                     this.AdvancedOptions == input.AdvancedOptions ||
-                    this.AdvancedOptions != null &&
-                    this.AdvancedOptions.SequenceEqual(input.AdvancedOptions)
+                    (this.AdvancedOptions != null &&
+                    this.AdvancedOptions.Equals(input.AdvancedOptions))
                 ) && 
                 (
                     this.InsuranceProvider == input.InsuranceProvider ||

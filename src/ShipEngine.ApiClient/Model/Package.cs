@@ -38,26 +38,26 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Package" /> class.
         /// </summary>
-        /// <param name="PackageId">PackageId.</param>
-        /// <param name="PackageCode">PackageCode.</param>
-        /// <param name="Name">Name (required).</param>
-        /// <param name="Dimensions">Dimensions.</param>
-        /// <param name="Description">Description.</param>
-        public Package(string PackageId = default(string), string PackageCode = default(string), string Name = default(string), Dimensions Dimensions = default(Dimensions), string Description = default(string))
+        /// <param name="packageId">packageId.</param>
+        /// <param name="packageCode">packageCode.</param>
+        /// <param name="name">name (required).</param>
+        /// <param name="dimensions">dimensions.</param>
+        /// <param name="description">description.</param>
+        public Package(string packageId = default(string), string packageCode = default(string), string name = default(string), Dimensions dimensions = default(Dimensions), string description = default(string))
         {
-            // to ensure "Name" is required (not null)
-            if (Name == null)
+            // to ensure "name" is required (not null)
+            if (name == null)
             {
-                throw new InvalidDataException("Name is a required property for Package and cannot be null");
+                throw new InvalidDataException("name is a required property for Package and cannot be null");
             }
             else
             {
-                this.Name = Name;
+                this.Name = name;
             }
-            this.PackageId = PackageId;
-            this.PackageCode = PackageCode;
-            this.Dimensions = Dimensions;
-            this.Description = Description;
+            this.PackageId = packageId;
+            this.PackageCode = packageCode;
+            this.Dimensions = dimensions;
+            this.Description = description;
         }
         
         /// <summary>
@@ -111,7 +111,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

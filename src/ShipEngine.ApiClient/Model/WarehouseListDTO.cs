@@ -33,10 +33,10 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="WarehouseListDTO" /> class.
         /// </summary>
-        /// <param name="Warehouses">Warehouses.</param>
-        public WarehouseListDTO(List<WarehouseDTO> Warehouses = default(List<WarehouseDTO>))
+        /// <param name="warehouses">warehouses.</param>
+        public WarehouseListDTO(List<WarehouseDTO> warehouses = default(List<WarehouseDTO>))
         {
-            this.Warehouses = Warehouses;
+            this.Warehouses = warehouses;
         }
         
         /// <summary>
@@ -62,7 +62,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

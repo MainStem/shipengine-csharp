@@ -33,18 +33,18 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ListShipmentResponse" /> class.
         /// </summary>
-        /// <param name="Shipments">Shipments.</param>
-        /// <param name="Total">Total.</param>
-        /// <param name="Page">Page.</param>
-        /// <param name="Pages">Pages.</param>
-        /// <param name="Links">Links.</param>
-        public ListShipmentResponse(List<Shipment> Shipments = default(List<Shipment>), int? Total = default(int?), int? Page = default(int?), int? Pages = default(int?), PaginationLinkDTO Links = default(PaginationLinkDTO))
+        /// <param name="shipments">shipments.</param>
+        /// <param name="total">total.</param>
+        /// <param name="page">page.</param>
+        /// <param name="pages">pages.</param>
+        /// <param name="links">links.</param>
+        public ListShipmentResponse(List<Shipment> shipments = default(List<Shipment>), long? total = default(long?), int? page = default(int?), int? pages = default(int?), PaginationLinkDTO links = default(PaginationLinkDTO))
         {
-            this.Shipments = Shipments;
-            this.Total = Total;
-            this.Page = Page;
-            this.Pages = Pages;
-            this.Links = Links;
+            this.Shipments = shipments;
+            this.Total = total;
+            this.Page = page;
+            this.Pages = pages;
+            this.Links = links;
         }
         
         /// <summary>
@@ -57,7 +57,7 @@ namespace ShipEngine.ApiClient.Model
         /// Gets or Sets Total
         /// </summary>
         [DataMember(Name="total", EmitDefaultValue=false)]
-        public int? Total { get; set; }
+        public long? Total { get; set; }
 
         /// <summary>
         /// Gets or Sets Page
@@ -98,7 +98,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

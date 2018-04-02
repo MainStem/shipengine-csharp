@@ -31,20 +31,20 @@ namespace ShipEngine.ApiClient.Model
     public partial class Rate :  IEquatable<Rate>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets RateType
+        /// Defines RateType
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum RateTypeEnum
         {
             
             /// <summary>
-            /// Enum Check for "check"
+            /// Enum Check for value: check
             /// </summary>
             [EnumMember(Value = "check")]
             Check = 1,
             
             /// <summary>
-            /// Enum Shipment for "shipment"
+            /// Enum Shipment for value: shipment
             /// </summary>
             [EnumMember(Value = "shipment")]
             Shipment = 2
@@ -56,32 +56,32 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="rate_type", EmitDefaultValue=false)]
         public RateTypeEnum? RateType { get; set; }
         /// <summary>
-        /// Gets or Sets ValidationStatus
+        /// Defines ValidationStatus
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ValidationStatusEnum
         {
             
             /// <summary>
-            /// Enum Valid for "valid"
+            /// Enum Valid for value: valid
             /// </summary>
             [EnumMember(Value = "valid")]
             Valid = 1,
             
             /// <summary>
-            /// Enum Invalid for "invalid"
+            /// Enum Invalid for value: invalid
             /// </summary>
             [EnumMember(Value = "invalid")]
             Invalid = 2,
             
             /// <summary>
-            /// Enum Haswarnings for "has_warnings"
+            /// Enum Haswarnings for value: has_warnings
             /// </summary>
             [EnumMember(Value = "has_warnings")]
             Haswarnings = 3,
             
             /// <summary>
-            /// Enum Unknown for "unknown"
+            /// Enum Unknown for value: unknown
             /// </summary>
             [EnumMember(Value = "unknown")]
             Unknown = 4
@@ -95,56 +95,56 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Rate" /> class.
         /// </summary>
-        /// <param name="RateId">RateId.</param>
-        /// <param name="RateType">RateType.</param>
-        /// <param name="CarrierId">CarrierId.</param>
-        /// <param name="ShippingAmount">ShippingAmount.</param>
-        /// <param name="InsuranceAmount">InsuranceAmount.</param>
-        /// <param name="ConfirmationAmount">ConfirmationAmount.</param>
-        /// <param name="OtherAmount">OtherAmount.</param>
-        /// <param name="Zone">Zone.</param>
-        /// <param name="PackageType">PackageType.</param>
-        /// <param name="DeliveryDays">DeliveryDays.</param>
-        /// <param name="GuaranteedService">GuaranteedService.</param>
-        /// <param name="EstimatedDeliveryDate">EstimatedDeliveryDate.</param>
-        /// <param name="CarrierDeliveryDays">CarrierDeliveryDays.</param>
-        /// <param name="ShipDate">ShipDate.</param>
-        /// <param name="NegotiatedRate">NegotiatedRate.</param>
-        /// <param name="ServiceType">ServiceType.</param>
-        /// <param name="ServiceCode">ServiceCode.</param>
-        /// <param name="Trackable">Trackable.</param>
-        /// <param name="ValidationStatus">ValidationStatus.</param>
-        /// <param name="WarningMessages">WarningMessages.</param>
-        /// <param name="ErrorMessages">ErrorMessages.</param>
-        /// <param name="CarrierCode">CarrierCode.</param>
-        /// <param name="CarrierNickname">CarrierNickname.</param>
-        /// <param name="CarrierFriendlyName">CarrierFriendlyName.</param>
-        public Rate(string RateId = default(string), RateTypeEnum? RateType = default(RateTypeEnum?), string CarrierId = default(string), MoneyDTO ShippingAmount = default(MoneyDTO), MoneyDTO InsuranceAmount = default(MoneyDTO), MoneyDTO ConfirmationAmount = default(MoneyDTO), MoneyDTO OtherAmount = default(MoneyDTO), int? Zone = default(int?), string PackageType = default(string), int? DeliveryDays = default(int?), bool? GuaranteedService = default(bool?), DateTime? EstimatedDeliveryDate = default(DateTime?), string CarrierDeliveryDays = default(string), DateTime? ShipDate = default(DateTime?), bool? NegotiatedRate = default(bool?), string ServiceType = default(string), string ServiceCode = default(string), bool? Trackable = default(bool?), ValidationStatusEnum? ValidationStatus = default(ValidationStatusEnum?), List<string> WarningMessages = default(List<string>), List<string> ErrorMessages = default(List<string>), string CarrierCode = default(string), string CarrierNickname = default(string), string CarrierFriendlyName = default(string))
+        /// <param name="rateId">rateId.</param>
+        /// <param name="rateType">rateType.</param>
+        /// <param name="carrierId">carrierId.</param>
+        /// <param name="shippingAmount">shippingAmount.</param>
+        /// <param name="insuranceAmount">insuranceAmount.</param>
+        /// <param name="confirmationAmount">confirmationAmount.</param>
+        /// <param name="otherAmount">otherAmount.</param>
+        /// <param name="zone">zone.</param>
+        /// <param name="packageType">packageType.</param>
+        /// <param name="deliveryDays">deliveryDays.</param>
+        /// <param name="guaranteedService">guaranteedService.</param>
+        /// <param name="estimatedDeliveryDate">estimatedDeliveryDate.</param>
+        /// <param name="carrierDeliveryDays">carrierDeliveryDays.</param>
+        /// <param name="shipDate">shipDate.</param>
+        /// <param name="negotiatedRate">negotiatedRate.</param>
+        /// <param name="serviceType">serviceType.</param>
+        /// <param name="serviceCode">serviceCode.</param>
+        /// <param name="trackable">trackable.</param>
+        /// <param name="carrierCode">carrierCode.</param>
+        /// <param name="carrierNickname">carrierNickname.</param>
+        /// <param name="carrierFriendlyName">carrierFriendlyName.</param>
+        /// <param name="validationStatus">validationStatus.</param>
+        /// <param name="warningMessages">warningMessages.</param>
+        /// <param name="errorMessages">errorMessages.</param>
+        public Rate(string rateId = default(string), RateTypeEnum? rateType = default(RateTypeEnum?), string carrierId = default(string), MoneyDTO shippingAmount = default(MoneyDTO), MoneyDTO insuranceAmount = default(MoneyDTO), MoneyDTO confirmationAmount = default(MoneyDTO), MoneyDTO otherAmount = default(MoneyDTO), int? zone = default(int?), string packageType = default(string), int? deliveryDays = default(int?), bool? guaranteedService = default(bool?), DateTime? estimatedDeliveryDate = default(DateTime?), string carrierDeliveryDays = default(string), DateTime? shipDate = default(DateTime?), bool? negotiatedRate = default(bool?), string serviceType = default(string), string serviceCode = default(string), bool? trackable = default(bool?), string carrierCode = default(string), string carrierNickname = default(string), string carrierFriendlyName = default(string), ValidationStatusEnum? validationStatus = default(ValidationStatusEnum?), List<string> warningMessages = default(List<string>), List<string> errorMessages = default(List<string>))
         {
-            this.RateId = RateId;
-            this.RateType = RateType;
-            this.CarrierId = CarrierId;
-            this.ShippingAmount = ShippingAmount;
-            this.InsuranceAmount = InsuranceAmount;
-            this.ConfirmationAmount = ConfirmationAmount;
-            this.OtherAmount = OtherAmount;
-            this.Zone = Zone;
-            this.PackageType = PackageType;
-            this.DeliveryDays = DeliveryDays;
-            this.GuaranteedService = GuaranteedService;
-            this.EstimatedDeliveryDate = EstimatedDeliveryDate;
-            this.CarrierDeliveryDays = CarrierDeliveryDays;
-            this.ShipDate = ShipDate;
-            this.NegotiatedRate = NegotiatedRate;
-            this.ServiceType = ServiceType;
-            this.ServiceCode = ServiceCode;
-            this.Trackable = Trackable;
-            this.ValidationStatus = ValidationStatus;
-            this.WarningMessages = WarningMessages;
-            this.ErrorMessages = ErrorMessages;
-            this.CarrierCode = CarrierCode;
-            this.CarrierNickname = CarrierNickname;
-            this.CarrierFriendlyName = CarrierFriendlyName;
+            this.RateId = rateId;
+            this.RateType = rateType;
+            this.CarrierId = carrierId;
+            this.ShippingAmount = shippingAmount;
+            this.InsuranceAmount = insuranceAmount;
+            this.ConfirmationAmount = confirmationAmount;
+            this.OtherAmount = otherAmount;
+            this.Zone = zone;
+            this.PackageType = packageType;
+            this.DeliveryDays = deliveryDays;
+            this.GuaranteedService = guaranteedService;
+            this.EstimatedDeliveryDate = estimatedDeliveryDate;
+            this.CarrierDeliveryDays = carrierDeliveryDays;
+            this.ShipDate = shipDate;
+            this.NegotiatedRate = negotiatedRate;
+            this.ServiceType = serviceType;
+            this.ServiceCode = serviceCode;
+            this.Trackable = trackable;
+            this.CarrierCode = carrierCode;
+            this.CarrierNickname = carrierNickname;
+            this.CarrierFriendlyName = carrierFriendlyName;
+            this.ValidationStatus = validationStatus;
+            this.WarningMessages = warningMessages;
+            this.ErrorMessages = errorMessages;
         }
         
         /// <summary>
@@ -250,19 +250,6 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="trackable", EmitDefaultValue=false)]
         public bool? Trackable { get; set; }
 
-
-        /// <summary>
-        /// Gets or Sets WarningMessages
-        /// </summary>
-        [DataMember(Name="warning_messages", EmitDefaultValue=false)]
-        public List<string> WarningMessages { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ErrorMessages
-        /// </summary>
-        [DataMember(Name="error_messages", EmitDefaultValue=false)]
-        public List<string> ErrorMessages { get; set; }
-
         /// <summary>
         /// Gets or Sets CarrierCode
         /// </summary>
@@ -280,6 +267,19 @@ namespace ShipEngine.ApiClient.Model
         /// </summary>
         [DataMember(Name="carrier_friendly_name", EmitDefaultValue=false)]
         public string CarrierFriendlyName { get; set; }
+
+
+        /// <summary>
+        /// Gets or Sets WarningMessages
+        /// </summary>
+        [DataMember(Name="warning_messages", EmitDefaultValue=false)]
+        public List<string> WarningMessages { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ErrorMessages
+        /// </summary>
+        [DataMember(Name="error_messages", EmitDefaultValue=false)]
+        public List<string> ErrorMessages { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -307,12 +307,12 @@ namespace ShipEngine.ApiClient.Model
             sb.Append("  ServiceType: ").Append(ServiceType).Append("\n");
             sb.Append("  ServiceCode: ").Append(ServiceCode).Append("\n");
             sb.Append("  Trackable: ").Append(Trackable).Append("\n");
-            sb.Append("  ValidationStatus: ").Append(ValidationStatus).Append("\n");
-            sb.Append("  WarningMessages: ").Append(WarningMessages).Append("\n");
-            sb.Append("  ErrorMessages: ").Append(ErrorMessages).Append("\n");
             sb.Append("  CarrierCode: ").Append(CarrierCode).Append("\n");
             sb.Append("  CarrierNickname: ").Append(CarrierNickname).Append("\n");
             sb.Append("  CarrierFriendlyName: ").Append(CarrierFriendlyName).Append("\n");
+            sb.Append("  ValidationStatus: ").Append(ValidationStatus).Append("\n");
+            sb.Append("  WarningMessages: ").Append(WarningMessages).Append("\n");
+            sb.Append("  ErrorMessages: ").Append(ErrorMessages).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -321,7 +321,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }
@@ -438,21 +438,6 @@ namespace ShipEngine.ApiClient.Model
                     this.Trackable.Equals(input.Trackable))
                 ) && 
                 (
-                    this.ValidationStatus == input.ValidationStatus ||
-                    (this.ValidationStatus != null &&
-                    this.ValidationStatus.Equals(input.ValidationStatus))
-                ) && 
-                (
-                    this.WarningMessages == input.WarningMessages ||
-                    this.WarningMessages != null &&
-                    this.WarningMessages.SequenceEqual(input.WarningMessages)
-                ) && 
-                (
-                    this.ErrorMessages == input.ErrorMessages ||
-                    this.ErrorMessages != null &&
-                    this.ErrorMessages.SequenceEqual(input.ErrorMessages)
-                ) && 
-                (
                     this.CarrierCode == input.CarrierCode ||
                     (this.CarrierCode != null &&
                     this.CarrierCode.Equals(input.CarrierCode))
@@ -466,6 +451,21 @@ namespace ShipEngine.ApiClient.Model
                     this.CarrierFriendlyName == input.CarrierFriendlyName ||
                     (this.CarrierFriendlyName != null &&
                     this.CarrierFriendlyName.Equals(input.CarrierFriendlyName))
+                ) && 
+                (
+                    this.ValidationStatus == input.ValidationStatus ||
+                    (this.ValidationStatus != null &&
+                    this.ValidationStatus.Equals(input.ValidationStatus))
+                ) && 
+                (
+                    this.WarningMessages == input.WarningMessages ||
+                    this.WarningMessages != null &&
+                    this.WarningMessages.SequenceEqual(input.WarningMessages)
+                ) && 
+                (
+                    this.ErrorMessages == input.ErrorMessages ||
+                    this.ErrorMessages != null &&
+                    this.ErrorMessages.SequenceEqual(input.ErrorMessages)
                 );
         }
 
@@ -514,18 +514,18 @@ namespace ShipEngine.ApiClient.Model
                     hashCode = hashCode * 59 + this.ServiceCode.GetHashCode();
                 if (this.Trackable != null)
                     hashCode = hashCode * 59 + this.Trackable.GetHashCode();
-                if (this.ValidationStatus != null)
-                    hashCode = hashCode * 59 + this.ValidationStatus.GetHashCode();
-                if (this.WarningMessages != null)
-                    hashCode = hashCode * 59 + this.WarningMessages.GetHashCode();
-                if (this.ErrorMessages != null)
-                    hashCode = hashCode * 59 + this.ErrorMessages.GetHashCode();
                 if (this.CarrierCode != null)
                     hashCode = hashCode * 59 + this.CarrierCode.GetHashCode();
                 if (this.CarrierNickname != null)
                     hashCode = hashCode * 59 + this.CarrierNickname.GetHashCode();
                 if (this.CarrierFriendlyName != null)
                     hashCode = hashCode * 59 + this.CarrierFriendlyName.GetHashCode();
+                if (this.ValidationStatus != null)
+                    hashCode = hashCode * 59 + this.ValidationStatus.GetHashCode();
+                if (this.WarningMessages != null)
+                    hashCode = hashCode * 59 + this.WarningMessages.GetHashCode();
+                if (this.ErrorMessages != null)
+                    hashCode = hashCode * 59 + this.ErrorMessages.GetHashCode();
                 return hashCode;
             }
         }

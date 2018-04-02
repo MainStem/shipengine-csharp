@@ -31,32 +31,32 @@ namespace ShipEngine.ApiClient.Model
     public partial class Label :  IEquatable<Label>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets Status
+        /// Defines Status
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum StatusEnum
         {
             
             /// <summary>
-            /// Enum Processing for "processing"
+            /// Enum Processing for value: processing
             /// </summary>
             [EnumMember(Value = "processing")]
             Processing = 1,
             
             /// <summary>
-            /// Enum Completed for "completed"
+            /// Enum Completed for value: completed
             /// </summary>
             [EnumMember(Value = "completed")]
             Completed = 2,
             
             /// <summary>
-            /// Enum Error for "error"
+            /// Enum Error for value: error
             /// </summary>
             [EnumMember(Value = "error")]
             Error = 3,
             
             /// <summary>
-            /// Enum Voided for "voided"
+            /// Enum Voided for value: voided
             /// </summary>
             [EnumMember(Value = "voided")]
             Voided = 4
@@ -68,26 +68,26 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="status", EmitDefaultValue=false)]
         public StatusEnum? Status { get; set; }
         /// <summary>
-        /// Gets or Sets LabelFormat
+        /// Defines LabelFormat
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum LabelFormatEnum
         {
             
             /// <summary>
-            /// Enum Pdf for "pdf"
+            /// Enum Pdf for value: pdf
             /// </summary>
             [EnumMember(Value = "pdf")]
             Pdf = 1,
             
             /// <summary>
-            /// Enum Zpl for "zpl"
+            /// Enum Zpl for value: zpl
             /// </summary>
             [EnumMember(Value = "zpl")]
             Zpl = 2,
             
             /// <summary>
-            /// Enum Png for "png"
+            /// Enum Png for value: png
             /// </summary>
             [EnumMember(Value = "png")]
             Png = 3
@@ -99,32 +99,32 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="label_format", EmitDefaultValue=false)]
         public LabelFormatEnum? LabelFormat { get; set; }
         /// <summary>
-        /// Gets or Sets TrackingStatus
+        /// Defines TrackingStatus
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum TrackingStatusEnum
         {
             
             /// <summary>
-            /// Enum Unknown for "unknown"
+            /// Enum Unknown for value: unknown
             /// </summary>
             [EnumMember(Value = "unknown")]
             Unknown = 1,
             
             /// <summary>
-            /// Enum Intransit for "in_transit"
+            /// Enum Intransit for value: in_transit
             /// </summary>
             [EnumMember(Value = "in_transit")]
             Intransit = 2,
             
             /// <summary>
-            /// Enum Error for "error"
+            /// Enum Error for value: error
             /// </summary>
             [EnumMember(Value = "error")]
             Error = 3,
             
             /// <summary>
-            /// Enum Delivered for "delivered"
+            /// Enum Delivered for value: delivered
             /// </summary>
             [EnumMember(Value = "delivered")]
             Delivered = 4
@@ -138,58 +138,60 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Label" /> class.
         /// </summary>
-        /// <param name="LabelId">LabelId.</param>
-        /// <param name="Status">Status.</param>
-        /// <param name="ShipmentId">ShipmentId.</param>
-        /// <param name="ShipDate">ShipDate.</param>
-        /// <param name="CreatedAt">CreatedAt.</param>
-        /// <param name="ShipmentCost">ShipmentCost.</param>
-        /// <param name="InsuranceCost">InsuranceCost.</param>
-        /// <param name="TrackingNumber">TrackingNumber.</param>
-        /// <param name="IsReturnLabel">IsReturnLabel.</param>
-        /// <param name="IsInternational">IsInternational.</param>
-        /// <param name="BatchId">BatchId.</param>
-        /// <param name="CarrierId">CarrierId.</param>
-        /// <param name="ServiceCode">ServiceCode.</param>
-        /// <param name="PackageCode">PackageCode.</param>
-        /// <param name="Voided">Voided.</param>
-        /// <param name="VoidedAt">VoidedAt.</param>
-        /// <param name="LabelFormat">LabelFormat.</param>
-        /// <param name="LabelLayout">LabelLayout.</param>
-        /// <param name="Trackable">Trackable.</param>
-        /// <param name="CarrierCode">CarrierCode.</param>
-        /// <param name="TrackingStatus">TrackingStatus.</param>
-        /// <param name="LabelDownload">LabelDownload.</param>
-        /// <param name="FormDownload">FormDownload.</param>
-        /// <param name="InsuranceClaim">InsuranceClaim.</param>
-        /// <param name="Packages">Packages.</param>
-        public Label(string LabelId = default(string), StatusEnum? Status = default(StatusEnum?), string ShipmentId = default(string), DateTime? ShipDate = default(DateTime?), DateTime? CreatedAt = default(DateTime?), MoneyDTO ShipmentCost = default(MoneyDTO), MoneyDTO InsuranceCost = default(MoneyDTO), string TrackingNumber = default(string), bool? IsReturnLabel = default(bool?), bool? IsInternational = default(bool?), string BatchId = default(string), string CarrierId = default(string), string ServiceCode = default(string), string PackageCode = default(string), bool? Voided = default(bool?), DateTime? VoidedAt = default(DateTime?), LabelFormatEnum? LabelFormat = default(LabelFormatEnum?), string LabelLayout = default(string), bool? Trackable = default(bool?), string CarrierCode = default(string), TrackingStatusEnum? TrackingStatus = default(TrackingStatusEnum?), LinkDTO LabelDownload = default(LinkDTO), LinkDTO FormDownload = default(LinkDTO), LinkDTO InsuranceClaim = default(LinkDTO), List<LabelPackage> Packages = default(List<LabelPackage>))
+        /// <param name="labelId">labelId.</param>
+        /// <param name="status">status.</param>
+        /// <param name="shipmentId">shipmentId.</param>
+        /// <param name="shipDate">shipDate.</param>
+        /// <param name="createdAt">createdAt.</param>
+        /// <param name="shipmentCost">shipmentCost.</param>
+        /// <param name="insuranceCost">insuranceCost.</param>
+        /// <param name="trackingNumber">trackingNumber.</param>
+        /// <param name="isReturnLabel">isReturnLabel.</param>
+        /// <param name="rmaNumber">rmaNumber.</param>
+        /// <param name="isInternational">isInternational.</param>
+        /// <param name="batchId">batchId.</param>
+        /// <param name="carrierId">carrierId.</param>
+        /// <param name="serviceCode">serviceCode.</param>
+        /// <param name="packageCode">packageCode.</param>
+        /// <param name="voided">voided.</param>
+        /// <param name="voidedAt">voidedAt.</param>
+        /// <param name="labelFormat">labelFormat.</param>
+        /// <param name="labelLayout">labelLayout.</param>
+        /// <param name="trackable">trackable.</param>
+        /// <param name="carrierCode">carrierCode.</param>
+        /// <param name="trackingStatus">trackingStatus.</param>
+        /// <param name="labelDownload">labelDownload.</param>
+        /// <param name="formDownload">formDownload.</param>
+        /// <param name="insuranceClaim">insuranceClaim.</param>
+        /// <param name="packages">packages.</param>
+        public Label(string labelId = default(string), StatusEnum? status = default(StatusEnum?), string shipmentId = default(string), DateTime? shipDate = default(DateTime?), DateTime? createdAt = default(DateTime?), MoneyDTO shipmentCost = default(MoneyDTO), MoneyDTO insuranceCost = default(MoneyDTO), string trackingNumber = default(string), bool? isReturnLabel = default(bool?), string rmaNumber = default(string), bool? isInternational = default(bool?), string batchId = default(string), string carrierId = default(string), string serviceCode = default(string), string packageCode = default(string), bool? voided = default(bool?), DateTime? voidedAt = default(DateTime?), LabelFormatEnum? labelFormat = default(LabelFormatEnum?), string labelLayout = default(string), bool? trackable = default(bool?), string carrierCode = default(string), TrackingStatusEnum? trackingStatus = default(TrackingStatusEnum?), LinkDTO labelDownload = default(LinkDTO), LinkDTO formDownload = default(LinkDTO), LinkDTO insuranceClaim = default(LinkDTO), List<LabelPackage> packages = default(List<LabelPackage>))
         {
-            this.LabelId = LabelId;
-            this.Status = Status;
-            this.ShipmentId = ShipmentId;
-            this.ShipDate = ShipDate;
-            this.CreatedAt = CreatedAt;
-            this.ShipmentCost = ShipmentCost;
-            this.InsuranceCost = InsuranceCost;
-            this.TrackingNumber = TrackingNumber;
-            this.IsReturnLabel = IsReturnLabel;
-            this.IsInternational = IsInternational;
-            this.BatchId = BatchId;
-            this.CarrierId = CarrierId;
-            this.ServiceCode = ServiceCode;
-            this.PackageCode = PackageCode;
-            this.Voided = Voided;
-            this.VoidedAt = VoidedAt;
-            this.LabelFormat = LabelFormat;
-            this.LabelLayout = LabelLayout;
-            this.Trackable = Trackable;
-            this.CarrierCode = CarrierCode;
-            this.TrackingStatus = TrackingStatus;
-            this.LabelDownload = LabelDownload;
-            this.FormDownload = FormDownload;
-            this.InsuranceClaim = InsuranceClaim;
-            this.Packages = Packages;
+            this.LabelId = labelId;
+            this.Status = status;
+            this.ShipmentId = shipmentId;
+            this.ShipDate = shipDate;
+            this.CreatedAt = createdAt;
+            this.ShipmentCost = shipmentCost;
+            this.InsuranceCost = insuranceCost;
+            this.TrackingNumber = trackingNumber;
+            this.IsReturnLabel = isReturnLabel;
+            this.RmaNumber = rmaNumber;
+            this.IsInternational = isInternational;
+            this.BatchId = batchId;
+            this.CarrierId = carrierId;
+            this.ServiceCode = serviceCode;
+            this.PackageCode = packageCode;
+            this.Voided = voided;
+            this.VoidedAt = voidedAt;
+            this.LabelFormat = labelFormat;
+            this.LabelLayout = labelLayout;
+            this.Trackable = trackable;
+            this.CarrierCode = carrierCode;
+            this.TrackingStatus = trackingStatus;
+            this.LabelDownload = labelDownload;
+            this.FormDownload = formDownload;
+            this.InsuranceClaim = insuranceClaim;
+            this.Packages = packages;
         }
         
         /// <summary>
@@ -240,6 +242,12 @@ namespace ShipEngine.ApiClient.Model
         /// </summary>
         [DataMember(Name="is_return_label", EmitDefaultValue=false)]
         public bool? IsReturnLabel { get; set; }
+
+        /// <summary>
+        /// Gets or Sets RmaNumber
+        /// </summary>
+        [DataMember(Name="rma_number", EmitDefaultValue=false)]
+        public string RmaNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets IsInternational
@@ -344,6 +352,7 @@ namespace ShipEngine.ApiClient.Model
             sb.Append("  InsuranceCost: ").Append(InsuranceCost).Append("\n");
             sb.Append("  TrackingNumber: ").Append(TrackingNumber).Append("\n");
             sb.Append("  IsReturnLabel: ").Append(IsReturnLabel).Append("\n");
+            sb.Append("  RmaNumber: ").Append(RmaNumber).Append("\n");
             sb.Append("  IsInternational: ").Append(IsInternational).Append("\n");
             sb.Append("  BatchId: ").Append(BatchId).Append("\n");
             sb.Append("  CarrierId: ").Append(CarrierId).Append("\n");
@@ -368,7 +377,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }
@@ -438,6 +447,11 @@ namespace ShipEngine.ApiClient.Model
                     this.IsReturnLabel == input.IsReturnLabel ||
                     (this.IsReturnLabel != null &&
                     this.IsReturnLabel.Equals(input.IsReturnLabel))
+                ) && 
+                (
+                    this.RmaNumber == input.RmaNumber ||
+                    (this.RmaNumber != null &&
+                    this.RmaNumber.Equals(input.RmaNumber))
                 ) && 
                 (
                     this.IsInternational == input.IsInternational ||
@@ -548,6 +562,8 @@ namespace ShipEngine.ApiClient.Model
                     hashCode = hashCode * 59 + this.TrackingNumber.GetHashCode();
                 if (this.IsReturnLabel != null)
                     hashCode = hashCode * 59 + this.IsReturnLabel.GetHashCode();
+                if (this.RmaNumber != null)
+                    hashCode = hashCode * 59 + this.RmaNumber.GetHashCode();
                 if (this.IsInternational != null)
                     hashCode = hashCode * 59 + this.IsInternational.GetHashCode();
                 if (this.BatchId != null)

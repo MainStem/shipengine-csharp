@@ -4,6 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Shipment** | [**Shipment**](Shipment.md) |  | [optional] 
+**IsReturnLabel** | **bool?** |  | [optional] 
+**RmaNumber** | **string** |  | [optional] 
 **TestLabel** | **bool?** |  | [optional] 
 **ValidateAddress** | **string** |  | [optional] 
 **LabelLayout** | **string** |  | [optional] 

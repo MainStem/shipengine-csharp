@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **ReturnTo** | [**AddressDTO**](AddressDTO.md) |  | [optional] 
 **Confirmation** | **string** |  | [optional] 
 **Customs** | [**InternationalOptions**](InternationalOptions.md) |  | [optional] 
-**AdvancedOptions** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
+**AdvancedOptions** | [**AdvancedOptions**](AdvancedOptions.md) |  | [optional] 
 **InsuranceProvider** | **string** |  | [optional] 
 **Tags** | [**List&lt;TagResponse&gt;**](TagResponse.md) |  | [optional] 
 **Packages** | [**List&lt;ShipmentPackage&gt;**](ShipmentPackage.md) |  | [optional] 

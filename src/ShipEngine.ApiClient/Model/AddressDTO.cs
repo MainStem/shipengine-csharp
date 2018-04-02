@@ -31,26 +31,26 @@ namespace ShipEngine.ApiClient.Model
     public partial class AddressDTO :  IEquatable<AddressDTO>, IValidatableObject
     {
         /// <summary>
-        /// Gets or Sets AddressResidentialIndicator
+        /// Defines AddressResidentialIndicator
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum AddressResidentialIndicatorEnum
         {
             
             /// <summary>
-            /// Enum Unknown for "unknown"
+            /// Enum Unknown for value: unknown
             /// </summary>
             [EnumMember(Value = "unknown")]
             Unknown = 1,
             
             /// <summary>
-            /// Enum Yes for "yes"
+            /// Enum Yes for value: yes
             /// </summary>
             [EnumMember(Value = "yes")]
             Yes = 2,
             
             /// <summary>
-            /// Enum No for "no"
+            /// Enum No for value: no
             /// </summary>
             [EnumMember(Value = "no")]
             No = 3
@@ -64,30 +64,30 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="AddressDTO" /> class.
         /// </summary>
-        /// <param name="Name">Name.</param>
-        /// <param name="Phone">Phone.</param>
-        /// <param name="CompanyName">CompanyName.</param>
-        /// <param name="AddressLine1">AddressLine1.</param>
-        /// <param name="AddressLine2">AddressLine2.</param>
-        /// <param name="AddressLine3">AddressLine3.</param>
-        /// <param name="CityLocality">CityLocality.</param>
-        /// <param name="StateProvince">StateProvince.</param>
-        /// <param name="PostalCode">PostalCode.</param>
-        /// <param name="CountryCode">CountryCode.</param>
-        /// <param name="AddressResidentialIndicator">AddressResidentialIndicator.</param>
-        public AddressDTO(string Name = default(string), string Phone = default(string), string CompanyName = default(string), string AddressLine1 = default(string), string AddressLine2 = default(string), string AddressLine3 = default(string), string CityLocality = default(string), string StateProvince = default(string), string PostalCode = default(string), string CountryCode = default(string), AddressResidentialIndicatorEnum? AddressResidentialIndicator = default(AddressResidentialIndicatorEnum?))
+        /// <param name="name">name.</param>
+        /// <param name="phone">phone.</param>
+        /// <param name="companyName">companyName.</param>
+        /// <param name="addressLine1">addressLine1.</param>
+        /// <param name="addressLine2">addressLine2.</param>
+        /// <param name="addressLine3">addressLine3.</param>
+        /// <param name="cityLocality">cityLocality.</param>
+        /// <param name="stateProvince">stateProvince.</param>
+        /// <param name="postalCode">postalCode.</param>
+        /// <param name="countryCode">countryCode.</param>
+        /// <param name="addressResidentialIndicator">addressResidentialIndicator.</param>
+        public AddressDTO(string name = default(string), string phone = default(string), string companyName = default(string), string addressLine1 = default(string), string addressLine2 = default(string), string addressLine3 = default(string), string cityLocality = default(string), string stateProvince = default(string), string postalCode = default(string), string countryCode = default(string), AddressResidentialIndicatorEnum? addressResidentialIndicator = default(AddressResidentialIndicatorEnum?))
         {
-            this.Name = Name;
-            this.Phone = Phone;
-            this.CompanyName = CompanyName;
-            this.AddressLine1 = AddressLine1;
-            this.AddressLine2 = AddressLine2;
-            this.AddressLine3 = AddressLine3;
-            this.CityLocality = CityLocality;
-            this.StateProvince = StateProvince;
-            this.PostalCode = PostalCode;
-            this.CountryCode = CountryCode;
-            this.AddressResidentialIndicator = AddressResidentialIndicator;
+            this.Name = name;
+            this.Phone = phone;
+            this.CompanyName = companyName;
+            this.AddressLine1 = addressLine1;
+            this.AddressLine2 = addressLine2;
+            this.AddressLine3 = addressLine3;
+            this.CityLocality = cityLocality;
+            this.StateProvince = stateProvince;
+            this.PostalCode = postalCode;
+            this.CountryCode = countryCode;
+            this.AddressResidentialIndicator = addressResidentialIndicator;
         }
         
         /// <summary>
@@ -178,7 +178,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

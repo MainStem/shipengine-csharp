@@ -33,10 +33,10 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="TagResponse" /> class.
         /// </summary>
-        /// <param name="Name">Name.</param>
-        public TagResponse(string Name = default(string))
+        /// <param name="name">name.</param>
+        public TagResponse(string name = default(string))
         {
-            this.Name = Name;
+            this.Name = name;
         }
         
         /// <summary>
@@ -62,7 +62,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

@@ -33,44 +33,44 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UPSAccountInformationDTO" /> class.
         /// </summary>
-        /// <param name="Nickname">Nickname.</param>
-        /// <param name="AccountNumber">AccountNumber.</param>
-        /// <param name="AccountCountryCode">AccountCountryCode.</param>
-        /// <param name="AccountPostalCode">AccountPostalCode.</param>
-        /// <param name="Title">Title.</param>
-        /// <param name="FirstName">FirstName.</param>
-        /// <param name="LastName">LastName.</param>
-        /// <param name="Company">Company.</param>
-        /// <param name="Address1">Address1.</param>
-        /// <param name="Address2">Address2.</param>
-        /// <param name="City">City.</param>
-        /// <param name="State">State.</param>
-        /// <param name="PostalCode">PostalCode.</param>
-        /// <param name="CountryCode">CountryCode.</param>
-        /// <param name="Email">Email.</param>
-        /// <param name="Phone">Phone.</param>
-        /// <param name="Invoice">Invoice.</param>
-        /// <param name="AgreeToTechnologyAgreement">AgreeToTechnologyAgreement.</param>
-        public UPSAccountInformationDTO(string Nickname = default(string), string AccountNumber = default(string), string AccountCountryCode = default(string), string AccountPostalCode = default(string), string Title = default(string), string FirstName = default(string), string LastName = default(string), string Company = default(string), string Address1 = default(string), string Address2 = default(string), string City = default(string), string State = default(string), string PostalCode = default(string), string CountryCode = default(string), string Email = default(string), string Phone = default(string), UPSInvoiceDTO Invoice = default(UPSInvoiceDTO), bool? AgreeToTechnologyAgreement = default(bool?))
+        /// <param name="nickname">nickname.</param>
+        /// <param name="accountNumber">accountNumber.</param>
+        /// <param name="accountCountryCode">accountCountryCode.</param>
+        /// <param name="accountPostalCode">accountPostalCode.</param>
+        /// <param name="title">title.</param>
+        /// <param name="firstName">firstName.</param>
+        /// <param name="lastName">lastName.</param>
+        /// <param name="company">company.</param>
+        /// <param name="address1">address1.</param>
+        /// <param name="address2">address2.</param>
+        /// <param name="city">city.</param>
+        /// <param name="state">state.</param>
+        /// <param name="postalCode">postalCode.</param>
+        /// <param name="countryCode">countryCode.</param>
+        /// <param name="email">email.</param>
+        /// <param name="phone">phone.</param>
+        /// <param name="invoice">invoice.</param>
+        /// <param name="agreeToTechnologyAgreement">agreeToTechnologyAgreement.</param>
+        public UPSAccountInformationDTO(string nickname = default(string), string accountNumber = default(string), string accountCountryCode = default(string), string accountPostalCode = default(string), string title = default(string), string firstName = default(string), string lastName = default(string), string company = default(string), string address1 = default(string), string address2 = default(string), string city = default(string), string state = default(string), string postalCode = default(string), string countryCode = default(string), string email = default(string), string phone = default(string), UPSInvoiceDTO invoice = default(UPSInvoiceDTO), bool? agreeToTechnologyAgreement = default(bool?))
         {
-            this.Nickname = Nickname;
-            this.AccountNumber = AccountNumber;
-            this.AccountCountryCode = AccountCountryCode;
-            this.AccountPostalCode = AccountPostalCode;
-            this.Title = Title;
-            this.FirstName = FirstName;
-            this.LastName = LastName;
-            this.Company = Company;
-            this.Address1 = Address1;
-            this.Address2 = Address2;
-            this.City = City;
-            this.State = State;
-            this.PostalCode = PostalCode;
-            this.CountryCode = CountryCode;
-            this.Email = Email;
-            this.Phone = Phone;
-            this.Invoice = Invoice;
-            this.AgreeToTechnologyAgreement = AgreeToTechnologyAgreement;
+            this.Nickname = nickname;
+            this.AccountNumber = accountNumber;
+            this.AccountCountryCode = accountCountryCode;
+            this.AccountPostalCode = accountPostalCode;
+            this.Title = title;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.Company = company;
+            this.Address1 = address1;
+            this.Address2 = address2;
+            this.City = city;
+            this.State = state;
+            this.PostalCode = postalCode;
+            this.CountryCode = countryCode;
+            this.Email = email;
+            this.Phone = phone;
+            this.Invoice = invoice;
+            this.AgreeToTechnologyAgreement = agreeToTechnologyAgreement;
         }
         
         /// <summary>
@@ -215,7 +215,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

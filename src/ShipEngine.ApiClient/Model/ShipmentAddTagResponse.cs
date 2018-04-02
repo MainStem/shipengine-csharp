@@ -33,12 +33,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ShipmentAddTagResponse" /> class.
         /// </summary>
-        /// <param name="ShipmentId">ShipmentId.</param>
-        /// <param name="Tag">Tag.</param>
-        public ShipmentAddTagResponse(string ShipmentId = default(string), TagResponse Tag = default(TagResponse))
+        /// <param name="shipmentId">shipmentId.</param>
+        /// <param name="tag">tag.</param>
+        public ShipmentAddTagResponse(string shipmentId = default(string), TagResponse tag = default(TagResponse))
         {
-            this.ShipmentId = ShipmentId;
-            this.Tag = Tag;
+            this.ShipmentId = shipmentId;
+            this.Tag = tag;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

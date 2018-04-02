@@ -71,10 +71,10 @@ namespace ShipEngine.ApiClient.Test
         public void EnvironmentCreateWebhookTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //CreateWebhookDTO createWebhookDto = null;
+            //CreateWebhookRequest createWebhookRequest = null;
             //string apiKey = null;
-            //var response = instance.EnvironmentCreateWebhook(createWebhookDto, apiKey);
-            //Assert.IsInstanceOf<WebhookDTO> (response, "response is WebhookDTO");
+            //var response = instance.EnvironmentCreateWebhook(createWebhookRequest, apiKey);
+            //Assert.IsInstanceOf<WebhookResponse> (response, "response is WebhookResponse");
         }
         
         /// <summary>
@@ -100,7 +100,7 @@ namespace ShipEngine.ApiClient.Test
             //string webhookId = null;
             //string apiKey = null;
             //var response = instance.EnvironmentGetWebhookById(webhookId, apiKey);
-            //Assert.IsInstanceOf<WebhookDTO> (response, "response is WebhookDTO");
+            //Assert.IsInstanceOf<WebhookResponse> (response, "response is WebhookResponse");
         }
         
         /// <summary>
@@ -111,9 +111,9 @@ namespace ShipEngine.ApiClient.Test
         {
             // TODO uncomment below to test the method and replace null with proper value
             //string webhookId = null;
-            //UpdateWebhookDTO updateWebhookDto = null;
+            //UpdateWebhookRequest updateWebhookRequest = null;
             //string apiKey = null;
-            //instance.EnvironmentUpdateWebhook(webhookId, updateWebhookDto, apiKey);
+            //instance.EnvironmentUpdateWebhook(webhookId, updateWebhookRequest, apiKey);
             
         }
         
@@ -126,7 +126,7 @@ namespace ShipEngine.ApiClient.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string apiKey = null;
             //var response = instance.EnvironmentWebhooks(apiKey);
-            //Assert.IsInstanceOf<List<WebhookDTO>> (response, "response is List<WebhookDTO>");
+            //Assert.IsInstanceOf<List<WebhookResponse>> (response, "response is List<WebhookResponse>");
         }
         
         /// <summary>
@@ -138,7 +138,7 @@ namespace ShipEngine.ApiClient.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string apiKey = null;
             //var response = instance.EnvironmentWhoami(apiKey);
-            //Assert.IsInstanceOf<Object> (response, "response is Object");
+            //Assert.IsInstanceOf<Dictionary<string, string>> (response, "response is Dictionary<string, string>");
         }
         
     }

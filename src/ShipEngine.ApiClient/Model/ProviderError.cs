@@ -33,12 +33,12 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ProviderError" /> class.
         /// </summary>
-        /// <param name="CarrierId">CarrierId.</param>
-        /// <param name="Message">Message.</param>
-        public ProviderError(string CarrierId = default(string), string Message = default(string))
+        /// <param name="carrierId">carrierId.</param>
+        /// <param name="message">message.</param>
+        public ProviderError(string carrierId = default(string), string message = default(string))
         {
-            this.CarrierId = CarrierId;
-            this.Message = Message;
+            this.CarrierId = carrierId;
+            this.Message = message;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace ShipEngine.ApiClient.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

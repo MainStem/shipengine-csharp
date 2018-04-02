@@ -75,6 +75,22 @@ namespace ShipEngine.ApiClient.Test
             // TODO unit test for the property 'Shipment'
         }
         /// <summary>
+        /// Test the property 'IsReturnLabel'
+        /// </summary>
+        [Test]
+        public void IsReturnLabelTest()
+        {
+            // TODO unit test for the property 'IsReturnLabel'
+        }
+        /// <summary>
+        /// Test the property 'RmaNumber'
+        /// </summary>
+        [Test]
+        public void RmaNumberTest()
+        {
+            // TODO unit test for the property 'RmaNumber'
+        }
+        /// <summary>
         /// Test the property 'TestLabel'
         /// </summary>
         [Test]
