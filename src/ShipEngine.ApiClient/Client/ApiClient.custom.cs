@@ -18,7 +18,7 @@ namespace ShipEngine.ApiClient.Client
     /// </summary>
     public partial class ApiClient
     {
-        public static ApiClient()
+        static ApiClient()
         {
             EnsureSecurityProtocol();
         }
