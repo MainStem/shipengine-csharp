@@ -3,6 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**AutomaticallyImportSalesOrders** | **bool?** |  | [optional] 
 **UnpaidStatus** | **List&lt;string&gt;** |  | [optional] 
 **PaidStatus** | **List&lt;string&gt;** |  | [optional] 
 **ShippedStatus** | **List&lt;string&gt;** |  | [optional] 

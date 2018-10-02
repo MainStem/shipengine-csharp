@@ -58,6 +58,7 @@ namespace ShipEngine.ApiClient.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="MagentoAccountSettingsRequest" /> class.
         /// </summary>
+        /// <param name="automaticallyImportSalesOrders">automaticallyImportSalesOrders.</param>
         /// <param name="unpaidStatus">unpaidStatus.</param>
         /// <param name="paidStatus">paidStatus.</param>
         /// <param name="shippedStatus">shippedStatus.</param>
@@ -65,8 +66,9 @@ namespace ShipEngine.ApiClient.Model
         /// <param name="holdStatus">holdStatus.</param>
         /// <param name="warehouseLocation">warehouseLocation.</param>
         /// <param name="capturePayment">capturePayment.</param>
-        public MagentoAccountSettingsRequest(List<string> unpaidStatus = default(List<string>), List<string> paidStatus = default(List<string>), List<string> shippedStatus = default(List<string>), List<string> cancelledStatus = default(List<string>), List<string> holdStatus = default(List<string>), List<string> warehouseLocation = default(List<string>), CapturePaymentEnum? capturePayment = default(CapturePaymentEnum?))
+        public MagentoAccountSettingsRequest(bool? automaticallyImportSalesOrders = default(bool?), List<string> unpaidStatus = default(List<string>), List<string> paidStatus = default(List<string>), List<string> shippedStatus = default(List<string>), List<string> cancelledStatus = default(List<string>), List<string> holdStatus = default(List<string>), List<string> warehouseLocation = default(List<string>), CapturePaymentEnum? capturePayment = default(CapturePaymentEnum?))
         {
+            this.AutomaticallyImportSalesOrders = automaticallyImportSalesOrders;
             this.UnpaidStatus = unpaidStatus;
             this.PaidStatus = paidStatus;
             this.ShippedStatus = shippedStatus;
@@ -76,6 +78,12 @@ namespace ShipEngine.ApiClient.Model
             this.CapturePayment = capturePayment;
         }
         
+        /// <summary>
+        /// Gets or Sets AutomaticallyImportSalesOrders
+        /// </summary>
+        [DataMember(Name="automatically_import_sales_orders", EmitDefaultValue=false)]
+        public bool? AutomaticallyImportSalesOrders { get; set; }
+
         /// <summary>
         /// Gets or Sets UnpaidStatus
         /// </summary>
@@ -121,6 +129,7 @@ namespace ShipEngine.ApiClient.Model
         {
             var sb = new StringBuilder();
             sb.Append("class MagentoAccountSettingsRequest {\n");
+            sb.Append("  AutomaticallyImportSalesOrders: ").Append(AutomaticallyImportSalesOrders).Append("\n");
             sb.Append("  UnpaidStatus: ").Append(UnpaidStatus).Append("\n");
             sb.Append("  PaidStatus: ").Append(PaidStatus).Append("\n");
             sb.Append("  ShippedStatus: ").Append(ShippedStatus).Append("\n");
@@ -162,6 +171,11 @@ namespace ShipEngine.ApiClient.Model
                 return false;
 
             return 
+                (
+                    this.AutomaticallyImportSalesOrders == input.AutomaticallyImportSalesOrders ||
+                    (this.AutomaticallyImportSalesOrders != null &&
+                    this.AutomaticallyImportSalesOrders.Equals(input.AutomaticallyImportSalesOrders))
+                ) && 
                 (
                     this.UnpaidStatus == input.UnpaidStatus ||
                     this.UnpaidStatus != null &&
@@ -208,6 +222,8 @@ namespace ShipEngine.ApiClient.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.AutomaticallyImportSalesOrders != null)
+                    hashCode = hashCode * 59 + this.AutomaticallyImportSalesOrders.GetHashCode();
                 if (this.UnpaidStatus != null)
                     hashCode = hashCode * 59 + this.UnpaidStatus.GetHashCode();
                 if (this.PaidStatus != null)

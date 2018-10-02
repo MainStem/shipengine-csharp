@@ -90,6 +90,14 @@ namespace ShipEngine.ApiClient.Test
         {
             // TODO unit test for the property 'Type'
         }
+        /// <summary>
+        /// Test the property 'DetailCode'
+        /// </summary>
+        [Test]
+        public void DetailCodeTest()
+        {
+            // TODO unit test for the property 'DetailCode'
+        }
 
     }
 

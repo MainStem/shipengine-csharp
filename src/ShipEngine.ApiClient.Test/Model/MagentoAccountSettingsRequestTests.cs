@@ -67,6 +67,14 @@ namespace ShipEngine.ApiClient.Test
 
 
         /// <summary>
+        /// Test the property 'AutomaticallyImportSalesOrders'
+        /// </summary>
+        [Test]
+        public void AutomaticallyImportSalesOrdersTest()
+        {
+            // TODO unit test for the property 'AutomaticallyImportSalesOrders'
+        }
+        /// <summary>
         /// Test the property 'UnpaidStatus'
         /// </summary>
         [Test]

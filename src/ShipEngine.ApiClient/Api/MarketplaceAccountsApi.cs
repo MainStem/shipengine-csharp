@@ -123,6 +123,265 @@ namespace ShipEngine.ApiClient.Api
         /// 
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns></returns>
+        void AmazonAccountUpdateSettings (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> AmazonAccountUpdateSettingsWithHttpInfo (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectMarketplaceResponseDTO</returns>
+        ConnectMarketplaceResponseDTO AmazonCaAccountConnect (AmazonAccountInformationRequest accountInfo, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectMarketplaceResponseDTO</returns>
+        ApiResponse<ConnectMarketplaceResponseDTO> AmazonCaAccountConnectWithHttpInfo (AmazonAccountInformationRequest accountInfo, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void AmazonCaAccountDeactivate (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> AmazonCaAccountDeactivateWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void AmazonCaAccountReactivate (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> AmazonCaAccountReactivateWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void AmazonCaAccountTest (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> AmazonCaAccountTestWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns></returns>
+        void AmazonCaAccountUpdateSettings (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> AmazonCaAccountUpdateSettingsWithHttpInfo (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectMarketplaceResponseDTO</returns>
+        ConnectMarketplaceResponseDTO BrightpearlAccountConnect (BrightpearlAccountInformationRequest accountInfo, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectMarketplaceResponseDTO</returns>
+        ApiResponse<ConnectMarketplaceResponseDTO> BrightpearlAccountConnectWithHttpInfo (BrightpearlAccountInformationRequest accountInfo, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void BrightpearlAccountDeactivate (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> BrightpearlAccountDeactivateWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void BrightpearlAccountReactivate (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> BrightpearlAccountReactivateWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void BrightpearlAccountTest (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> BrightpearlAccountTestWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void BrightpearlAccountUpdateSettings (Guid? storeId, BrightpearlAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> BrightpearlAccountUpdateSettingsWithHttpInfo (Guid? storeId, BrightpearlAccountSettingsRequest accountSettingsRequest, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountInfo"></param>
         /// <param name="apiKey">API Key</param>
         /// <returns>ConnectMarketplaceResponseDTO</returns>
@@ -208,6 +467,31 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="apiKey">API Key</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> ChannelAdvisorAccountTestWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void ChannelAdvisorAccountUpdateSettings (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> ChannelAdvisorAccountUpdateSettingsWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
         /// <summary>
         /// 
         /// </summary>
@@ -307,6 +591,31 @@ namespace ShipEngine.ApiClient.Api
         /// 
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void EbayAccountUpdateSettings (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> EbayAccountUpdateSettingsWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accessTokenInfo"></param>
         /// <param name="apiKey">API Key</param>
         /// <returns>ConnectMarketplaceResponseDTO</returns>
@@ -392,6 +701,31 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="apiKey">API Key</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> EtsyAccountTestWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void EtsyAccountUpdateSettings (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> EtsyAccountUpdateSettingsWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
         /// <summary>
         /// 
         /// </summary>
@@ -491,6 +825,31 @@ namespace ShipEngine.ApiClient.Api
         /// 
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void MagentoAccountUpdateSettings (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> MagentoAccountUpdateSettingsWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accessTokenInfo"></param>
         /// <param name="apiKey">API Key</param>
         /// <returns>ConnectMarketplaceResponseDTO</returns>
@@ -576,6 +935,148 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="apiKey">API Key</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> ShopifyAccountTestWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void ShopifyAccountUpdateSettings (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> ShopifyAccountUpdateSettingsWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accessTokenInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectMarketplaceResponseDTO</returns>
+        ConnectMarketplaceResponseDTO ThreeDCartAccountConnect (ThreeDCartAccessTokenRequest accessTokenInfo, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accessTokenInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectMarketplaceResponseDTO</returns>
+        ApiResponse<ConnectMarketplaceResponseDTO> ThreeDCartAccountConnectWithHttpInfo (ThreeDCartAccessTokenRequest accessTokenInfo, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void ThreeDCartAccountDeactivate (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> ThreeDCartAccountDeactivateWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void ThreeDCartAccountReactivate (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> ThreeDCartAccountReactivateWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void ThreeDCartAccountTest (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> ThreeDCartAccountTestWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void ThreeDCartAccountUpdateSettings (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> ThreeDCartAccountUpdateSettingsWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -677,6 +1178,265 @@ namespace ShipEngine.ApiClient.Api
         /// 
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task AmazonAccountUpdateSettingsAsync (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> AmazonAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectMarketplaceResponseDTO</returns>
+        System.Threading.Tasks.Task<ConnectMarketplaceResponseDTO> AmazonCaAccountConnectAsync (AmazonAccountInformationRequest accountInfo, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectMarketplaceResponseDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ConnectMarketplaceResponseDTO>> AmazonCaAccountConnectAsyncWithHttpInfo (AmazonAccountInformationRequest accountInfo, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task AmazonCaAccountDeactivateAsync (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> AmazonCaAccountDeactivateAsyncWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task AmazonCaAccountReactivateAsync (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> AmazonCaAccountReactivateAsyncWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task AmazonCaAccountTestAsync (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> AmazonCaAccountTestAsyncWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task AmazonCaAccountUpdateSettingsAsync (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> AmazonCaAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectMarketplaceResponseDTO</returns>
+        System.Threading.Tasks.Task<ConnectMarketplaceResponseDTO> BrightpearlAccountConnectAsync (BrightpearlAccountInformationRequest accountInfo, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectMarketplaceResponseDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ConnectMarketplaceResponseDTO>> BrightpearlAccountConnectAsyncWithHttpInfo (BrightpearlAccountInformationRequest accountInfo, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task BrightpearlAccountDeactivateAsync (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> BrightpearlAccountDeactivateAsyncWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task BrightpearlAccountReactivateAsync (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> BrightpearlAccountReactivateAsyncWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task BrightpearlAccountTestAsync (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> BrightpearlAccountTestAsyncWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task BrightpearlAccountUpdateSettingsAsync (Guid? storeId, BrightpearlAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> BrightpearlAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, BrightpearlAccountSettingsRequest accountSettingsRequest, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountInfo"></param>
         /// <param name="apiKey">API Key</param>
         /// <returns>Task of ConnectMarketplaceResponseDTO</returns>
@@ -762,6 +1522,31 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="apiKey">API Key</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> ChannelAdvisorAccountTestAsyncWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task ChannelAdvisorAccountUpdateSettingsAsync (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> ChannelAdvisorAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
         /// <summary>
         /// 
         /// </summary>
@@ -861,6 +1646,31 @@ namespace ShipEngine.ApiClient.Api
         /// 
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task EbayAccountUpdateSettingsAsync (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> EbayAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accessTokenInfo"></param>
         /// <param name="apiKey">API Key</param>
         /// <returns>Task of ConnectMarketplaceResponseDTO</returns>
@@ -946,6 +1756,31 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="apiKey">API Key</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> EtsyAccountTestAsyncWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task EtsyAccountUpdateSettingsAsync (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> EtsyAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
         /// <summary>
         /// 
         /// </summary>
@@ -1045,6 +1880,31 @@ namespace ShipEngine.ApiClient.Api
         /// 
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task MagentoAccountUpdateSettingsAsync (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> MagentoAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accessTokenInfo"></param>
         /// <param name="apiKey">API Key</param>
         /// <returns>Task of ConnectMarketplaceResponseDTO</returns>
@@ -1130,6 +1990,148 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="apiKey">API Key</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> ShopifyAccountTestAsyncWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task ShopifyAccountUpdateSettingsAsync (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> ShopifyAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accessTokenInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectMarketplaceResponseDTO</returns>
+        System.Threading.Tasks.Task<ConnectMarketplaceResponseDTO> ThreeDCartAccountConnectAsync (ThreeDCartAccessTokenRequest accessTokenInfo, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accessTokenInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectMarketplaceResponseDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ConnectMarketplaceResponseDTO>> ThreeDCartAccountConnectAsyncWithHttpInfo (ThreeDCartAccessTokenRequest accessTokenInfo, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task ThreeDCartAccountDeactivateAsync (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> ThreeDCartAccountDeactivateAsyncWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task ThreeDCartAccountReactivateAsync (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> ThreeDCartAccountReactivateAsyncWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task ThreeDCartAccountTestAsync (Guid? storeId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> ThreeDCartAccountTestAsyncWithHttpInfo (Guid? storeId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task ThreeDCartAccountUpdateSettingsAsync (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> ThreeDCartAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey);
         #endregion Asynchronous Operations
     }
 
@@ -1874,6 +2876,1801 @@ namespace ShipEngine.ApiClient.Api
         ///  
         /// </summary>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns></returns>
+        public void AmazonAccountUpdateSettings (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null)
+        {
+             AmazonAccountUpdateSettingsWithHttpInfo(storeId, apiKey, accountSettingsRequestAutomaticallyImportSalesOrders);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> AmazonAccountUpdateSettingsWithHttpInfo (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->AmazonAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->AmazonAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/amazon/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (accountSettingsRequestAutomaticallyImportSalesOrders != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "accountSettingsRequest.automatically_import_sales_orders", accountSettingsRequestAutomaticallyImportSalesOrders)); // query parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AmazonAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task AmazonAccountUpdateSettingsAsync (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null)
+        {
+             await AmazonAccountUpdateSettingsAsyncWithHttpInfo(storeId, apiKey, accountSettingsRequestAutomaticallyImportSalesOrders);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> AmazonAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->AmazonAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->AmazonAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/amazon/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (accountSettingsRequestAutomaticallyImportSalesOrders != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "accountSettingsRequest.automatically_import_sales_orders", accountSettingsRequestAutomaticallyImportSalesOrders)); // query parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AmazonAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectMarketplaceResponseDTO</returns>
+        public ConnectMarketplaceResponseDTO AmazonCaAccountConnect (AmazonAccountInformationRequest accountInfo, string apiKey)
+        {
+             ApiResponse<ConnectMarketplaceResponseDTO> localVarResponse = AmazonCaAccountConnectWithHttpInfo(accountInfo, apiKey);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectMarketplaceResponseDTO</returns>
+        public ApiResponse< ConnectMarketplaceResponseDTO > AmazonCaAccountConnectWithHttpInfo (AmazonAccountInformationRequest accountInfo, string apiKey)
+        {
+            // verify the required parameter 'accountInfo' is set
+            if (accountInfo == null)
+                throw new ApiException(400, "Missing required parameter 'accountInfo' when calling MarketplaceAccountsApi->AmazonCaAccountConnect");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->AmazonCaAccountConnect");
+
+            var localVarPath = "/v-beta/connections/marketplaces/amazon_ca";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountInfo != null && accountInfo.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountInfo); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountInfo; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AmazonCaAccountConnect", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectMarketplaceResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectMarketplaceResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectMarketplaceResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectMarketplaceResponseDTO</returns>
+        public async System.Threading.Tasks.Task<ConnectMarketplaceResponseDTO> AmazonCaAccountConnectAsync (AmazonAccountInformationRequest accountInfo, string apiKey)
+        {
+             ApiResponse<ConnectMarketplaceResponseDTO> localVarResponse = await AmazonCaAccountConnectAsyncWithHttpInfo(accountInfo, apiKey);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectMarketplaceResponseDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ConnectMarketplaceResponseDTO>> AmazonCaAccountConnectAsyncWithHttpInfo (AmazonAccountInformationRequest accountInfo, string apiKey)
+        {
+            // verify the required parameter 'accountInfo' is set
+            if (accountInfo == null)
+                throw new ApiException(400, "Missing required parameter 'accountInfo' when calling MarketplaceAccountsApi->AmazonCaAccountConnect");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->AmazonCaAccountConnect");
+
+            var localVarPath = "/v-beta/connections/marketplaces/amazon_ca";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountInfo != null && accountInfo.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountInfo); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountInfo; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AmazonCaAccountConnect", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectMarketplaceResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectMarketplaceResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectMarketplaceResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void AmazonCaAccountDeactivate (Guid? storeId, string apiKey)
+        {
+             AmazonCaAccountDeactivateWithHttpInfo(storeId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> AmazonCaAccountDeactivateWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->AmazonCaAccountDeactivate");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->AmazonCaAccountDeactivate");
+
+            var localVarPath = "/v-beta/connections/marketplaces/amazon_ca/{store_id}/deactivate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AmazonCaAccountDeactivate", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task AmazonCaAccountDeactivateAsync (Guid? storeId, string apiKey)
+        {
+             await AmazonCaAccountDeactivateAsyncWithHttpInfo(storeId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> AmazonCaAccountDeactivateAsyncWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->AmazonCaAccountDeactivate");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->AmazonCaAccountDeactivate");
+
+            var localVarPath = "/v-beta/connections/marketplaces/amazon_ca/{store_id}/deactivate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AmazonCaAccountDeactivate", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void AmazonCaAccountReactivate (Guid? storeId, string apiKey)
+        {
+             AmazonCaAccountReactivateWithHttpInfo(storeId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> AmazonCaAccountReactivateWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->AmazonCaAccountReactivate");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->AmazonCaAccountReactivate");
+
+            var localVarPath = "/v-beta/connections/marketplaces/amazon_ca/{store_id}/reactivate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AmazonCaAccountReactivate", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task AmazonCaAccountReactivateAsync (Guid? storeId, string apiKey)
+        {
+             await AmazonCaAccountReactivateAsyncWithHttpInfo(storeId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> AmazonCaAccountReactivateAsyncWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->AmazonCaAccountReactivate");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->AmazonCaAccountReactivate");
+
+            var localVarPath = "/v-beta/connections/marketplaces/amazon_ca/{store_id}/reactivate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AmazonCaAccountReactivate", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void AmazonCaAccountTest (Guid? storeId, string apiKey)
+        {
+             AmazonCaAccountTestWithHttpInfo(storeId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> AmazonCaAccountTestWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->AmazonCaAccountTest");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->AmazonCaAccountTest");
+
+            var localVarPath = "/v-beta/connections/marketplaces/amazon_ca/{store_id}/test";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AmazonCaAccountTest", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task AmazonCaAccountTestAsync (Guid? storeId, string apiKey)
+        {
+             await AmazonCaAccountTestAsyncWithHttpInfo(storeId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> AmazonCaAccountTestAsyncWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->AmazonCaAccountTest");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->AmazonCaAccountTest");
+
+            var localVarPath = "/v-beta/connections/marketplaces/amazon_ca/{store_id}/test";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AmazonCaAccountTest", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns></returns>
+        public void AmazonCaAccountUpdateSettings (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null)
+        {
+             AmazonCaAccountUpdateSettingsWithHttpInfo(storeId, apiKey, accountSettingsRequestAutomaticallyImportSalesOrders);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> AmazonCaAccountUpdateSettingsWithHttpInfo (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->AmazonCaAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->AmazonCaAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/amazon_ca/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (accountSettingsRequestAutomaticallyImportSalesOrders != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "accountSettingsRequest.automatically_import_sales_orders", accountSettingsRequestAutomaticallyImportSalesOrders)); // query parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AmazonCaAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task AmazonCaAccountUpdateSettingsAsync (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null)
+        {
+             await AmazonCaAccountUpdateSettingsAsyncWithHttpInfo(storeId, apiKey, accountSettingsRequestAutomaticallyImportSalesOrders);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <param name="accountSettingsRequestAutomaticallyImportSalesOrders"> (optional)</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> AmazonCaAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, string apiKey, bool? accountSettingsRequestAutomaticallyImportSalesOrders = null)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->AmazonCaAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->AmazonCaAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/amazon_ca/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (accountSettingsRequestAutomaticallyImportSalesOrders != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "accountSettingsRequest.automatically_import_sales_orders", accountSettingsRequestAutomaticallyImportSalesOrders)); // query parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AmazonCaAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectMarketplaceResponseDTO</returns>
+        public ConnectMarketplaceResponseDTO BrightpearlAccountConnect (BrightpearlAccountInformationRequest accountInfo, string apiKey)
+        {
+             ApiResponse<ConnectMarketplaceResponseDTO> localVarResponse = BrightpearlAccountConnectWithHttpInfo(accountInfo, apiKey);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectMarketplaceResponseDTO</returns>
+        public ApiResponse< ConnectMarketplaceResponseDTO > BrightpearlAccountConnectWithHttpInfo (BrightpearlAccountInformationRequest accountInfo, string apiKey)
+        {
+            // verify the required parameter 'accountInfo' is set
+            if (accountInfo == null)
+                throw new ApiException(400, "Missing required parameter 'accountInfo' when calling MarketplaceAccountsApi->BrightpearlAccountConnect");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->BrightpearlAccountConnect");
+
+            var localVarPath = "/v-beta/connections/marketplaces/brightpearl";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountInfo != null && accountInfo.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountInfo); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountInfo; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("BrightpearlAccountConnect", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectMarketplaceResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectMarketplaceResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectMarketplaceResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectMarketplaceResponseDTO</returns>
+        public async System.Threading.Tasks.Task<ConnectMarketplaceResponseDTO> BrightpearlAccountConnectAsync (BrightpearlAccountInformationRequest accountInfo, string apiKey)
+        {
+             ApiResponse<ConnectMarketplaceResponseDTO> localVarResponse = await BrightpearlAccountConnectAsyncWithHttpInfo(accountInfo, apiKey);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectMarketplaceResponseDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ConnectMarketplaceResponseDTO>> BrightpearlAccountConnectAsyncWithHttpInfo (BrightpearlAccountInformationRequest accountInfo, string apiKey)
+        {
+            // verify the required parameter 'accountInfo' is set
+            if (accountInfo == null)
+                throw new ApiException(400, "Missing required parameter 'accountInfo' when calling MarketplaceAccountsApi->BrightpearlAccountConnect");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->BrightpearlAccountConnect");
+
+            var localVarPath = "/v-beta/connections/marketplaces/brightpearl";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountInfo != null && accountInfo.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountInfo); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountInfo; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("BrightpearlAccountConnect", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectMarketplaceResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectMarketplaceResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectMarketplaceResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void BrightpearlAccountDeactivate (Guid? storeId, string apiKey)
+        {
+             BrightpearlAccountDeactivateWithHttpInfo(storeId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> BrightpearlAccountDeactivateWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->BrightpearlAccountDeactivate");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->BrightpearlAccountDeactivate");
+
+            var localVarPath = "/v-beta/connections/marketplaces/brightpearl/{store_id}/deactivate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("BrightpearlAccountDeactivate", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task BrightpearlAccountDeactivateAsync (Guid? storeId, string apiKey)
+        {
+             await BrightpearlAccountDeactivateAsyncWithHttpInfo(storeId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> BrightpearlAccountDeactivateAsyncWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->BrightpearlAccountDeactivate");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->BrightpearlAccountDeactivate");
+
+            var localVarPath = "/v-beta/connections/marketplaces/brightpearl/{store_id}/deactivate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("BrightpearlAccountDeactivate", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void BrightpearlAccountReactivate (Guid? storeId, string apiKey)
+        {
+             BrightpearlAccountReactivateWithHttpInfo(storeId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> BrightpearlAccountReactivateWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->BrightpearlAccountReactivate");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->BrightpearlAccountReactivate");
+
+            var localVarPath = "/v-beta/connections/marketplaces/brightpearl/{store_id}/reactivate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("BrightpearlAccountReactivate", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task BrightpearlAccountReactivateAsync (Guid? storeId, string apiKey)
+        {
+             await BrightpearlAccountReactivateAsyncWithHttpInfo(storeId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> BrightpearlAccountReactivateAsyncWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->BrightpearlAccountReactivate");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->BrightpearlAccountReactivate");
+
+            var localVarPath = "/v-beta/connections/marketplaces/brightpearl/{store_id}/reactivate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("BrightpearlAccountReactivate", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void BrightpearlAccountTest (Guid? storeId, string apiKey)
+        {
+             BrightpearlAccountTestWithHttpInfo(storeId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> BrightpearlAccountTestWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->BrightpearlAccountTest");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->BrightpearlAccountTest");
+
+            var localVarPath = "/v-beta/connections/marketplaces/brightpearl/{store_id}/test";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("BrightpearlAccountTest", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task BrightpearlAccountTestAsync (Guid? storeId, string apiKey)
+        {
+             await BrightpearlAccountTestAsyncWithHttpInfo(storeId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> BrightpearlAccountTestAsyncWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->BrightpearlAccountTest");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->BrightpearlAccountTest");
+
+            var localVarPath = "/v-beta/connections/marketplaces/brightpearl/{store_id}/test";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("BrightpearlAccountTest", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void BrightpearlAccountUpdateSettings (Guid? storeId, BrightpearlAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             BrightpearlAccountUpdateSettingsWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> BrightpearlAccountUpdateSettingsWithHttpInfo (Guid? storeId, BrightpearlAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->BrightpearlAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->BrightpearlAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->BrightpearlAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/brightpearl/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("BrightpearlAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task BrightpearlAccountUpdateSettingsAsync (Guid? storeId, BrightpearlAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             await BrightpearlAccountUpdateSettingsAsyncWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> BrightpearlAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, BrightpearlAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->BrightpearlAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->BrightpearlAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->BrightpearlAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/brightpearl/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("BrightpearlAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountInfo"></param>
         /// <param name="apiKey">API Key</param>
         /// <returns>ConnectMarketplaceResponseDTO</returns>
@@ -2502,6 +5299,191 @@ namespace ShipEngine.ApiClient.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("ChannelAdvisorAccountTest", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void ChannelAdvisorAccountUpdateSettings (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             ChannelAdvisorAccountUpdateSettingsWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> ChannelAdvisorAccountUpdateSettingsWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->ChannelAdvisorAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->ChannelAdvisorAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ChannelAdvisorAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/channeladvisor/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ChannelAdvisorAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task ChannelAdvisorAccountUpdateSettingsAsync (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             await ChannelAdvisorAccountUpdateSettingsAsyncWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> ChannelAdvisorAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->ChannelAdvisorAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->ChannelAdvisorAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ChannelAdvisorAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/channeladvisor/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ChannelAdvisorAccountUpdateSettings", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -3154,6 +6136,191 @@ namespace ShipEngine.ApiClient.Api
         ///  
         /// </summary>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void EbayAccountUpdateSettings (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             EbayAccountUpdateSettingsWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> EbayAccountUpdateSettingsWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->EbayAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->EbayAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->EbayAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/ebay/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("EbayAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task EbayAccountUpdateSettingsAsync (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             await EbayAccountUpdateSettingsAsyncWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> EbayAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->EbayAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->EbayAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->EbayAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/ebay/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("EbayAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accessTokenInfo"></param>
         /// <param name="apiKey">API Key</param>
         /// <returns>ConnectMarketplaceResponseDTO</returns>
@@ -3782,6 +6949,191 @@ namespace ShipEngine.ApiClient.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("EtsyAccountTest", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void EtsyAccountUpdateSettings (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             EtsyAccountUpdateSettingsWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> EtsyAccountUpdateSettingsWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->EtsyAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->EtsyAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->EtsyAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/etsy/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("EtsyAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task EtsyAccountUpdateSettingsAsync (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             await EtsyAccountUpdateSettingsAsyncWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> EtsyAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->EtsyAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->EtsyAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->EtsyAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/etsy/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("EtsyAccountUpdateSettings", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -4434,6 +7786,191 @@ namespace ShipEngine.ApiClient.Api
         ///  
         /// </summary>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void MagentoAccountUpdateSettings (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             MagentoAccountUpdateSettingsWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> MagentoAccountUpdateSettingsWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->MagentoAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->MagentoAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->MagentoAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/magento/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("MagentoAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task MagentoAccountUpdateSettingsAsync (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             await MagentoAccountUpdateSettingsAsyncWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> MagentoAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->MagentoAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->MagentoAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->MagentoAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/magento/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("MagentoAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accessTokenInfo"></param>
         /// <param name="apiKey">API Key</param>
         /// <returns>ConnectMarketplaceResponseDTO</returns>
@@ -5062,6 +8599,1016 @@ namespace ShipEngine.ApiClient.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("ShopifyAccountTest", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void ShopifyAccountUpdateSettings (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             ShopifyAccountUpdateSettingsWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> ShopifyAccountUpdateSettingsWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->ShopifyAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->ShopifyAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ShopifyAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/shopify/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ShopifyAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task ShopifyAccountUpdateSettingsAsync (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             await ShopifyAccountUpdateSettingsAsyncWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> ShopifyAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->ShopifyAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->ShopifyAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ShopifyAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/shopify/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ShopifyAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accessTokenInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectMarketplaceResponseDTO</returns>
+        public ConnectMarketplaceResponseDTO ThreeDCartAccountConnect (ThreeDCartAccessTokenRequest accessTokenInfo, string apiKey)
+        {
+             ApiResponse<ConnectMarketplaceResponseDTO> localVarResponse = ThreeDCartAccountConnectWithHttpInfo(accessTokenInfo, apiKey);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accessTokenInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectMarketplaceResponseDTO</returns>
+        public ApiResponse< ConnectMarketplaceResponseDTO > ThreeDCartAccountConnectWithHttpInfo (ThreeDCartAccessTokenRequest accessTokenInfo, string apiKey)
+        {
+            // verify the required parameter 'accessTokenInfo' is set
+            if (accessTokenInfo == null)
+                throw new ApiException(400, "Missing required parameter 'accessTokenInfo' when calling MarketplaceAccountsApi->ThreeDCartAccountConnect");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ThreeDCartAccountConnect");
+
+            var localVarPath = "/v-beta/connections/marketplaces/threedcart/access_token";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accessTokenInfo != null && accessTokenInfo.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accessTokenInfo); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accessTokenInfo; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ThreeDCartAccountConnect", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectMarketplaceResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectMarketplaceResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectMarketplaceResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accessTokenInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectMarketplaceResponseDTO</returns>
+        public async System.Threading.Tasks.Task<ConnectMarketplaceResponseDTO> ThreeDCartAccountConnectAsync (ThreeDCartAccessTokenRequest accessTokenInfo, string apiKey)
+        {
+             ApiResponse<ConnectMarketplaceResponseDTO> localVarResponse = await ThreeDCartAccountConnectAsyncWithHttpInfo(accessTokenInfo, apiKey);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accessTokenInfo"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectMarketplaceResponseDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ConnectMarketplaceResponseDTO>> ThreeDCartAccountConnectAsyncWithHttpInfo (ThreeDCartAccessTokenRequest accessTokenInfo, string apiKey)
+        {
+            // verify the required parameter 'accessTokenInfo' is set
+            if (accessTokenInfo == null)
+                throw new ApiException(400, "Missing required parameter 'accessTokenInfo' when calling MarketplaceAccountsApi->ThreeDCartAccountConnect");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ThreeDCartAccountConnect");
+
+            var localVarPath = "/v-beta/connections/marketplaces/threedcart/access_token";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accessTokenInfo != null && accessTokenInfo.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accessTokenInfo); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accessTokenInfo; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ThreeDCartAccountConnect", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectMarketplaceResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectMarketplaceResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectMarketplaceResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void ThreeDCartAccountDeactivate (Guid? storeId, string apiKey)
+        {
+             ThreeDCartAccountDeactivateWithHttpInfo(storeId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> ThreeDCartAccountDeactivateWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->ThreeDCartAccountDeactivate");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ThreeDCartAccountDeactivate");
+
+            var localVarPath = "/v-beta/connections/marketplaces/threedcart/{store_id}/deactivate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ThreeDCartAccountDeactivate", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task ThreeDCartAccountDeactivateAsync (Guid? storeId, string apiKey)
+        {
+             await ThreeDCartAccountDeactivateAsyncWithHttpInfo(storeId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> ThreeDCartAccountDeactivateAsyncWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->ThreeDCartAccountDeactivate");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ThreeDCartAccountDeactivate");
+
+            var localVarPath = "/v-beta/connections/marketplaces/threedcart/{store_id}/deactivate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ThreeDCartAccountDeactivate", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void ThreeDCartAccountReactivate (Guid? storeId, string apiKey)
+        {
+             ThreeDCartAccountReactivateWithHttpInfo(storeId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> ThreeDCartAccountReactivateWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->ThreeDCartAccountReactivate");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ThreeDCartAccountReactivate");
+
+            var localVarPath = "/v-beta/connections/marketplaces/threedcart/{store_id}/reactivate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ThreeDCartAccountReactivate", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task ThreeDCartAccountReactivateAsync (Guid? storeId, string apiKey)
+        {
+             await ThreeDCartAccountReactivateAsyncWithHttpInfo(storeId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> ThreeDCartAccountReactivateAsyncWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->ThreeDCartAccountReactivate");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ThreeDCartAccountReactivate");
+
+            var localVarPath = "/v-beta/connections/marketplaces/threedcart/{store_id}/reactivate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ThreeDCartAccountReactivate", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void ThreeDCartAccountTest (Guid? storeId, string apiKey)
+        {
+             ThreeDCartAccountTestWithHttpInfo(storeId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> ThreeDCartAccountTestWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->ThreeDCartAccountTest");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ThreeDCartAccountTest");
+
+            var localVarPath = "/v-beta/connections/marketplaces/threedcart/{store_id}/test";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ThreeDCartAccountTest", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task ThreeDCartAccountTestAsync (Guid? storeId, string apiKey)
+        {
+             await ThreeDCartAccountTestAsyncWithHttpInfo(storeId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> ThreeDCartAccountTestAsyncWithHttpInfo (Guid? storeId, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->ThreeDCartAccountTest");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ThreeDCartAccountTest");
+
+            var localVarPath = "/v-beta/connections/marketplaces/threedcart/{store_id}/test";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ThreeDCartAccountTest", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void ThreeDCartAccountUpdateSettings (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             ThreeDCartAccountUpdateSettingsWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> ThreeDCartAccountUpdateSettingsWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->ThreeDCartAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->ThreeDCartAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ThreeDCartAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/threedcart/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ThreeDCartAccountUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task ThreeDCartAccountUpdateSettingsAsync (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+             await ThreeDCartAccountUpdateSettingsAsyncWithHttpInfo(storeId, accountSettingsRequest, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="storeId"></param>
+        /// <param name="accountSettingsRequest"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> ThreeDCartAccountUpdateSettingsAsyncWithHttpInfo (Guid? storeId, DefaultAccountSettingsRequest accountSettingsRequest, string apiKey)
+        {
+            // verify the required parameter 'storeId' is set
+            if (storeId == null)
+                throw new ApiException(400, "Missing required parameter 'storeId' when calling MarketplaceAccountsApi->ThreeDCartAccountUpdateSettings");
+            // verify the required parameter 'accountSettingsRequest' is set
+            if (accountSettingsRequest == null)
+                throw new ApiException(400, "Missing required parameter 'accountSettingsRequest' when calling MarketplaceAccountsApi->ThreeDCartAccountUpdateSettings");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling MarketplaceAccountsApi->ThreeDCartAccountUpdateSettings");
+
+            var localVarPath = "/v-beta/connections/marketplaces/threedcart/{store_id}/settings";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (storeId != null) localVarPathParams.Add("store_id", this.Configuration.ApiClient.ParameterToString(storeId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (accountSettingsRequest != null && accountSettingsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(accountSettingsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = accountSettingsRequest; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ThreeDCartAccountUpdateSettings", localVarResponse);
                 if (exception != null) throw exception;
             }
 

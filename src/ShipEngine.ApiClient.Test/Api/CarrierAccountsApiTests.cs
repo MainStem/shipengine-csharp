@@ -143,6 +143,32 @@ namespace ShipEngine.ApiClient.Test
         }
         
         /// <summary>
+        /// Test DHLECommerceAccountCarrierConnectAccount
+        /// </summary>
+        [Test]
+        public void DHLECommerceAccountCarrierConnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //DHLECommerceAccountInformationDTO model = null;
+            //string apiKey = null;
+            //var response = instance.DHLECommerceAccountCarrierConnectAccount(model, apiKey);
+            //Assert.IsInstanceOf<ConnectAccountResponseDTO> (response, "response is ConnectAccountResponseDTO");
+        }
+        
+        /// <summary>
+        /// Test DHLECommerceAccountCarrierDisconnectAccount
+        /// </summary>
+        [Test]
+        public void DHLECommerceAccountCarrierDisconnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string carrierId = null;
+            //string apiKey = null;
+            //instance.DHLECommerceAccountCarrierDisconnectAccount(carrierId, apiKey);
+            
+        }
+        
+        /// <summary>
         /// Test DHLExpressAccountCarrierConnectAccount
         /// </summary>
         [Test]
@@ -178,7 +204,7 @@ namespace ShipEngine.ApiClient.Test
             //string carrierId = null;
             //string apiKey = null;
             //var response = instance.DHLExpressAccountCarrierGetSettings(carrierId, apiKey);
-            //Assert.IsInstanceOf<UPSAccountSettingsDTO> (response, "response is UPSAccountSettingsDTO");
+            //Assert.IsInstanceOf<DHLExpressAccountSettingsDTO> (response, "response is DHLExpressAccountSettingsDTO");
         }
         
         /// <summary>
@@ -192,6 +218,84 @@ namespace ShipEngine.ApiClient.Test
             //DHLExpressAccountSettingsDTO settings = null;
             //string apiKey = null;
             //instance.DHLExpressAccountCarrierUpdateSettings(carrierId, settings, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test DHLExpressCaAccountCarrierConnectAccount
+        /// </summary>
+        [Test]
+        public void DHLExpressCaAccountCarrierConnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //DHLExpressCaAccountInformationRequest model = null;
+            //string apiKey = null;
+            //var response = instance.DHLExpressCaAccountCarrierConnectAccount(model, apiKey);
+            //Assert.IsInstanceOf<ConnectAccountResponseDTO> (response, "response is ConnectAccountResponseDTO");
+        }
+        
+        /// <summary>
+        /// Test DHLExpressCaAccountCarrierDisconnectAccount
+        /// </summary>
+        [Test]
+        public void DHLExpressCaAccountCarrierDisconnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string carrierId = null;
+            //string apiKey = null;
+            //instance.DHLExpressCaAccountCarrierDisconnectAccount(carrierId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test DhlExpressUkAccountCarrierConnectAccount
+        /// </summary>
+        [Test]
+        public void DhlExpressUkAccountCarrierConnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //DHLExpressUkAccountInformationDTO model = null;
+            //string apiKey = null;
+            //var response = instance.DhlExpressUkAccountCarrierConnectAccount(model, apiKey);
+            //Assert.IsInstanceOf<ConnectAccountResponseDTO> (response, "response is ConnectAccountResponseDTO");
+        }
+        
+        /// <summary>
+        /// Test DhlExpressUkAccountCarrierDisconnectAccount
+        /// </summary>
+        [Test]
+        public void DhlExpressUkAccountCarrierDisconnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string carrierId = null;
+            //string apiKey = null;
+            //instance.DhlExpressUkAccountCarrierDisconnectAccount(carrierId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test DpdAccountCarrierConnectAccount
+        /// </summary>
+        [Test]
+        public void DpdAccountCarrierConnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //DpdAccountInformationRequest model = null;
+            //string apiKey = null;
+            //var response = instance.DpdAccountCarrierConnectAccount(model, apiKey);
+            //Assert.IsInstanceOf<ConnectAccountResponseDTO> (response, "response is ConnectAccountResponseDTO");
+        }
+        
+        /// <summary>
+        /// Test DpdAccountCarrierDisconnectAccount
+        /// </summary>
+        [Test]
+        public void DpdAccountCarrierDisconnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string carrierId = null;
+            //string apiKey = null;
+            //instance.DpdAccountCarrierDisconnectAccount(carrierId, apiKey);
             
         }
         
@@ -271,6 +375,32 @@ namespace ShipEngine.ApiClient.Test
             //FedExAccountSettingsDTO settings = null;
             //string apiKey = null;
             //instance.FedExAccountCarrierUpdateSettings(carrierId, settings, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test FedExUkAccountCarrierConnectAccount
+        /// </summary>
+        [Test]
+        public void FedExUkAccountCarrierConnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //FedExUkAccountInformationRequest model = null;
+            //string apiKey = null;
+            //var response = instance.FedExUkAccountCarrierConnectAccount(model, apiKey);
+            //Assert.IsInstanceOf<ConnectAccountResponseDTO> (response, "response is ConnectAccountResponseDTO");
+        }
+        
+        /// <summary>
+        /// Test FedExUkAccountCarrierDisconnectAccount
+        /// </summary>
+        [Test]
+        public void FedExUkAccountCarrierDisconnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string carrierId = null;
+            //string apiKey = null;
+            //instance.FedExUkAccountCarrierDisconnectAccount(carrierId, apiKey);
             
         }
         
@@ -415,6 +545,58 @@ namespace ShipEngine.ApiClient.Test
             //string carrierId = null;
             //string apiKey = null;
             //instance.OnTracAccountCarrierDisconnectAccount(carrierId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test PurolatorAccountCarrierConnectAccount
+        /// </summary>
+        [Test]
+        public void PurolatorAccountCarrierConnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //PurolatorAccountInformationRequest model = null;
+            //string apiKey = null;
+            //var response = instance.PurolatorAccountCarrierConnectAccount(model, apiKey);
+            //Assert.IsInstanceOf<ConnectAccountResponseDTO> (response, "response is ConnectAccountResponseDTO");
+        }
+        
+        /// <summary>
+        /// Test PurolatorAccountCarrierDisconnectAccount
+        /// </summary>
+        [Test]
+        public void PurolatorAccountCarrierDisconnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string carrierId = null;
+            //string apiKey = null;
+            //instance.PurolatorAccountCarrierDisconnectAccount(carrierId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test RoyalMailAccountCarrierConnectAccount
+        /// </summary>
+        [Test]
+        public void RoyalMailAccountCarrierConnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //RoyalMailAccountInformationRequest model = null;
+            //string apiKey = null;
+            //var response = instance.RoyalMailAccountCarrierConnectAccount(model, apiKey);
+            //Assert.IsInstanceOf<ConnectAccountResponseDTO> (response, "response is ConnectAccountResponseDTO");
+        }
+        
+        /// <summary>
+        /// Test RoyalMailAccountCarrierDisconnectAccount
+        /// </summary>
+        [Test]
+        public void RoyalMailAccountCarrierDisconnectAccountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string carrierId = null;
+            //string apiKey = null;
+            //instance.RoyalMailAccountCarrierDisconnectAccount(carrierId, apiKey);
             
         }
         

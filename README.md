@@ -116,16 +116,26 @@ Class | Method | HTTP request | Description
 *CarrierAccountsApi* | [**ApcAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#apcaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/apc/{carrier_id} | 
 *CarrierAccountsApi* | [**AsendiaAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#asendiaaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/asendia | 
 *CarrierAccountsApi* | [**AsendiaAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#asendiaaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/asendia/{carrier_id} | 
+*CarrierAccountsApi* | [**DHLECommerceAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#dhlecommerceaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/dhl_ecommerce | 
+*CarrierAccountsApi* | [**DHLECommerceAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#dhlecommerceaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/dhl_ecommerce/{carrier_id} | 
 *CarrierAccountsApi* | [**DHLExpressAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#dhlexpressaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/dhl_express | 
 *CarrierAccountsApi* | [**DHLExpressAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#dhlexpressaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/dhl_express/{carrier_id} | 
 *CarrierAccountsApi* | [**DHLExpressAccountCarrierGetSettings**](docs/CarrierAccountsApi.md#dhlexpressaccountcarriergetsettings) | **GET** /v1/connections/carriers/dhl_express/{carrier_id}/settings | 
 *CarrierAccountsApi* | [**DHLExpressAccountCarrierUpdateSettings**](docs/CarrierAccountsApi.md#dhlexpressaccountcarrierupdatesettings) | **PUT** /v1/connections/carriers/dhl_express/{carrier_id}/settings | 
+*CarrierAccountsApi* | [**DHLExpressCaAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#dhlexpresscaaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/dhl_express_ca | 
+*CarrierAccountsApi* | [**DHLExpressCaAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#dhlexpresscaaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/dhl_express_ca/{carrier_id} | 
+*CarrierAccountsApi* | [**DhlExpressUkAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#dhlexpressukaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/dhl_express_uk | 
+*CarrierAccountsApi* | [**DhlExpressUkAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#dhlexpressukaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/dhl_express_uk/{carrier_id} | 
+*CarrierAccountsApi* | [**DpdAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#dpdaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/dpd | 
+*CarrierAccountsApi* | [**DpdAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#dpdaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/dpd/{carrier_id} | 
 *CarrierAccountsApi* | [**EndiciaAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#endiciaaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/endicia | 
 *CarrierAccountsApi* | [**EndiciaAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#endiciaaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/endicia/{carrier_id} | 
 *CarrierAccountsApi* | [**FedExAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#fedexaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/fedex | 
 *CarrierAccountsApi* | [**FedExAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#fedexaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/fedex/{carrier_id} | 
 *CarrierAccountsApi* | [**FedExAccountCarrierGetSettings**](docs/CarrierAccountsApi.md#fedexaccountcarriergetsettings) | **GET** /v1/connections/carriers/fedex/{carrier_id}/settings | 
 *CarrierAccountsApi* | [**FedExAccountCarrierUpdateSettings**](docs/CarrierAccountsApi.md#fedexaccountcarrierupdatesettings) | **PUT** /v1/connections/carriers/fedex/{carrier_id}/settings | 
+*CarrierAccountsApi* | [**FedExUkAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#fedexukaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/fedex_uk | 
+*CarrierAccountsApi* | [**FedExUkAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#fedexukaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/fedex_uk/{carrier_id} | 
 *CarrierAccountsApi* | [**FirstMileAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#firstmileaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/firstmile | 
 *CarrierAccountsApi* | [**FirstMileAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#firstmileaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/firstmile/{carrier_id} | 
 *CarrierAccountsApi* | [**GlobegisticsAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#globegisticsaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/globegistics | 
@@ -137,6 +147,10 @@ Class | Method | HTTP request | Description
 *CarrierAccountsApi* | [**NewgisticsAccountCarrierUpdateSettings**](docs/CarrierAccountsApi.md#newgisticsaccountcarrierupdatesettings) | **PUT** /v1/connections/carriers/newgistics/{carrier_id}/settings | 
 *CarrierAccountsApi* | [**OnTracAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#ontracaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/ontrac | 
 *CarrierAccountsApi* | [**OnTracAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#ontracaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/ontrac/{carrier_id} | 
+*CarrierAccountsApi* | [**PurolatorAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#purolatoraccountcarrierconnectaccount) | **POST** /v1/connections/carriers/purolator_canada | 
+*CarrierAccountsApi* | [**PurolatorAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#purolatoraccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/purolator_canada/{carrier_id} | 
+*CarrierAccountsApi* | [**RoyalMailAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#royalmailaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/royal_mail | 
+*CarrierAccountsApi* | [**RoyalMailAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#royalmailaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/royal_mail/{carrier_id} | 
 *CarrierAccountsApi* | [**RrDonnelleyAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#rrdonnelleyaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/rr_donnelley | 
 *CarrierAccountsApi* | [**RrDonnelleyAccountCarrierDisconnectAccount**](docs/CarrierAccountsApi.md#rrdonnelleyaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/rr_donnelley/{carrier_id} | 
 *CarrierAccountsApi* | [**StampsAccountCarrierConnectAccount**](docs/CarrierAccountsApi.md#stampsaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/stamps_com | 
@@ -174,26 +188,49 @@ Class | Method | HTTP request | Description
 *MarketplaceAccountsApi* | [**AmazonAccountDeactivate**](docs/MarketplaceAccountsApi.md#amazonaccountdeactivate) | **PUT** /v-beta/connections/marketplaces/amazon/{store_id}/deactivate | 
 *MarketplaceAccountsApi* | [**AmazonAccountReactivate**](docs/MarketplaceAccountsApi.md#amazonaccountreactivate) | **PUT** /v-beta/connections/marketplaces/amazon/{store_id}/reactivate | 
 *MarketplaceAccountsApi* | [**AmazonAccountTest**](docs/MarketplaceAccountsApi.md#amazonaccounttest) | **GET** /v-beta/connections/marketplaces/amazon/{store_id}/test | 
+*MarketplaceAccountsApi* | [**AmazonAccountUpdateSettings**](docs/MarketplaceAccountsApi.md#amazonaccountupdatesettings) | **GET** /v-beta/connections/marketplaces/amazon/{store_id}/settings | 
+*MarketplaceAccountsApi* | [**AmazonCaAccountConnect**](docs/MarketplaceAccountsApi.md#amazoncaaccountconnect) | **POST** /v-beta/connections/marketplaces/amazon_ca | 
+*MarketplaceAccountsApi* | [**AmazonCaAccountDeactivate**](docs/MarketplaceAccountsApi.md#amazoncaaccountdeactivate) | **PUT** /v-beta/connections/marketplaces/amazon_ca/{store_id}/deactivate | 
+*MarketplaceAccountsApi* | [**AmazonCaAccountReactivate**](docs/MarketplaceAccountsApi.md#amazoncaaccountreactivate) | **PUT** /v-beta/connections/marketplaces/amazon_ca/{store_id}/reactivate | 
+*MarketplaceAccountsApi* | [**AmazonCaAccountTest**](docs/MarketplaceAccountsApi.md#amazoncaaccounttest) | **GET** /v-beta/connections/marketplaces/amazon_ca/{store_id}/test | 
+*MarketplaceAccountsApi* | [**AmazonCaAccountUpdateSettings**](docs/MarketplaceAccountsApi.md#amazoncaaccountupdatesettings) | **GET** /v-beta/connections/marketplaces/amazon_ca/{store_id}/settings | 
+*MarketplaceAccountsApi* | [**BrightpearlAccountConnect**](docs/MarketplaceAccountsApi.md#brightpearlaccountconnect) | **POST** /v-beta/connections/marketplaces/brightpearl | 
+*MarketplaceAccountsApi* | [**BrightpearlAccountDeactivate**](docs/MarketplaceAccountsApi.md#brightpearlaccountdeactivate) | **PUT** /v-beta/connections/marketplaces/brightpearl/{store_id}/deactivate | 
+*MarketplaceAccountsApi* | [**BrightpearlAccountReactivate**](docs/MarketplaceAccountsApi.md#brightpearlaccountreactivate) | **PUT** /v-beta/connections/marketplaces/brightpearl/{store_id}/reactivate | 
+*MarketplaceAccountsApi* | [**BrightpearlAccountTest**](docs/MarketplaceAccountsApi.md#brightpearlaccounttest) | **GET** /v-beta/connections/marketplaces/brightpearl/{store_id}/test | 
+*MarketplaceAccountsApi* | [**BrightpearlAccountUpdateSettings**](docs/MarketplaceAccountsApi.md#brightpearlaccountupdatesettings) | **PUT** /v-beta/connections/marketplaces/brightpearl/{store_id}/settings | 
 *MarketplaceAccountsApi* | [**ChannelAdvisorAccountConnect**](docs/MarketplaceAccountsApi.md#channeladvisoraccountconnect) | **POST** /v-beta/connections/marketplaces/channeladvisor | 
 *MarketplaceAccountsApi* | [**ChannelAdvisorAccountDeactivate**](docs/MarketplaceAccountsApi.md#channeladvisoraccountdeactivate) | **PUT** /v-beta/connections/marketplaces/channeladvisor/{store_id}/deactivate | 
 *MarketplaceAccountsApi* | [**ChannelAdvisorAccountReactivate**](docs/MarketplaceAccountsApi.md#channeladvisoraccountreactivate) | **PUT** /v-beta/connections/marketplaces/channeladvisor/{store_id}/reactivate | 
 *MarketplaceAccountsApi* | [**ChannelAdvisorAccountTest**](docs/MarketplaceAccountsApi.md#channeladvisoraccounttest) | **GET** /v-beta/connections/marketplaces/channeladvisor/{store_id}/test | 
+*MarketplaceAccountsApi* | [**ChannelAdvisorAccountUpdateSettings**](docs/MarketplaceAccountsApi.md#channeladvisoraccountupdatesettings) | **PUT** /v-beta/connections/marketplaces/channeladvisor/{store_id}/settings | 
 *MarketplaceAccountsApi* | [**EbayAccountConnectAccessToken**](docs/MarketplaceAccountsApi.md#ebayaccountconnectaccesstoken) | **POST** /v-beta/connections/marketplaces/ebay/access_token | 
 *MarketplaceAccountsApi* | [**EbayAccountDeactivate**](docs/MarketplaceAccountsApi.md#ebayaccountdeactivate) | **PUT** /v-beta/connections/marketplaces/ebay/{store_id}/deactivate | 
 *MarketplaceAccountsApi* | [**EbayAccountReactivate**](docs/MarketplaceAccountsApi.md#ebayaccountreactivate) | **PUT** /v-beta/connections/marketplaces/ebay/{store_id}/reactivate | 
 *MarketplaceAccountsApi* | [**EbayAccountTest**](docs/MarketplaceAccountsApi.md#ebayaccounttest) | **GET** /v-beta/connections/marketplaces/ebay/{store_id}/test | 
+*MarketplaceAccountsApi* | [**EbayAccountUpdateSettings**](docs/MarketplaceAccountsApi.md#ebayaccountupdatesettings) | **PUT** /v-beta/connections/marketplaces/ebay/{store_id}/settings | 
 *MarketplaceAccountsApi* | [**EtsyAccountConnect**](docs/MarketplaceAccountsApi.md#etsyaccountconnect) | **POST** /v-beta/connections/marketplaces/etsy/access_token | 
 *MarketplaceAccountsApi* | [**EtsyAccountDeactivate**](docs/MarketplaceAccountsApi.md#etsyaccountdeactivate) | **PUT** /v-beta/connections/marketplaces/etsy/{store_id}/deactivate | 
 *MarketplaceAccountsApi* | [**EtsyAccountReactivate**](docs/MarketplaceAccountsApi.md#etsyaccountreactivate) | **PUT** /v-beta/connections/marketplaces/etsy/{store_id}/reactivate | 
 *MarketplaceAccountsApi* | [**EtsyAccountTest**](docs/MarketplaceAccountsApi.md#etsyaccounttest) | **GET** /v-beta/connections/marketplaces/etsy/{store_id}/test | 
+*MarketplaceAccountsApi* | [**EtsyAccountUpdateSettings**](docs/MarketplaceAccountsApi.md#etsyaccountupdatesettings) | **PUT** /v-beta/connections/marketplaces/etsy/{store_id}/settings | 
 *MarketplaceAccountsApi* | [**MagentoAccountConnect**](docs/MarketplaceAccountsApi.md#magentoaccountconnect) | **POST** /v-beta/connections/marketplaces/magento | 
 *MarketplaceAccountsApi* | [**MagentoAccountDeactivate**](docs/MarketplaceAccountsApi.md#magentoaccountdeactivate) | **PUT** /v-beta/connections/marketplaces/magento/{store_id}/deactivate | 
 *MarketplaceAccountsApi* | [**MagentoAccountReactivate**](docs/MarketplaceAccountsApi.md#magentoaccountreactivate) | **PUT** /v-beta/connections/marketplaces/magento/{store_id}/reactivate | 
 *MarketplaceAccountsApi* | [**MagentoAccountTest**](docs/MarketplaceAccountsApi.md#magentoaccounttest) | **GET** /v-beta/connections/marketplaces/magento/{store_id}/test | 
+*MarketplaceAccountsApi* | [**MagentoAccountUpdateSettings**](docs/MarketplaceAccountsApi.md#magentoaccountupdatesettings) | **PUT** /v-beta/connections/marketplaces/magento/{store_id}/settings | 
 *MarketplaceAccountsApi* | [**ShopifyAccountConnectAccessToken**](docs/MarketplaceAccountsApi.md#shopifyaccountconnectaccesstoken) | **POST** /v-beta/connections/marketplaces/shopify/access_token | 
 *MarketplaceAccountsApi* | [**ShopifyAccountDeactivate**](docs/MarketplaceAccountsApi.md#shopifyaccountdeactivate) | **PUT** /v-beta/connections/marketplaces/shopify/{store_id}/deactivate | 
 *MarketplaceAccountsApi* | [**ShopifyAccountReactivate**](docs/MarketplaceAccountsApi.md#shopifyaccountreactivate) | **PUT** /v-beta/connections/marketplaces/shopify/{store_id}/reactivate | 
 *MarketplaceAccountsApi* | [**ShopifyAccountTest**](docs/MarketplaceAccountsApi.md#shopifyaccounttest) | **GET** /v-beta/connections/marketplaces/shopify/{store_id}/test | 
+*MarketplaceAccountsApi* | [**ShopifyAccountUpdateSettings**](docs/MarketplaceAccountsApi.md#shopifyaccountupdatesettings) | **PUT** /v-beta/connections/marketplaces/shopify/{store_id}/settings | 
+*MarketplaceAccountsApi* | [**ThreeDCartAccountConnect**](docs/MarketplaceAccountsApi.md#threedcartaccountconnect) | **POST** /v-beta/connections/marketplaces/threedcart/access_token | 
+*MarketplaceAccountsApi* | [**ThreeDCartAccountDeactivate**](docs/MarketplaceAccountsApi.md#threedcartaccountdeactivate) | **PUT** /v-beta/connections/marketplaces/threedcart/{store_id}/deactivate | 
+*MarketplaceAccountsApi* | [**ThreeDCartAccountReactivate**](docs/MarketplaceAccountsApi.md#threedcartaccountreactivate) | **PUT** /v-beta/connections/marketplaces/threedcart/{store_id}/reactivate | 
+*MarketplaceAccountsApi* | [**ThreeDCartAccountTest**](docs/MarketplaceAccountsApi.md#threedcartaccounttest) | **GET** /v-beta/connections/marketplaces/threedcart/{store_id}/test | 
+*MarketplaceAccountsApi* | [**ThreeDCartAccountUpdateSettings**](docs/MarketplaceAccountsApi.md#threedcartaccountupdatesettings) | **PUT** /v-beta/connections/marketplaces/threedcart/{store_id}/settings | 
+*NLPApi* | [**NLPRecognizeAddress**](docs/NLPApi.md#nlprecognizeaddress) | **PUT** /v1/addresses/recognize | Identifies address-related entities (name, line1, line2, city, postal code, etc.) in unstructured text 
+*NLPApi* | [**NLPRecognizeShipment**](docs/NLPApi.md#nlprecognizeshipment) | **PUT** /v1/shipments/recognize | Identifies shipment-related entities (names, address parts, package dimensions, weight, insurance options, etc.) in unstructured text 
 *PackagesApi* | [**PackagesCreate**](docs/PackagesApi.md#packagescreate) | **POST** /v1/packages | 
 *PackagesApi* | [**PackagesDelete**](docs/PackagesApi.md#packagesdelete) | **DELETE** /v1/packages/{package_id} | 
 *PackagesApi* | [**PackagesGet**](docs/PackagesApi.md#packagesget) | **GET** /v1/packages/{package_id} | 
@@ -244,6 +281,8 @@ Class | Method | HTTP request | Description
  - [Model.Batch](docs/Batch.md)
  - [Model.BatchResponseError](docs/BatchResponseError.md)
  - [Model.BatchResponseErrors](docs/BatchResponseErrors.md)
+ - [Model.BrightpearlAccountInformationRequest](docs/BrightpearlAccountInformationRequest.md)
+ - [Model.BrightpearlAccountSettingsRequest](docs/BrightpearlAccountSettingsRequest.md)
  - [Model.Carrier](docs/Carrier.md)
  - [Model.CarrierAdvancedOption](docs/CarrierAdvancedOption.md)
  - [Model.CarrierListOptionsResponse](docs/CarrierListOptionsResponse.md)
@@ -260,14 +299,20 @@ Class | Method | HTTP request | Description
  - [Model.CreateShipmentsResponse](docs/CreateShipmentsResponse.md)
  - [Model.CreateWebhookRequest](docs/CreateWebhookRequest.md)
  - [Model.CustomsItem](docs/CustomsItem.md)
+ - [Model.DHLECommerceAccountInformationDTO](docs/DHLECommerceAccountInformationDTO.md)
  - [Model.DHLExpressAccountInformationDTO](docs/DHLExpressAccountInformationDTO.md)
  - [Model.DHLExpressAccountSettingsDTO](docs/DHLExpressAccountSettingsDTO.md)
+ - [Model.DHLExpressCaAccountInformationRequest](docs/DHLExpressCaAccountInformationRequest.md)
+ - [Model.DHLExpressUkAccountInformationDTO](docs/DHLExpressUkAccountInformationDTO.md)
+ - [Model.DefaultAccountSettingsRequest](docs/DefaultAccountSettingsRequest.md)
  - [Model.Dimensions](docs/Dimensions.md)
+ - [Model.DpdAccountInformationRequest](docs/DpdAccountInformationRequest.md)
  - [Model.EbayAccessTokenRequest](docs/EbayAccessTokenRequest.md)
  - [Model.EndiciaAccountInformationDTO](docs/EndiciaAccountInformationDTO.md)
  - [Model.EtsyAccessTokenRequest](docs/EtsyAccessTokenRequest.md)
  - [Model.FedExAccountInformationDTO](docs/FedExAccountInformationDTO.md)
  - [Model.FedExAccountSettingsDTO](docs/FedExAccountSettingsDTO.md)
+ - [Model.FedExUkAccountInformationRequest](docs/FedExUkAccountInformationRequest.md)
  - [Model.FirstMileAccountInformationDTO](docs/FirstMileAccountInformationDTO.md)
  - [Model.GlobegisticsAccountInformationDTO](docs/GlobegisticsAccountInformationDTO.md)
  - [Model.ImexAccountInformationDTO](docs/ImexAccountInformationDTO.md)
@@ -297,6 +342,7 @@ Class | Method | HTTP request | Description
  - [Model.ProviderError](docs/ProviderError.md)
  - [Model.PurchaseLabelRequest](docs/PurchaseLabelRequest.md)
  - [Model.PurchaseLabelWithoutShipmentRequest](docs/PurchaseLabelWithoutShipmentRequest.md)
+ - [Model.PurolatorAccountInformationRequest](docs/PurolatorAccountInformationRequest.md)
  - [Model.Rate](docs/Rate.md)
  - [Model.RateEstimateRequest](docs/RateEstimateRequest.md)
  - [Model.RateRequest](docs/RateRequest.md)
@@ -305,7 +351,13 @@ Class | Method | HTTP request | Description
  - [Model.RateShipmentRequest](docs/RateShipmentRequest.md)
  - [Model.RateShipmentResponse](docs/RateShipmentResponse.md)
  - [Model.RateShipmentsRequest](docs/RateShipmentsRequest.md)
+ - [Model.RecognizeAddressRequestDTO](docs/RecognizeAddressRequestDTO.md)
+ - [Model.RecognizeAddressResponseDTO](docs/RecognizeAddressResponseDTO.md)
+ - [Model.RecognizeShipmentRequestDTO](docs/RecognizeShipmentRequestDTO.md)
+ - [Model.RecognizeShipmentResponseDTO](docs/RecognizeShipmentResponseDTO.md)
+ - [Model.RecognizedEntity](docs/RecognizedEntity.md)
  - [Model.ResponseMessageDTO](docs/ResponseMessageDTO.md)
+ - [Model.RoyalMailAccountInformationRequest](docs/RoyalMailAccountInformationRequest.md)
  - [Model.RrDonnelleyAccountInformationDTO](docs/RrDonnelleyAccountInformationDTO.md)
  - [Model.Service](docs/Service.md)
  - [Model.Shipment](docs/Shipment.md)
@@ -319,6 +371,7 @@ Class | Method | HTTP request | Description
  - [Model.StampsAccountUrlsRequest](docs/StampsAccountUrlsRequest.md)
  - [Model.StampsAccountUrlsResponse](docs/StampsAccountUrlsResponse.md)
  - [Model.TagResponse](docs/TagResponse.md)
+ - [Model.ThreeDCartAccessTokenRequest](docs/ThreeDCartAccessTokenRequest.md)
  - [Model.TrackEvent](docs/TrackEvent.md)
  - [Model.TrackingInformation](docs/TrackingInformation.md)
  - [Model.UPSAccountInformationDTO](docs/UPSAccountInformationDTO.md)
