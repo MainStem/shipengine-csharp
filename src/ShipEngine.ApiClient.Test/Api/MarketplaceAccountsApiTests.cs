@@ -117,6 +117,152 @@ namespace ShipEngine.ApiClient.Test
         }
         
         /// <summary>
+        /// Test AmazonAccountUpdateSettings
+        /// </summary>
+        [Test]
+        public void AmazonAccountUpdateSettingsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //string apiKey = null;
+            //bool? accountSettingsRequestAutomaticallyImportSalesOrders = null;
+            //instance.AmazonAccountUpdateSettings(storeId, apiKey, accountSettingsRequestAutomaticallyImportSalesOrders);
+            
+        }
+        
+        /// <summary>
+        /// Test AmazonCaAccountConnect
+        /// </summary>
+        [Test]
+        public void AmazonCaAccountConnectTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //AmazonAccountInformationRequest accountInfo = null;
+            //string apiKey = null;
+            //var response = instance.AmazonCaAccountConnect(accountInfo, apiKey);
+            //Assert.IsInstanceOf<ConnectMarketplaceResponseDTO> (response, "response is ConnectMarketplaceResponseDTO");
+        }
+        
+        /// <summary>
+        /// Test AmazonCaAccountDeactivate
+        /// </summary>
+        [Test]
+        public void AmazonCaAccountDeactivateTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //string apiKey = null;
+            //instance.AmazonCaAccountDeactivate(storeId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test AmazonCaAccountReactivate
+        /// </summary>
+        [Test]
+        public void AmazonCaAccountReactivateTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //string apiKey = null;
+            //instance.AmazonCaAccountReactivate(storeId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test AmazonCaAccountTest
+        /// </summary>
+        [Test]
+        public void AmazonCaAccountTestTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //string apiKey = null;
+            //instance.AmazonCaAccountTest(storeId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test AmazonCaAccountUpdateSettings
+        /// </summary>
+        [Test]
+        public void AmazonCaAccountUpdateSettingsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //string apiKey = null;
+            //bool? accountSettingsRequestAutomaticallyImportSalesOrders = null;
+            //instance.AmazonCaAccountUpdateSettings(storeId, apiKey, accountSettingsRequestAutomaticallyImportSalesOrders);
+            
+        }
+        
+        /// <summary>
+        /// Test BrightpearlAccountConnect
+        /// </summary>
+        [Test]
+        public void BrightpearlAccountConnectTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //BrightpearlAccountInformationRequest accountInfo = null;
+            //string apiKey = null;
+            //var response = instance.BrightpearlAccountConnect(accountInfo, apiKey);
+            //Assert.IsInstanceOf<ConnectMarketplaceResponseDTO> (response, "response is ConnectMarketplaceResponseDTO");
+        }
+        
+        /// <summary>
+        /// Test BrightpearlAccountDeactivate
+        /// </summary>
+        [Test]
+        public void BrightpearlAccountDeactivateTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //string apiKey = null;
+            //instance.BrightpearlAccountDeactivate(storeId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test BrightpearlAccountReactivate
+        /// </summary>
+        [Test]
+        public void BrightpearlAccountReactivateTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //string apiKey = null;
+            //instance.BrightpearlAccountReactivate(storeId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test BrightpearlAccountTest
+        /// </summary>
+        [Test]
+        public void BrightpearlAccountTestTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //string apiKey = null;
+            //instance.BrightpearlAccountTest(storeId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test BrightpearlAccountUpdateSettings
+        /// </summary>
+        [Test]
+        public void BrightpearlAccountUpdateSettingsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //BrightpearlAccountSettingsRequest accountSettingsRequest = null;
+            //string apiKey = null;
+            //instance.BrightpearlAccountUpdateSettings(storeId, accountSettingsRequest, apiKey);
+            
+        }
+        
+        /// <summary>
         /// Test ChannelAdvisorAccountConnect
         /// </summary>
         [Test]
@@ -165,6 +311,20 @@ namespace ShipEngine.ApiClient.Test
             //Guid? storeId = null;
             //string apiKey = null;
             //instance.ChannelAdvisorAccountTest(storeId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test ChannelAdvisorAccountUpdateSettings
+        /// </summary>
+        [Test]
+        public void ChannelAdvisorAccountUpdateSettingsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //DefaultAccountSettingsRequest accountSettingsRequest = null;
+            //string apiKey = null;
+            //instance.ChannelAdvisorAccountUpdateSettings(storeId, accountSettingsRequest, apiKey);
             
         }
         
@@ -221,6 +381,20 @@ namespace ShipEngine.ApiClient.Test
         }
         
         /// <summary>
+        /// Test EbayAccountUpdateSettings
+        /// </summary>
+        [Test]
+        public void EbayAccountUpdateSettingsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //DefaultAccountSettingsRequest accountSettingsRequest = null;
+            //string apiKey = null;
+            //instance.EbayAccountUpdateSettings(storeId, accountSettingsRequest, apiKey);
+            
+        }
+        
+        /// <summary>
         /// Test EtsyAccountConnect
         /// </summary>
         [Test]
@@ -269,6 +443,20 @@ namespace ShipEngine.ApiClient.Test
             //Guid? storeId = null;
             //string apiKey = null;
             //instance.EtsyAccountTest(storeId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test EtsyAccountUpdateSettings
+        /// </summary>
+        [Test]
+        public void EtsyAccountUpdateSettingsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //DefaultAccountSettingsRequest accountSettingsRequest = null;
+            //string apiKey = null;
+            //instance.EtsyAccountUpdateSettings(storeId, accountSettingsRequest, apiKey);
             
         }
         
@@ -325,6 +513,20 @@ namespace ShipEngine.ApiClient.Test
         }
         
         /// <summary>
+        /// Test MagentoAccountUpdateSettings
+        /// </summary>
+        [Test]
+        public void MagentoAccountUpdateSettingsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //DefaultAccountSettingsRequest accountSettingsRequest = null;
+            //string apiKey = null;
+            //instance.MagentoAccountUpdateSettings(storeId, accountSettingsRequest, apiKey);
+            
+        }
+        
+        /// <summary>
         /// Test ShopifyAccountConnectAccessToken
         /// </summary>
         [Test]
@@ -373,6 +575,86 @@ namespace ShipEngine.ApiClient.Test
             //Guid? storeId = null;
             //string apiKey = null;
             //instance.ShopifyAccountTest(storeId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test ShopifyAccountUpdateSettings
+        /// </summary>
+        [Test]
+        public void ShopifyAccountUpdateSettingsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //DefaultAccountSettingsRequest accountSettingsRequest = null;
+            //string apiKey = null;
+            //instance.ShopifyAccountUpdateSettings(storeId, accountSettingsRequest, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test ThreeDCartAccountConnect
+        /// </summary>
+        [Test]
+        public void ThreeDCartAccountConnectTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //ThreeDCartAccessTokenRequest accessTokenInfo = null;
+            //string apiKey = null;
+            //var response = instance.ThreeDCartAccountConnect(accessTokenInfo, apiKey);
+            //Assert.IsInstanceOf<ConnectMarketplaceResponseDTO> (response, "response is ConnectMarketplaceResponseDTO");
+        }
+        
+        /// <summary>
+        /// Test ThreeDCartAccountDeactivate
+        /// </summary>
+        [Test]
+        public void ThreeDCartAccountDeactivateTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //string apiKey = null;
+            //instance.ThreeDCartAccountDeactivate(storeId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test ThreeDCartAccountReactivate
+        /// </summary>
+        [Test]
+        public void ThreeDCartAccountReactivateTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //string apiKey = null;
+            //instance.ThreeDCartAccountReactivate(storeId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test ThreeDCartAccountTest
+        /// </summary>
+        [Test]
+        public void ThreeDCartAccountTestTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //string apiKey = null;
+            //instance.ThreeDCartAccountTest(storeId, apiKey);
+            
+        }
+        
+        /// <summary>
+        /// Test ThreeDCartAccountUpdateSettings
+        /// </summary>
+        [Test]
+        public void ThreeDCartAccountUpdateSettingsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //Guid? storeId = null;
+            //DefaultAccountSettingsRequest accountSettingsRequest = null;
+            //string apiKey = null;
+            //instance.ThreeDCartAccountUpdateSettings(storeId, accountSettingsRequest, apiKey);
             
         }
         

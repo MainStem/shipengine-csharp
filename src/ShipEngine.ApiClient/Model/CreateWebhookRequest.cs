@@ -59,7 +59,19 @@ namespace ShipEngine.ApiClient.Model
             /// Enum StoreRefreshComplete for value: storeRefreshComplete
             /// </summary>
             [EnumMember(Value = "storeRefreshComplete")]
-            StoreRefreshComplete = 4
+            StoreRefreshComplete = 4,
+            
+            /// <summary>
+            /// Enum SalesOrdersImported for value: salesOrdersImported
+            /// </summary>
+            [EnumMember(Value = "salesOrdersImported")]
+            SalesOrdersImported = 5,
+            
+            /// <summary>
+            /// Enum CarrierConnected for value: carrierConnected
+            /// </summary>
+            [EnumMember(Value = "carrierConnected")]
+            CarrierConnected = 6
         }
 
         /// <summary>

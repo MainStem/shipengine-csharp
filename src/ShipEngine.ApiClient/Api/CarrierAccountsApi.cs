@@ -172,6 +172,52 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="model"></param>
         /// <param name="apiKey">API Key</param>
         /// <returns>ConnectAccountResponseDTO</returns>
+        ConnectAccountResponseDTO DHLECommerceAccountCarrierConnectAccount (DHLECommerceAccountInformationDTO model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        ApiResponse<ConnectAccountResponseDTO> DHLECommerceAccountCarrierConnectAccountWithHttpInfo (DHLECommerceAccountInformationDTO model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void DHLECommerceAccountCarrierDisconnectAccount (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> DHLECommerceAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
         ConnectAccountResponseDTO DHLExpressAccountCarrierConnectAccount (DHLExpressAccountInformationDTO model, string apiKey);
 
         /// <summary>
@@ -217,8 +263,8 @@ namespace ShipEngine.ApiClient.Api
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="carrierId"></param>
         /// <param name="apiKey">API Key</param>
-        /// <returns>UPSAccountSettingsDTO</returns>
-        UPSAccountSettingsDTO DHLExpressAccountCarrierGetSettings (string carrierId, string apiKey);
+        /// <returns>DHLExpressAccountSettingsDTO</returns>
+        DHLExpressAccountSettingsDTO DHLExpressAccountCarrierGetSettings (string carrierId, string apiKey);
 
         /// <summary>
         /// 
@@ -229,8 +275,8 @@ namespace ShipEngine.ApiClient.Api
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="carrierId"></param>
         /// <param name="apiKey">API Key</param>
-        /// <returns>ApiResponse of UPSAccountSettingsDTO</returns>
-        ApiResponse<UPSAccountSettingsDTO> DHLExpressAccountCarrierGetSettingsWithHttpInfo (string carrierId, string apiKey);
+        /// <returns>ApiResponse of DHLExpressAccountSettingsDTO</returns>
+        ApiResponse<DHLExpressAccountSettingsDTO> DHLExpressAccountCarrierGetSettingsWithHttpInfo (string carrierId, string apiKey);
         /// <summary>
         /// 
         /// </summary>
@@ -256,6 +302,144 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="apiKey">API Key</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DHLExpressAccountCarrierUpdateSettingsWithHttpInfo (string carrierId, DHLExpressAccountSettingsDTO settings, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
+        ConnectAccountResponseDTO DHLExpressCaAccountCarrierConnectAccount (DHLExpressCaAccountInformationRequest model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        ApiResponse<ConnectAccountResponseDTO> DHLExpressCaAccountCarrierConnectAccountWithHttpInfo (DHLExpressCaAccountInformationRequest model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void DHLExpressCaAccountCarrierDisconnectAccount (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> DHLExpressCaAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
+        ConnectAccountResponseDTO DhlExpressUkAccountCarrierConnectAccount (DHLExpressUkAccountInformationDTO model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        ApiResponse<ConnectAccountResponseDTO> DhlExpressUkAccountCarrierConnectAccountWithHttpInfo (DHLExpressUkAccountInformationDTO model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void DhlExpressUkAccountCarrierDisconnectAccount (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> DhlExpressUkAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
+        ConnectAccountResponseDTO DpdAccountCarrierConnectAccount (DpdAccountInformationRequest model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        ApiResponse<ConnectAccountResponseDTO> DpdAccountCarrierConnectAccountWithHttpInfo (DpdAccountInformationRequest model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void DpdAccountCarrierDisconnectAccount (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> DpdAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey);
         /// <summary>
         /// 
         /// </summary>
@@ -396,6 +580,52 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="apiKey">API Key</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> FedExAccountCarrierUpdateSettingsWithHttpInfo (string carrierId, FedExAccountSettingsDTO settings, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
+        ConnectAccountResponseDTO FedExUkAccountCarrierConnectAccount (FedExUkAccountInformationRequest model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        ApiResponse<ConnectAccountResponseDTO> FedExUkAccountCarrierConnectAccountWithHttpInfo (FedExUkAccountInformationRequest model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void FedExUkAccountCarrierDisconnectAccount (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> FedExUkAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey);
         /// <summary>
         /// 
         /// </summary>
@@ -651,6 +881,98 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="apiKey">API Key</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> OnTracAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
+        ConnectAccountResponseDTO PurolatorAccountCarrierConnectAccount (PurolatorAccountInformationRequest model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        ApiResponse<ConnectAccountResponseDTO> PurolatorAccountCarrierConnectAccountWithHttpInfo (PurolatorAccountInformationRequest model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void PurolatorAccountCarrierDisconnectAccount (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> PurolatorAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
+        ConnectAccountResponseDTO RoyalMailAccountCarrierConnectAccount (RoyalMailAccountInformationRequest model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        ApiResponse<ConnectAccountResponseDTO> RoyalMailAccountCarrierConnectAccountWithHttpInfo (RoyalMailAccountInformationRequest model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        void RoyalMailAccountCarrierDisconnectAccount (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> RoyalMailAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey);
         /// <summary>
         /// 
         /// </summary>
@@ -1012,6 +1334,52 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="model"></param>
         /// <param name="apiKey">API Key</param>
         /// <returns>Task of ConnectAccountResponseDTO</returns>
+        System.Threading.Tasks.Task<ConnectAccountResponseDTO> DHLECommerceAccountCarrierConnectAccountAsync (DHLECommerceAccountInformationDTO model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> DHLECommerceAccountCarrierConnectAccountAsyncWithHttpInfo (DHLECommerceAccountInformationDTO model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task DHLECommerceAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> DHLECommerceAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
         System.Threading.Tasks.Task<ConnectAccountResponseDTO> DHLExpressAccountCarrierConnectAccountAsync (DHLExpressAccountInformationDTO model, string apiKey);
 
         /// <summary>
@@ -1057,8 +1425,8 @@ namespace ShipEngine.ApiClient.Api
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="carrierId"></param>
         /// <param name="apiKey">API Key</param>
-        /// <returns>Task of UPSAccountSettingsDTO</returns>
-        System.Threading.Tasks.Task<UPSAccountSettingsDTO> DHLExpressAccountCarrierGetSettingsAsync (string carrierId, string apiKey);
+        /// <returns>Task of DHLExpressAccountSettingsDTO</returns>
+        System.Threading.Tasks.Task<DHLExpressAccountSettingsDTO> DHLExpressAccountCarrierGetSettingsAsync (string carrierId, string apiKey);
 
         /// <summary>
         /// 
@@ -1069,8 +1437,8 @@ namespace ShipEngine.ApiClient.Api
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="carrierId"></param>
         /// <param name="apiKey">API Key</param>
-        /// <returns>Task of ApiResponse (UPSAccountSettingsDTO)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UPSAccountSettingsDTO>> DHLExpressAccountCarrierGetSettingsAsyncWithHttpInfo (string carrierId, string apiKey);
+        /// <returns>Task of ApiResponse (DHLExpressAccountSettingsDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DHLExpressAccountSettingsDTO>> DHLExpressAccountCarrierGetSettingsAsyncWithHttpInfo (string carrierId, string apiKey);
         /// <summary>
         /// 
         /// </summary>
@@ -1096,6 +1464,144 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="apiKey">API Key</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DHLExpressAccountCarrierUpdateSettingsAsyncWithHttpInfo (string carrierId, DHLExpressAccountSettingsDTO settings, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        System.Threading.Tasks.Task<ConnectAccountResponseDTO> DHLExpressCaAccountCarrierConnectAccountAsync (DHLExpressCaAccountInformationRequest model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> DHLExpressCaAccountCarrierConnectAccountAsyncWithHttpInfo (DHLExpressCaAccountInformationRequest model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task DHLExpressCaAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> DHLExpressCaAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        System.Threading.Tasks.Task<ConnectAccountResponseDTO> DhlExpressUkAccountCarrierConnectAccountAsync (DHLExpressUkAccountInformationDTO model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> DhlExpressUkAccountCarrierConnectAccountAsyncWithHttpInfo (DHLExpressUkAccountInformationDTO model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task DhlExpressUkAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> DhlExpressUkAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        System.Threading.Tasks.Task<ConnectAccountResponseDTO> DpdAccountCarrierConnectAccountAsync (DpdAccountInformationRequest model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> DpdAccountCarrierConnectAccountAsyncWithHttpInfo (DpdAccountInformationRequest model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task DpdAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> DpdAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey);
         /// <summary>
         /// 
         /// </summary>
@@ -1236,6 +1742,52 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="apiKey">API Key</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> FedExAccountCarrierUpdateSettingsAsyncWithHttpInfo (string carrierId, FedExAccountSettingsDTO settings, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        System.Threading.Tasks.Task<ConnectAccountResponseDTO> FedExUkAccountCarrierConnectAccountAsync (FedExUkAccountInformationRequest model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> FedExUkAccountCarrierConnectAccountAsyncWithHttpInfo (FedExUkAccountInformationRequest model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task FedExUkAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> FedExUkAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey);
         /// <summary>
         /// 
         /// </summary>
@@ -1491,6 +2043,98 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="apiKey">API Key</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> OnTracAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        System.Threading.Tasks.Task<ConnectAccountResponseDTO> PurolatorAccountCarrierConnectAccountAsync (PurolatorAccountInformationRequest model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> PurolatorAccountCarrierConnectAccountAsyncWithHttpInfo (PurolatorAccountInformationRequest model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task PurolatorAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> PurolatorAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        System.Threading.Tasks.Task<ConnectAccountResponseDTO> RoyalMailAccountCarrierConnectAccountAsync (RoyalMailAccountInformationRequest model, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> RoyalMailAccountCarrierConnectAccountAsyncWithHttpInfo (RoyalMailAccountInformationRequest model, string apiKey);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task RoyalMailAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> RoyalMailAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey);
         /// <summary>
         /// 
         /// </summary>
@@ -2799,6 +3443,336 @@ namespace ShipEngine.ApiClient.Api
         /// <param name="model"></param>
         /// <param name="apiKey">API Key</param>
         /// <returns>ConnectAccountResponseDTO</returns>
+        public ConnectAccountResponseDTO DHLECommerceAccountCarrierConnectAccount (DHLECommerceAccountInformationDTO model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = DHLECommerceAccountCarrierConnectAccountWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        public ApiResponse< ConnectAccountResponseDTO > DHLECommerceAccountCarrierConnectAccountWithHttpInfo (DHLECommerceAccountInformationDTO model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->DHLECommerceAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DHLECommerceAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dhl_ecommerce";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DHLECommerceAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        public async System.Threading.Tasks.Task<ConnectAccountResponseDTO> DHLECommerceAccountCarrierConnectAccountAsync (DHLECommerceAccountInformationDTO model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = await DHLECommerceAccountCarrierConnectAccountAsyncWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> DHLECommerceAccountCarrierConnectAccountAsyncWithHttpInfo (DHLECommerceAccountInformationDTO model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->DHLECommerceAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DHLECommerceAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dhl_ecommerce";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DHLECommerceAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void DHLECommerceAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+        {
+             DHLECommerceAccountCarrierDisconnectAccountWithHttpInfo(carrierId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> DHLECommerceAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->DHLECommerceAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DHLECommerceAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dhl_ecommerce/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DHLECommerceAccountCarrierDisconnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task DHLECommerceAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey)
+        {
+             await DHLECommerceAccountCarrierDisconnectAccountAsyncWithHttpInfo(carrierId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DHLECommerceAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->DHLECommerceAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DHLECommerceAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dhl_ecommerce/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DHLECommerceAccountCarrierDisconnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
         public ConnectAccountResponseDTO DHLExpressAccountCarrierConnectAccount (DHLExpressAccountInformationDTO model, string apiKey)
         {
              ApiResponse<ConnectAccountResponseDTO> localVarResponse = DHLExpressAccountCarrierConnectAccountWithHttpInfo(model, apiKey);
@@ -3128,10 +4102,10 @@ namespace ShipEngine.ApiClient.Api
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="carrierId"></param>
         /// <param name="apiKey">API Key</param>
-        /// <returns>UPSAccountSettingsDTO</returns>
-        public UPSAccountSettingsDTO DHLExpressAccountCarrierGetSettings (string carrierId, string apiKey)
+        /// <returns>DHLExpressAccountSettingsDTO</returns>
+        public DHLExpressAccountSettingsDTO DHLExpressAccountCarrierGetSettings (string carrierId, string apiKey)
         {
-             ApiResponse<UPSAccountSettingsDTO> localVarResponse = DHLExpressAccountCarrierGetSettingsWithHttpInfo(carrierId, apiKey);
+             ApiResponse<DHLExpressAccountSettingsDTO> localVarResponse = DHLExpressAccountCarrierGetSettingsWithHttpInfo(carrierId, apiKey);
              return localVarResponse.Data;
         }
 
@@ -3141,8 +4115,8 @@ namespace ShipEngine.ApiClient.Api
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="carrierId"></param>
         /// <param name="apiKey">API Key</param>
-        /// <returns>ApiResponse of UPSAccountSettingsDTO</returns>
-        public ApiResponse< UPSAccountSettingsDTO > DHLExpressAccountCarrierGetSettingsWithHttpInfo (string carrierId, string apiKey)
+        /// <returns>ApiResponse of DHLExpressAccountSettingsDTO</returns>
+        public ApiResponse< DHLExpressAccountSettingsDTO > DHLExpressAccountCarrierGetSettingsWithHttpInfo (string carrierId, string apiKey)
         {
             // verify the required parameter 'carrierId' is set
             if (carrierId == null)
@@ -3195,9 +4169,9 @@ namespace ShipEngine.ApiClient.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<UPSAccountSettingsDTO>(localVarStatusCode,
+            return new ApiResponse<DHLExpressAccountSettingsDTO>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UPSAccountSettingsDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UPSAccountSettingsDTO)));
+                (DHLExpressAccountSettingsDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DHLExpressAccountSettingsDTO)));
         }
 
         /// <summary>
@@ -3206,10 +4180,10 @@ namespace ShipEngine.ApiClient.Api
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="carrierId"></param>
         /// <param name="apiKey">API Key</param>
-        /// <returns>Task of UPSAccountSettingsDTO</returns>
-        public async System.Threading.Tasks.Task<UPSAccountSettingsDTO> DHLExpressAccountCarrierGetSettingsAsync (string carrierId, string apiKey)
+        /// <returns>Task of DHLExpressAccountSettingsDTO</returns>
+        public async System.Threading.Tasks.Task<DHLExpressAccountSettingsDTO> DHLExpressAccountCarrierGetSettingsAsync (string carrierId, string apiKey)
         {
-             ApiResponse<UPSAccountSettingsDTO> localVarResponse = await DHLExpressAccountCarrierGetSettingsAsyncWithHttpInfo(carrierId, apiKey);
+             ApiResponse<DHLExpressAccountSettingsDTO> localVarResponse = await DHLExpressAccountCarrierGetSettingsAsyncWithHttpInfo(carrierId, apiKey);
              return localVarResponse.Data;
 
         }
@@ -3220,8 +4194,8 @@ namespace ShipEngine.ApiClient.Api
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="carrierId"></param>
         /// <param name="apiKey">API Key</param>
-        /// <returns>Task of ApiResponse (UPSAccountSettingsDTO)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UPSAccountSettingsDTO>> DHLExpressAccountCarrierGetSettingsAsyncWithHttpInfo (string carrierId, string apiKey)
+        /// <returns>Task of ApiResponse (DHLExpressAccountSettingsDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DHLExpressAccountSettingsDTO>> DHLExpressAccountCarrierGetSettingsAsyncWithHttpInfo (string carrierId, string apiKey)
         {
             // verify the required parameter 'carrierId' is set
             if (carrierId == null)
@@ -3274,9 +4248,9 @@ namespace ShipEngine.ApiClient.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<UPSAccountSettingsDTO>(localVarStatusCode,
+            return new ApiResponse<DHLExpressAccountSettingsDTO>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UPSAccountSettingsDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UPSAccountSettingsDTO)));
+                (DHLExpressAccountSettingsDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DHLExpressAccountSettingsDTO)));
         }
 
         /// <summary>
@@ -3456,6 +4430,996 @@ namespace ShipEngine.ApiClient.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("DHLExpressAccountCarrierUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
+        public ConnectAccountResponseDTO DHLExpressCaAccountCarrierConnectAccount (DHLExpressCaAccountInformationRequest model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = DHLExpressCaAccountCarrierConnectAccountWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        public ApiResponse< ConnectAccountResponseDTO > DHLExpressCaAccountCarrierConnectAccountWithHttpInfo (DHLExpressCaAccountInformationRequest model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->DHLExpressCaAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DHLExpressCaAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dhl_express_ca";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DHLExpressCaAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        public async System.Threading.Tasks.Task<ConnectAccountResponseDTO> DHLExpressCaAccountCarrierConnectAccountAsync (DHLExpressCaAccountInformationRequest model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = await DHLExpressCaAccountCarrierConnectAccountAsyncWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> DHLExpressCaAccountCarrierConnectAccountAsyncWithHttpInfo (DHLExpressCaAccountInformationRequest model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->DHLExpressCaAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DHLExpressCaAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dhl_express_ca";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DHLExpressCaAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void DHLExpressCaAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+        {
+             DHLExpressCaAccountCarrierDisconnectAccountWithHttpInfo(carrierId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> DHLExpressCaAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->DHLExpressCaAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DHLExpressCaAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dhl_express_ca/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DHLExpressCaAccountCarrierDisconnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task DHLExpressCaAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey)
+        {
+             await DHLExpressCaAccountCarrierDisconnectAccountAsyncWithHttpInfo(carrierId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DHLExpressCaAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->DHLExpressCaAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DHLExpressCaAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dhl_express_ca/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DHLExpressCaAccountCarrierDisconnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
+        public ConnectAccountResponseDTO DhlExpressUkAccountCarrierConnectAccount (DHLExpressUkAccountInformationDTO model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = DhlExpressUkAccountCarrierConnectAccountWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        public ApiResponse< ConnectAccountResponseDTO > DhlExpressUkAccountCarrierConnectAccountWithHttpInfo (DHLExpressUkAccountInformationDTO model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->DhlExpressUkAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DhlExpressUkAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dhl_express_uk";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DhlExpressUkAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        public async System.Threading.Tasks.Task<ConnectAccountResponseDTO> DhlExpressUkAccountCarrierConnectAccountAsync (DHLExpressUkAccountInformationDTO model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = await DhlExpressUkAccountCarrierConnectAccountAsyncWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> DhlExpressUkAccountCarrierConnectAccountAsyncWithHttpInfo (DHLExpressUkAccountInformationDTO model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->DhlExpressUkAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DhlExpressUkAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dhl_express_uk";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DhlExpressUkAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void DhlExpressUkAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+        {
+             DhlExpressUkAccountCarrierDisconnectAccountWithHttpInfo(carrierId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> DhlExpressUkAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->DhlExpressUkAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DhlExpressUkAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dhl_express_uk/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DhlExpressUkAccountCarrierDisconnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task DhlExpressUkAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey)
+        {
+             await DhlExpressUkAccountCarrierDisconnectAccountAsyncWithHttpInfo(carrierId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DhlExpressUkAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->DhlExpressUkAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DhlExpressUkAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dhl_express_uk/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DhlExpressUkAccountCarrierDisconnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
+        public ConnectAccountResponseDTO DpdAccountCarrierConnectAccount (DpdAccountInformationRequest model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = DpdAccountCarrierConnectAccountWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        public ApiResponse< ConnectAccountResponseDTO > DpdAccountCarrierConnectAccountWithHttpInfo (DpdAccountInformationRequest model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->DpdAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DpdAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dpd";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DpdAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        public async System.Threading.Tasks.Task<ConnectAccountResponseDTO> DpdAccountCarrierConnectAccountAsync (DpdAccountInformationRequest model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = await DpdAccountCarrierConnectAccountAsyncWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> DpdAccountCarrierConnectAccountAsyncWithHttpInfo (DpdAccountInformationRequest model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->DpdAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DpdAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dpd";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DpdAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void DpdAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+        {
+             DpdAccountCarrierDisconnectAccountWithHttpInfo(carrierId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> DpdAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->DpdAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DpdAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dpd/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DpdAccountCarrierDisconnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task DpdAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey)
+        {
+             await DpdAccountCarrierDisconnectAccountAsyncWithHttpInfo(carrierId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DpdAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->DpdAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->DpdAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/dpd/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DpdAccountCarrierDisconnectAccount", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -4458,6 +6422,336 @@ namespace ShipEngine.ApiClient.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("FedExAccountCarrierUpdateSettings", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
+        public ConnectAccountResponseDTO FedExUkAccountCarrierConnectAccount (FedExUkAccountInformationRequest model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = FedExUkAccountCarrierConnectAccountWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        public ApiResponse< ConnectAccountResponseDTO > FedExUkAccountCarrierConnectAccountWithHttpInfo (FedExUkAccountInformationRequest model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->FedExUkAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->FedExUkAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/fedex_uk";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("FedExUkAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        public async System.Threading.Tasks.Task<ConnectAccountResponseDTO> FedExUkAccountCarrierConnectAccountAsync (FedExUkAccountInformationRequest model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = await FedExUkAccountCarrierConnectAccountAsyncWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> FedExUkAccountCarrierConnectAccountAsyncWithHttpInfo (FedExUkAccountInformationRequest model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->FedExUkAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->FedExUkAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/fedex_uk";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("FedExUkAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void FedExUkAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+        {
+             FedExUkAccountCarrierDisconnectAccountWithHttpInfo(carrierId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> FedExUkAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->FedExUkAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->FedExUkAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/fedex_uk/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("FedExUkAccountCarrierDisconnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task FedExUkAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey)
+        {
+             await FedExUkAccountCarrierDisconnectAccountAsyncWithHttpInfo(carrierId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> FedExUkAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->FedExUkAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->FedExUkAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/fedex_uk/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("FedExUkAccountCarrierDisconnectAccount", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -6293,6 +8587,666 @@ namespace ShipEngine.ApiClient.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("OnTracAccountCarrierDisconnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
+        public ConnectAccountResponseDTO PurolatorAccountCarrierConnectAccount (PurolatorAccountInformationRequest model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = PurolatorAccountCarrierConnectAccountWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        public ApiResponse< ConnectAccountResponseDTO > PurolatorAccountCarrierConnectAccountWithHttpInfo (PurolatorAccountInformationRequest model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->PurolatorAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->PurolatorAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/purolator_canada";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PurolatorAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        public async System.Threading.Tasks.Task<ConnectAccountResponseDTO> PurolatorAccountCarrierConnectAccountAsync (PurolatorAccountInformationRequest model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = await PurolatorAccountCarrierConnectAccountAsyncWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> PurolatorAccountCarrierConnectAccountAsyncWithHttpInfo (PurolatorAccountInformationRequest model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->PurolatorAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->PurolatorAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/purolator_canada";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PurolatorAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void PurolatorAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+        {
+             PurolatorAccountCarrierDisconnectAccountWithHttpInfo(carrierId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> PurolatorAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->PurolatorAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->PurolatorAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/purolator_canada/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PurolatorAccountCarrierDisconnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task PurolatorAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey)
+        {
+             await PurolatorAccountCarrierDisconnectAccountAsyncWithHttpInfo(carrierId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> PurolatorAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->PurolatorAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->PurolatorAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/purolator_canada/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PurolatorAccountCarrierDisconnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ConnectAccountResponseDTO</returns>
+        public ConnectAccountResponseDTO RoyalMailAccountCarrierConnectAccount (RoyalMailAccountInformationRequest model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = RoyalMailAccountCarrierConnectAccountWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of ConnectAccountResponseDTO</returns>
+        public ApiResponse< ConnectAccountResponseDTO > RoyalMailAccountCarrierConnectAccountWithHttpInfo (RoyalMailAccountInformationRequest model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->RoyalMailAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->RoyalMailAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/royal_mail";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("RoyalMailAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ConnectAccountResponseDTO</returns>
+        public async System.Threading.Tasks.Task<ConnectAccountResponseDTO> RoyalMailAccountCarrierConnectAccountAsync (RoyalMailAccountInformationRequest model, string apiKey)
+        {
+             ApiResponse<ConnectAccountResponseDTO> localVarResponse = await RoyalMailAccountCarrierConnectAccountAsyncWithHttpInfo(model, apiKey);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="model"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse (ConnectAccountResponseDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ConnectAccountResponseDTO>> RoyalMailAccountCarrierConnectAccountAsyncWithHttpInfo (RoyalMailAccountInformationRequest model, string apiKey)
+        {
+            // verify the required parameter 'model' is set
+            if (model == null)
+                throw new ApiException(400, "Missing required parameter 'model' when calling CarrierAccountsApi->RoyalMailAccountCarrierConnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->RoyalMailAccountCarrierConnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/royal_mail";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "text/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+            if (model != null && model.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(model); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = model; // byte array
+            }
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("RoyalMailAccountCarrierConnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectAccountResponseDTO>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectAccountResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectAccountResponseDTO)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns></returns>
+        public void RoyalMailAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+        {
+             RoyalMailAccountCarrierDisconnectAccountWithHttpInfo(carrierId, apiKey);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> RoyalMailAccountCarrierDisconnectAccountWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->RoyalMailAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->RoyalMailAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/royal_mail/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("RoyalMailAccountCarrierDisconnectAccount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task RoyalMailAccountCarrierDisconnectAccountAsync (string carrierId, string apiKey)
+        {
+             await RoyalMailAccountCarrierDisconnectAccountAsyncWithHttpInfo(carrierId, apiKey);
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="carrierId"></param>
+        /// <param name="apiKey">API Key</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> RoyalMailAccountCarrierDisconnectAccountAsyncWithHttpInfo (string carrierId, string apiKey)
+        {
+            // verify the required parameter 'carrierId' is set
+            if (carrierId == null)
+                throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierAccountsApi->RoyalMailAccountCarrierDisconnectAccount");
+            // verify the required parameter 'apiKey' is set
+            if (apiKey == null)
+                throw new ApiException(400, "Missing required parameter 'apiKey' when calling CarrierAccountsApi->RoyalMailAccountCarrierDisconnectAccount");
+
+            var localVarPath = "/v1/connections/carriers/royal_mail/{carrier_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json",
+                "text/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (carrierId != null) localVarPathParams.Add("carrier_id", this.Configuration.ApiClient.ParameterToString(carrierId)); // path parameter
+            if (apiKey != null) localVarHeaderParams.Add("api-key", this.Configuration.ApiClient.ParameterToString(apiKey)); // header parameter
+
+            // authentication (api-key) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("api-key")))
+            {
+                localVarHeaderParams["api-key"] = this.Configuration.GetApiKeyWithPrefix("api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("RoyalMailAccountCarrierDisconnectAccount", localVarResponse);
                 if (exception != null) throw exception;
             }
 

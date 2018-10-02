@@ -80,28 +80,40 @@ namespace ShipEngine.ApiClient.Model
             A1006 = 7,
             
             /// <summary>
+            /// Enum A1007 for value: a1007
+            /// </summary>
+            [EnumMember(Value = "a1007")]
+            A1007 = 8,
+            
+            /// <summary>
+            /// Enum A1008 for value: a1008
+            /// </summary>
+            [EnumMember(Value = "a1008")]
+            A1008 = 9,
+            
+            /// <summary>
             /// Enum R1000 for value: r1000
             /// </summary>
             [EnumMember(Value = "r1000")]
-            R1000 = 8,
+            R1000 = 10,
             
             /// <summary>
             /// Enum R1001 for value: r1001
             /// </summary>
             [EnumMember(Value = "r1001")]
-            R1001 = 9,
+            R1001 = 11,
             
             /// <summary>
             /// Enum R1002 for value: r1002
             /// </summary>
             [EnumMember(Value = "r1002")]
-            R1002 = 10,
+            R1002 = 12,
             
             /// <summary>
             /// Enum R1003 for value: r1003
             /// </summary>
             [EnumMember(Value = "r1003")]
-            R1003 = 11
+            R1003 = 13
         }
 
         /// <summary>
@@ -141,16 +153,361 @@ namespace ShipEngine.ApiClient.Model
         [DataMember(Name="type", EmitDefaultValue=false)]
         public TypeEnum? Type { get; set; }
         /// <summary>
+        /// Defines DetailCode
+        /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum DetailCodeEnum
+        {
+            
+            /// <summary>
+            /// Enum UnsupportedCountry for value: unsupportedCountry
+            /// </summary>
+            [EnumMember(Value = "unsupportedCountry")]
+            UnsupportedCountry = 1,
+            
+            /// <summary>
+            /// Enum NonSupportedCountry for value: nonSupportedCountry
+            /// </summary>
+            [EnumMember(Value = "nonSupportedCountry")]
+            NonSupportedCountry = 2,
+            
+            /// <summary>
+            /// Enum MinimumPostalCodeVerificationFailed for value: minimumPostalCodeVerificationFailed
+            /// </summary>
+            [EnumMember(Value = "minimumPostalCodeVerificationFailed")]
+            MinimumPostalCodeVerificationFailed = 3,
+            
+            /// <summary>
+            /// Enum StreetDoesNotMatchUniqueStreetName for value: streetDoesNotMatchUniqueStreetName
+            /// </summary>
+            [EnumMember(Value = "streetDoesNotMatchUniqueStreetName")]
+            StreetDoesNotMatchUniqueStreetName = 4,
+            
+            /// <summary>
+            /// Enum MultipleDirectionals for value: multipleDirectionals
+            /// </summary>
+            [EnumMember(Value = "multipleDirectionals")]
+            MultipleDirectionals = 5,
+            
+            /// <summary>
+            /// Enum MultipleMatches for value: multipleMatches
+            /// </summary>
+            [EnumMember(Value = "multipleMatches")]
+            MultipleMatches = 6,
+            
+            /// <summary>
+            /// Enum SuiteNotValid for value: suiteNotValid
+            /// </summary>
+            [EnumMember(Value = "suiteNotValid")]
+            SuiteNotValid = 7,
+            
+            /// <summary>
+            /// Enum SuiteMissing for value: suiteMissing
+            /// </summary>
+            [EnumMember(Value = "suiteMissing")]
+            SuiteMissing = 8,
+            
+            /// <summary>
+            /// Enum InvalidHouseNumber for value: invalidHouseNumber
+            /// </summary>
+            [EnumMember(Value = "invalidHouseNumber")]
+            InvalidHouseNumber = 9,
+            
+            /// <summary>
+            /// Enum MissingHouseNumber for value: missingHouseNumber
+            /// </summary>
+            [EnumMember(Value = "missingHouseNumber")]
+            MissingHouseNumber = 10,
+            
+            /// <summary>
+            /// Enum InvalidBoxNumber for value: invalidBoxNumber
+            /// </summary>
+            [EnumMember(Value = "invalidBoxNumber")]
+            InvalidBoxNumber = 11,
+            
+            /// <summary>
+            /// Enum MissingBoxNumber for value: missingBoxNumber
+            /// </summary>
+            [EnumMember(Value = "missingBoxNumber")]
+            MissingBoxNumber = 12,
+            
+            /// <summary>
+            /// Enum MissingCMRAOrPrivateMailBoxNumber for value: missingCMRAOrPrivateMailBoxNumber
+            /// </summary>
+            [EnumMember(Value = "missingCMRAOrPrivateMailBoxNumber")]
+            MissingCMRAOrPrivateMailBoxNumber = 13,
+            
+            /// <summary>
+            /// Enum SuiteHasNoSecondaries for value: suiteHasNoSecondaries
+            /// </summary>
+            [EnumMember(Value = "suiteHasNoSecondaries")]
+            SuiteHasNoSecondaries = 14,
+            
+            /// <summary>
+            /// Enum PostalCodeChangedOrAdded for value: postalCodeChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "postalCodeChangedOrAdded")]
+            PostalCodeChangedOrAdded = 15,
+            
+            /// <summary>
+            /// Enum StateProvinceChangedOrAdded for value: stateProvinceChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "stateProvinceChangedOrAdded")]
+            StateProvinceChangedOrAdded = 16,
+            
+            /// <summary>
+            /// Enum CityLocalityChangedOrAdded for value: cityLocalityChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "cityLocalityChangedOrAdded")]
+            CityLocalityChangedOrAdded = 17,
+            
+            /// <summary>
+            /// Enum UrbanizationChanged for value: urbanizationChanged
+            /// </summary>
+            [EnumMember(Value = "urbanizationChanged")]
+            UrbanizationChanged = 18,
+            
+            /// <summary>
+            /// Enum StreetNameSpellingChangedOrAdded for value: streetNameSpellingChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "streetNameSpellingChangedOrAdded")]
+            StreetNameSpellingChangedOrAdded = 19,
+            
+            /// <summary>
+            /// Enum StreetNameTypeChangedOrAdded for value: streetNameTypeChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "streetNameTypeChangedOrAdded")]
+            StreetNameTypeChangedOrAdded = 20,
+            
+            /// <summary>
+            /// Enum StreetDirectionChangedOrAdded for value: streetDirectionChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "streetDirectionChangedOrAdded")]
+            StreetDirectionChangedOrAdded = 21,
+            
+            /// <summary>
+            /// Enum SuiteTypeChangedOrAdded for value: suiteTypeChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "suiteTypeChangedOrAdded")]
+            SuiteTypeChangedOrAdded = 22,
+            
+            /// <summary>
+            /// Enum SuiteUnitNumberChangedOrAdded for value: suiteUnitNumberChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "suiteUnitNumberChangedOrAdded")]
+            SuiteUnitNumberChangedOrAdded = 23,
+            
+            /// <summary>
+            /// Enum DoubleDependentLocalityChangedOrAdded for value: doubleDependentLocalityChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "doubleDependentLocalityChangedOrAdded")]
+            DoubleDependentLocalityChangedOrAdded = 24,
+            
+            /// <summary>
+            /// Enum SubadministrativeAreaChangedOrAdded for value: subadministrativeAreaChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "subadministrativeAreaChangedOrAdded")]
+            SubadministrativeAreaChangedOrAdded = 25,
+            
+            /// <summary>
+            /// Enum SubnationalAreaChangedOrAdded for value: subnationalAreaChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "subnationalAreaChangedOrAdded")]
+            SubnationalAreaChangedOrAdded = 26,
+            
+            /// <summary>
+            /// Enum POBoxChangedOrAdded for value: pOBoxChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "pOBoxChangedOrAdded")]
+            POBoxChangedOrAdded = 27,
+            
+            /// <summary>
+            /// Enum PremiseTypeChangedOrAdded for value: premiseTypeChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "premiseTypeChangedOrAdded")]
+            PremiseTypeChangedOrAdded = 28,
+            
+            /// <summary>
+            /// Enum HouseNumberChanged for value: houseNumberChanged
+            /// </summary>
+            [EnumMember(Value = "houseNumberChanged")]
+            HouseNumberChanged = 29,
+            
+            /// <summary>
+            /// Enum OrganizationChangedOrAdded for value: organizationChangedOrAdded
+            /// </summary>
+            [EnumMember(Value = "organizationChangedOrAdded")]
+            OrganizationChangedOrAdded = 30,
+            
+            /// <summary>
+            /// Enum PartiallyVerifiedToStateLevel for value: partiallyVerifiedToStateLevel
+            /// </summary>
+            [EnumMember(Value = "partiallyVerifiedToStateLevel")]
+            PartiallyVerifiedToStateLevel = 31,
+            
+            /// <summary>
+            /// Enum PartiallyVerifiedToCityLevel for value: partiallyVerifiedToCityLevel
+            /// </summary>
+            [EnumMember(Value = "partiallyVerifiedToCityLevel")]
+            PartiallyVerifiedToCityLevel = 32,
+            
+            /// <summary>
+            /// Enum PartiallyVerifiedToStreetLevel for value: partiallyVerifiedToStreetLevel
+            /// </summary>
+            [EnumMember(Value = "partiallyVerifiedToStreetLevel")]
+            PartiallyVerifiedToStreetLevel = 33,
+            
+            /// <summary>
+            /// Enum PartiallyVerifiedToPremiseLevel for value: partiallyVerifiedToPremiseLevel
+            /// </summary>
+            [EnumMember(Value = "partiallyVerifiedToPremiseLevel")]
+            PartiallyVerifiedToPremiseLevel = 34,
+            
+            /// <summary>
+            /// Enum VerifiedToStateLevel for value: verifiedToStateLevel
+            /// </summary>
+            [EnumMember(Value = "verifiedToStateLevel")]
+            VerifiedToStateLevel = 35,
+            
+            /// <summary>
+            /// Enum VerifiedToCityLevel for value: verifiedToCityLevel
+            /// </summary>
+            [EnumMember(Value = "verifiedToCityLevel")]
+            VerifiedToCityLevel = 36,
+            
+            /// <summary>
+            /// Enum VerifiedToStreetLevel for value: verifiedToStreetLevel
+            /// </summary>
+            [EnumMember(Value = "verifiedToStreetLevel")]
+            VerifiedToStreetLevel = 37,
+            
+            /// <summary>
+            /// Enum VerifiedToPremiseLevel for value: verifiedToPremiseLevel
+            /// </summary>
+            [EnumMember(Value = "verifiedToPremiseLevel")]
+            VerifiedToPremiseLevel = 38,
+            
+            /// <summary>
+            /// Enum VerifiedToSuiteLevel for value: verifiedToSuiteLevel
+            /// </summary>
+            [EnumMember(Value = "verifiedToSuiteLevel")]
+            VerifiedToSuiteLevel = 39,
+            
+            /// <summary>
+            /// Enum CodedToStreetLavel for value: codedToStreetLavel
+            /// </summary>
+            [EnumMember(Value = "codedToStreetLavel")]
+            CodedToStreetLavel = 40,
+            
+            /// <summary>
+            /// Enum CodedToNeighborhoodLevel for value: codedToNeighborhoodLevel
+            /// </summary>
+            [EnumMember(Value = "codedToNeighborhoodLevel")]
+            CodedToNeighborhoodLevel = 41,
+            
+            /// <summary>
+            /// Enum CodedToCommunityLevel for value: codedToCommunityLevel
+            /// </summary>
+            [EnumMember(Value = "codedToCommunityLevel")]
+            CodedToCommunityLevel = 42,
+            
+            /// <summary>
+            /// Enum CodedToStateLevel for value: codedToStateLevel
+            /// </summary>
+            [EnumMember(Value = "codedToStateLevel")]
+            CodedToStateLevel = 43,
+            
+            /// <summary>
+            /// Enum CodedToRooftopLevel for value: codedToRooftopLevel
+            /// </summary>
+            [EnumMember(Value = "codedToRooftopLevel")]
+            CodedToRooftopLevel = 44,
+            
+            /// <summary>
+            /// Enum CodedToRooftopInterpolationLevel for value: codedToRooftopInterpolationLevel
+            /// </summary>
+            [EnumMember(Value = "codedToRooftopInterpolationLevel")]
+            CodedToRooftopInterpolationLevel = 45,
+            
+            /// <summary>
+            /// Enum NameMaxLengthExceeded for value: nameMaxLengthExceeded
+            /// </summary>
+            [EnumMember(Value = "nameMaxLengthExceeded")]
+            NameMaxLengthExceeded = 46,
+            
+            /// <summary>
+            /// Enum PhoneMaxLengthExceeded for value: phoneMaxLengthExceeded
+            /// </summary>
+            [EnumMember(Value = "phoneMaxLengthExceeded")]
+            PhoneMaxLengthExceeded = 47,
+            
+            /// <summary>
+            /// Enum CompanyNameMaxLengthExceeded for value: companyNameMaxLengthExceeded
+            /// </summary>
+            [EnumMember(Value = "companyNameMaxLengthExceeded")]
+            CompanyNameMaxLengthExceeded = 48,
+            
+            /// <summary>
+            /// Enum Line1MinMaxLength for value: line1MinMaxLength
+            /// </summary>
+            [EnumMember(Value = "line1MinMaxLength")]
+            Line1MinMaxLength = 49,
+            
+            /// <summary>
+            /// Enum Line2MaxLengthExceeded for value: line2MaxLengthExceeded
+            /// </summary>
+            [EnumMember(Value = "line2MaxLengthExceeded")]
+            Line2MaxLengthExceeded = 50,
+            
+            /// <summary>
+            /// Enum Line3MaxLengthExceeded for value: line3MaxLengthExceeded
+            /// </summary>
+            [EnumMember(Value = "line3MaxLengthExceeded")]
+            Line3MaxLengthExceeded = 51,
+            
+            /// <summary>
+            /// Enum CityLocalityMaxLengthExceeded for value: cityLocalityMaxLengthExceeded
+            /// </summary>
+            [EnumMember(Value = "cityLocalityMaxLengthExceeded")]
+            CityLocalityMaxLengthExceeded = 52,
+            
+            /// <summary>
+            /// Enum StateProvinceMaxLengthExceeded for value: stateProvinceMaxLengthExceeded
+            /// </summary>
+            [EnumMember(Value = "stateProvinceMaxLengthExceeded")]
+            StateProvinceMaxLengthExceeded = 53,
+            
+            /// <summary>
+            /// Enum InvalidPostalCode for value: invalidPostalCode
+            /// </summary>
+            [EnumMember(Value = "invalidPostalCode")]
+            InvalidPostalCode = 54,
+            
+            /// <summary>
+            /// Enum CountryInvalidLength for value: countryInvalidLength
+            /// </summary>
+            [EnumMember(Value = "countryInvalidLength")]
+            CountryInvalidLength = 55
+        }
+
+        /// <summary>
+        /// Gets or Sets DetailCode
+        /// </summary>
+        [DataMember(Name="detailCode", EmitDefaultValue=false)]
+        public DetailCodeEnum? DetailCode { get; set; }
+        /// <summary>
         /// Initializes a new instance of the <see cref="ResponseMessageDTO" /> class.
         /// </summary>
         /// <param name="code">code.</param>
         /// <param name="message">message.</param>
         /// <param name="type">type.</param>
-        public ResponseMessageDTO(CodeEnum? code = default(CodeEnum?), string message = default(string), TypeEnum? type = default(TypeEnum?))
+        /// <param name="detailCode">detailCode.</param>
+        public ResponseMessageDTO(CodeEnum? code = default(CodeEnum?), string message = default(string), TypeEnum? type = default(TypeEnum?), DetailCodeEnum? detailCode = default(DetailCodeEnum?))
         {
             this.Code = code;
             this.Message = message;
             this.Type = type;
+            this.DetailCode = detailCode;
         }
         
 
@@ -159,6 +516,7 @@ namespace ShipEngine.ApiClient.Model
         /// </summary>
         [DataMember(Name="message", EmitDefaultValue=false)]
         public string Message { get; set; }
+
 
 
         /// <summary>
@@ -172,6 +530,7 @@ namespace ShipEngine.ApiClient.Model
             sb.Append("  Code: ").Append(Code).Append("\n");
             sb.Append("  Message: ").Append(Message).Append("\n");
             sb.Append("  Type: ").Append(Type).Append("\n");
+            sb.Append("  DetailCode: ").Append(DetailCode).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -220,6 +579,11 @@ namespace ShipEngine.ApiClient.Model
                     this.Type == input.Type ||
                     (this.Type != null &&
                     this.Type.Equals(input.Type))
+                ) && 
+                (
+                    this.DetailCode == input.DetailCode ||
+                    (this.DetailCode != null &&
+                    this.DetailCode.Equals(input.DetailCode))
                 );
         }
 
@@ -238,6 +602,8 @@ namespace ShipEngine.ApiClient.Model
                     hashCode = hashCode * 59 + this.Message.GetHashCode();
                 if (this.Type != null)
                     hashCode = hashCode * 59 + this.Type.GetHashCode();
+                if (this.DetailCode != null)
+                    hashCode = hashCode * 59 + this.DetailCode.GetHashCode();
                 return hashCode;
             }
         }

@@ -74,16 +74,12 @@ namespace ShipEngine.ApiClient.Model
         /// <param name="originalAddress">originalAddress.</param>
         /// <param name="matchedAddress">matchedAddress.</param>
         /// <param name="messages">messages.</param>
-        /// <param name="nativeMatchedParsedAddress">nativeMatchedParsedAddress.</param>
-        /// <param name="outputNotes">outputNotes.</param>
-        public AddressValidationResponseDTO(StatusEnum? status = default(StatusEnum?), AddressDTO originalAddress = default(AddressDTO), AddressDTO matchedAddress = default(AddressDTO), List<ResponseMessageDTO> messages = default(List<ResponseMessageDTO>), Object nativeMatchedParsedAddress = default(Object), string outputNotes = default(string))
+        public AddressValidationResponseDTO(StatusEnum? status = default(StatusEnum?), AddressDTO originalAddress = default(AddressDTO), AddressDTO matchedAddress = default(AddressDTO), List<ResponseMessageDTO> messages = default(List<ResponseMessageDTO>))
         {
             this.Status = status;
             this.OriginalAddress = originalAddress;
             this.MatchedAddress = matchedAddress;
             this.Messages = messages;
-            this.NativeMatchedParsedAddress = nativeMatchedParsedAddress;
-            this.OutputNotes = outputNotes;
         }
         
 
@@ -106,18 +102,6 @@ namespace ShipEngine.ApiClient.Model
         public List<ResponseMessageDTO> Messages { get; set; }
 
         /// <summary>
-        /// Gets or Sets NativeMatchedParsedAddress
-        /// </summary>
-        [DataMember(Name="native_matched_parsed_address", EmitDefaultValue=false)]
-        public Object NativeMatchedParsedAddress { get; set; }
-
-        /// <summary>
-        /// Gets or Sets OutputNotes
-        /// </summary>
-        [DataMember(Name="output_notes", EmitDefaultValue=false)]
-        public string OutputNotes { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -129,8 +113,6 @@ namespace ShipEngine.ApiClient.Model
             sb.Append("  OriginalAddress: ").Append(OriginalAddress).Append("\n");
             sb.Append("  MatchedAddress: ").Append(MatchedAddress).Append("\n");
             sb.Append("  Messages: ").Append(Messages).Append("\n");
-            sb.Append("  NativeMatchedParsedAddress: ").Append(NativeMatchedParsedAddress).Append("\n");
-            sb.Append("  OutputNotes: ").Append(OutputNotes).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -184,16 +166,6 @@ namespace ShipEngine.ApiClient.Model
                     this.Messages == input.Messages ||
                     this.Messages != null &&
                     this.Messages.SequenceEqual(input.Messages)
-                ) && 
-                (
-                    this.NativeMatchedParsedAddress == input.NativeMatchedParsedAddress ||
-                    (this.NativeMatchedParsedAddress != null &&
-                    this.NativeMatchedParsedAddress.Equals(input.NativeMatchedParsedAddress))
-                ) && 
-                (
-                    this.OutputNotes == input.OutputNotes ||
-                    (this.OutputNotes != null &&
-                    this.OutputNotes.Equals(input.OutputNotes))
                 );
         }
 
@@ -214,10 +186,6 @@ namespace ShipEngine.ApiClient.Model
                     hashCode = hashCode * 59 + this.MatchedAddress.GetHashCode();
                 if (this.Messages != null)
                     hashCode = hashCode * 59 + this.Messages.GetHashCode();
-                if (this.NativeMatchedParsedAddress != null)
-                    hashCode = hashCode * 59 + this.NativeMatchedParsedAddress.GetHashCode();
-                if (this.OutputNotes != null)
-                    hashCode = hashCode * 59 + this.OutputNotes.GetHashCode();
                 return hashCode;
             }
         }

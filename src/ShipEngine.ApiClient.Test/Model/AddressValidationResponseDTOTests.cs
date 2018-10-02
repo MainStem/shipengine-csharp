@@ -98,22 +98,6 @@ namespace ShipEngine.ApiClient.Test
         {
             // TODO unit test for the property 'Messages'
         }
-        /// <summary>
-        /// Test the property 'NativeMatchedParsedAddress'
-        /// </summary>
-        [Test]
-        public void NativeMatchedParsedAddressTest()
-        {
-            // TODO unit test for the property 'NativeMatchedParsedAddress'
-        }
-        /// <summary>
-        /// Test the property 'OutputNotes'
-        /// </summary>
-        [Test]
-        public void OutputNotesTest()
-        {
-            // TODO unit test for the property 'OutputNotes'
-        }
 
     }
 

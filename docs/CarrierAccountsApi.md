@@ -10,16 +10,26 @@ Method | HTTP request | Description
 [**ApcAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#apcaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/apc/{carrier_id} | 
 [**AsendiaAccountCarrierConnectAccount**](CarrierAccountsApi.md#asendiaaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/asendia | 
 [**AsendiaAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#asendiaaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/asendia/{carrier_id} | 
+[**DHLECommerceAccountCarrierConnectAccount**](CarrierAccountsApi.md#dhlecommerceaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/dhl_ecommerce | 
+[**DHLECommerceAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#dhlecommerceaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/dhl_ecommerce/{carrier_id} | 
 [**DHLExpressAccountCarrierConnectAccount**](CarrierAccountsApi.md#dhlexpressaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/dhl_express | 
 [**DHLExpressAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#dhlexpressaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/dhl_express/{carrier_id} | 
 [**DHLExpressAccountCarrierGetSettings**](CarrierAccountsApi.md#dhlexpressaccountcarriergetsettings) | **GET** /v1/connections/carriers/dhl_express/{carrier_id}/settings | 
 [**DHLExpressAccountCarrierUpdateSettings**](CarrierAccountsApi.md#dhlexpressaccountcarrierupdatesettings) | **PUT** /v1/connections/carriers/dhl_express/{carrier_id}/settings | 
+[**DHLExpressCaAccountCarrierConnectAccount**](CarrierAccountsApi.md#dhlexpresscaaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/dhl_express_ca | 
+[**DHLExpressCaAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#dhlexpresscaaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/dhl_express_ca/{carrier_id} | 
+[**DhlExpressUkAccountCarrierConnectAccount**](CarrierAccountsApi.md#dhlexpressukaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/dhl_express_uk | 
+[**DhlExpressUkAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#dhlexpressukaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/dhl_express_uk/{carrier_id} | 
+[**DpdAccountCarrierConnectAccount**](CarrierAccountsApi.md#dpdaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/dpd | 
+[**DpdAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#dpdaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/dpd/{carrier_id} | 
 [**EndiciaAccountCarrierConnectAccount**](CarrierAccountsApi.md#endiciaaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/endicia | 
 [**EndiciaAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#endiciaaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/endicia/{carrier_id} | 
 [**FedExAccountCarrierConnectAccount**](CarrierAccountsApi.md#fedexaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/fedex | 
 [**FedExAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#fedexaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/fedex/{carrier_id} | 
 [**FedExAccountCarrierGetSettings**](CarrierAccountsApi.md#fedexaccountcarriergetsettings) | **GET** /v1/connections/carriers/fedex/{carrier_id}/settings | 
 [**FedExAccountCarrierUpdateSettings**](CarrierAccountsApi.md#fedexaccountcarrierupdatesettings) | **PUT** /v1/connections/carriers/fedex/{carrier_id}/settings | 
+[**FedExUkAccountCarrierConnectAccount**](CarrierAccountsApi.md#fedexukaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/fedex_uk | 
+[**FedExUkAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#fedexukaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/fedex_uk/{carrier_id} | 
 [**FirstMileAccountCarrierConnectAccount**](CarrierAccountsApi.md#firstmileaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/firstmile | 
 [**FirstMileAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#firstmileaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/firstmile/{carrier_id} | 
 [**GlobegisticsAccountCarrierConnectAccount**](CarrierAccountsApi.md#globegisticsaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/globegistics | 
@@ -31,6 +41,10 @@ Method | HTTP request | Description
 [**NewgisticsAccountCarrierUpdateSettings**](CarrierAccountsApi.md#newgisticsaccountcarrierupdatesettings) | **PUT** /v1/connections/carriers/newgistics/{carrier_id}/settings | 
 [**OnTracAccountCarrierConnectAccount**](CarrierAccountsApi.md#ontracaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/ontrac | 
 [**OnTracAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#ontracaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/ontrac/{carrier_id} | 
+[**PurolatorAccountCarrierConnectAccount**](CarrierAccountsApi.md#purolatoraccountcarrierconnectaccount) | **POST** /v1/connections/carriers/purolator_canada | 
+[**PurolatorAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#purolatoraccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/purolator_canada/{carrier_id} | 
+[**RoyalMailAccountCarrierConnectAccount**](CarrierAccountsApi.md#royalmailaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/royal_mail | 
+[**RoyalMailAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#royalmailaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/royal_mail/{carrier_id} | 
 [**RrDonnelleyAccountCarrierConnectAccount**](CarrierAccountsApi.md#rrdonnelleyaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/rr_donnelley | 
 [**RrDonnelleyAccountCarrierDisconnectAccount**](CarrierAccountsApi.md#rrdonnelleyaccountcarrierdisconnectaccount) | **DELETE** /v1/connections/carriers/rr_donnelley/{carrier_id} | 
 [**StampsAccountCarrierConnectAccount**](CarrierAccountsApi.md#stampsaccountcarrierconnectaccount) | **POST** /v1/connections/carriers/stamps_com | 
@@ -429,6 +443,135 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="dhlecommerceaccountcarrierconnectaccount"></a>
+# **DHLECommerceAccountCarrierConnectAccount**
+> ConnectAccountResponseDTO DHLECommerceAccountCarrierConnectAccount (DHLECommerceAccountInformationDTO model, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class DHLECommerceAccountCarrierConnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var model = new DHLECommerceAccountInformationDTO(); // DHLECommerceAccountInformationDTO | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                ConnectAccountResponseDTO result = apiInstance.DHLECommerceAccountCarrierConnectAccount(model, apiKey);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.DHLECommerceAccountCarrierConnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **model** | [**DHLECommerceAccountInformationDTO**](DHLECommerceAccountInformationDTO.md)|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+[**ConnectAccountResponseDTO**](ConnectAccountResponseDTO.md)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dhlecommerceaccountcarrierdisconnectaccount"></a>
+# **DHLECommerceAccountCarrierDisconnectAccount**
+> void DHLECommerceAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class DHLECommerceAccountCarrierDisconnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var carrierId = carrierId_example;  // string | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                apiInstance.DHLECommerceAccountCarrierDisconnectAccount(carrierId, apiKey);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.DHLECommerceAccountCarrierDisconnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **carrierId** | **string**|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="dhlexpressaccountcarrierconnectaccount"></a>
 # **DHLExpressAccountCarrierConnectAccount**
 > ConnectAccountResponseDTO DHLExpressAccountCarrierConnectAccount (DHLExpressAccountInformationDTO model, string apiKey)
@@ -560,7 +703,7 @@ void (empty response body)
 
 <a name="dhlexpressaccountcarriergetsettings"></a>
 # **DHLExpressAccountCarrierGetSettings**
-> UPSAccountSettingsDTO DHLExpressAccountCarrierGetSettings (string carrierId, string apiKey)
+> DHLExpressAccountSettingsDTO DHLExpressAccountCarrierGetSettings (string carrierId, string apiKey)
 
 
 
@@ -589,7 +732,7 @@ namespace Example
 
             try
             {
-                UPSAccountSettingsDTO result = apiInstance.DHLExpressAccountCarrierGetSettings(carrierId, apiKey);
+                DHLExpressAccountSettingsDTO result = apiInstance.DHLExpressAccountCarrierGetSettings(carrierId, apiKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -610,7 +753,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UPSAccountSettingsDTO**](UPSAccountSettingsDTO.md)
+[**DHLExpressAccountSettingsDTO**](DHLExpressAccountSettingsDTO.md)
 
 ### Authorization
 
@@ -685,6 +828,393 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json, text/json
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dhlexpresscaaccountcarrierconnectaccount"></a>
+# **DHLExpressCaAccountCarrierConnectAccount**
+> ConnectAccountResponseDTO DHLExpressCaAccountCarrierConnectAccount (DHLExpressCaAccountInformationRequest model, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class DHLExpressCaAccountCarrierConnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var model = new DHLExpressCaAccountInformationRequest(); // DHLExpressCaAccountInformationRequest | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                ConnectAccountResponseDTO result = apiInstance.DHLExpressCaAccountCarrierConnectAccount(model, apiKey);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.DHLExpressCaAccountCarrierConnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **model** | [**DHLExpressCaAccountInformationRequest**](DHLExpressCaAccountInformationRequest.md)|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+[**ConnectAccountResponseDTO**](ConnectAccountResponseDTO.md)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dhlexpresscaaccountcarrierdisconnectaccount"></a>
+# **DHLExpressCaAccountCarrierDisconnectAccount**
+> void DHLExpressCaAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class DHLExpressCaAccountCarrierDisconnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var carrierId = carrierId_example;  // string | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                apiInstance.DHLExpressCaAccountCarrierDisconnectAccount(carrierId, apiKey);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.DHLExpressCaAccountCarrierDisconnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **carrierId** | **string**|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dhlexpressukaccountcarrierconnectaccount"></a>
+# **DhlExpressUkAccountCarrierConnectAccount**
+> ConnectAccountResponseDTO DhlExpressUkAccountCarrierConnectAccount (DHLExpressUkAccountInformationDTO model, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class DhlExpressUkAccountCarrierConnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var model = new DHLExpressUkAccountInformationDTO(); // DHLExpressUkAccountInformationDTO | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                ConnectAccountResponseDTO result = apiInstance.DhlExpressUkAccountCarrierConnectAccount(model, apiKey);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.DhlExpressUkAccountCarrierConnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **model** | [**DHLExpressUkAccountInformationDTO**](DHLExpressUkAccountInformationDTO.md)|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+[**ConnectAccountResponseDTO**](ConnectAccountResponseDTO.md)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dhlexpressukaccountcarrierdisconnectaccount"></a>
+# **DhlExpressUkAccountCarrierDisconnectAccount**
+> void DhlExpressUkAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class DhlExpressUkAccountCarrierDisconnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var carrierId = carrierId_example;  // string | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                apiInstance.DhlExpressUkAccountCarrierDisconnectAccount(carrierId, apiKey);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.DhlExpressUkAccountCarrierDisconnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **carrierId** | **string**|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dpdaccountcarrierconnectaccount"></a>
+# **DpdAccountCarrierConnectAccount**
+> ConnectAccountResponseDTO DpdAccountCarrierConnectAccount (DpdAccountInformationRequest model, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class DpdAccountCarrierConnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var model = new DpdAccountInformationRequest(); // DpdAccountInformationRequest | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                ConnectAccountResponseDTO result = apiInstance.DpdAccountCarrierConnectAccount(model, apiKey);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.DpdAccountCarrierConnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **model** | [**DpdAccountInformationRequest**](DpdAccountInformationRequest.md)|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+[**ConnectAccountResponseDTO**](ConnectAccountResponseDTO.md)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dpdaccountcarrierdisconnectaccount"></a>
+# **DpdAccountCarrierDisconnectAccount**
+> void DpdAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class DpdAccountCarrierDisconnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var carrierId = carrierId_example;  // string | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                apiInstance.DpdAccountCarrierDisconnectAccount(carrierId, apiKey);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.DpdAccountCarrierDisconnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **carrierId** | **string**|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
  - **Accept**: application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1074,6 +1604,135 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json, text/json
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="fedexukaccountcarrierconnectaccount"></a>
+# **FedExUkAccountCarrierConnectAccount**
+> ConnectAccountResponseDTO FedExUkAccountCarrierConnectAccount (FedExUkAccountInformationRequest model, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class FedExUkAccountCarrierConnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var model = new FedExUkAccountInformationRequest(); // FedExUkAccountInformationRequest | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                ConnectAccountResponseDTO result = apiInstance.FedExUkAccountCarrierConnectAccount(model, apiKey);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.FedExUkAccountCarrierConnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **model** | [**FedExUkAccountInformationRequest**](FedExUkAccountInformationRequest.md)|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+[**ConnectAccountResponseDTO**](ConnectAccountResponseDTO.md)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="fedexukaccountcarrierdisconnectaccount"></a>
+# **FedExUkAccountCarrierDisconnectAccount**
+> void FedExUkAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class FedExUkAccountCarrierDisconnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var carrierId = carrierId_example;  // string | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                apiInstance.FedExUkAccountCarrierDisconnectAccount(carrierId, apiKey);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.FedExUkAccountCarrierDisconnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **carrierId** | **string**|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
  - **Accept**: application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1761,6 +2420,264 @@ namespace Example
             catch (Exception e)
             {
                 Debug.Print("Exception when calling CarrierAccountsApi.OnTracAccountCarrierDisconnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **carrierId** | **string**|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="purolatoraccountcarrierconnectaccount"></a>
+# **PurolatorAccountCarrierConnectAccount**
+> ConnectAccountResponseDTO PurolatorAccountCarrierConnectAccount (PurolatorAccountInformationRequest model, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class PurolatorAccountCarrierConnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var model = new PurolatorAccountInformationRequest(); // PurolatorAccountInformationRequest | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                ConnectAccountResponseDTO result = apiInstance.PurolatorAccountCarrierConnectAccount(model, apiKey);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.PurolatorAccountCarrierConnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **model** | [**PurolatorAccountInformationRequest**](PurolatorAccountInformationRequest.md)|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+[**ConnectAccountResponseDTO**](ConnectAccountResponseDTO.md)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="purolatoraccountcarrierdisconnectaccount"></a>
+# **PurolatorAccountCarrierDisconnectAccount**
+> void PurolatorAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class PurolatorAccountCarrierDisconnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var carrierId = carrierId_example;  // string | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                apiInstance.PurolatorAccountCarrierDisconnectAccount(carrierId, apiKey);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.PurolatorAccountCarrierDisconnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **carrierId** | **string**|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="royalmailaccountcarrierconnectaccount"></a>
+# **RoyalMailAccountCarrierConnectAccount**
+> ConnectAccountResponseDTO RoyalMailAccountCarrierConnectAccount (RoyalMailAccountInformationRequest model, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class RoyalMailAccountCarrierConnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var model = new RoyalMailAccountInformationRequest(); // RoyalMailAccountInformationRequest | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                ConnectAccountResponseDTO result = apiInstance.RoyalMailAccountCarrierConnectAccount(model, apiKey);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.RoyalMailAccountCarrierConnectAccount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **model** | [**RoyalMailAccountInformationRequest**](RoyalMailAccountInformationRequest.md)|  | 
+ **apiKey** | **string**| API Key | [default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY]
+
+### Return type
+
+[**ConnectAccountResponseDTO**](ConnectAccountResponseDTO.md)
+
+### Authorization
+
+[api-key](../README.md#api-key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="royalmailaccountcarrierdisconnectaccount"></a>
+# **RoyalMailAccountCarrierDisconnectAccount**
+> void RoyalMailAccountCarrierDisconnectAccount (string carrierId, string apiKey)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ShipEngine.ApiClient.Api;
+using ShipEngine.ApiClient.Client;
+using ShipEngine.ApiClient.Model;
+
+namespace Example
+{
+    public class RoyalMailAccountCarrierDisconnectAccountExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api-key
+            Configuration.Default.AddApiKey("api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("api-key", "Bearer");
+
+            var apiInstance = new CarrierAccountsApi();
+            var carrierId = carrierId_example;  // string | 
+            var apiKey = apiKey_example;  // string | API Key (default to jHpriMLAiP0f8PszTUn37t4D3+q2lW/G+eaMgGAupBY)
+
+            try
+            {
+                apiInstance.RoyalMailAccountCarrierDisconnectAccount(carrierId, apiKey);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CarrierAccountsApi.RoyalMailAccountCarrierDisconnectAccount: " + e.Message );
             }
         }
     }
