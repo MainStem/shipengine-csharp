@@ -32,8 +32,8 @@ namespace ShipEngine.ApiClient.Api
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>InlineResponse200</returns>
-        InlineResponse200 NLPRecognizeAddress (RecognizeAddressRequestDTO body);
+        /// <returns>RecognizeAddressResponseDTO</returns>
+        RecognizeAddressResponseDTO NLPRecognizeAddress (RecognizeAddressRequestDTO body);
 
         /// <summary>
         /// Identifies address-related entities (name, line1, line2, city, postal code, etc.) in unstructured text 
@@ -43,8 +43,8 @@ namespace ShipEngine.ApiClient.Api
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        ApiResponse<InlineResponse200> NLPRecognizeAddressWithHttpInfo (RecognizeAddressRequestDTO body);
+        /// <returns>ApiResponse of RecognizeAddressResponseDTO</returns>
+        ApiResponse<RecognizeAddressResponseDTO> NLPRecognizeAddressWithHttpInfo (RecognizeAddressRequestDTO body);
         /// <summary>
         /// Identifies shipment-related entities (names, address parts, package dimensions, weight, insurance options, etc.) in unstructured text 
         /// </summary>
@@ -53,8 +53,8 @@ namespace ShipEngine.ApiClient.Api
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 NLPRecognizeShipment (RecognizeShipmentRequestDTO body);
+        /// <returns>RecognizeShipmentResponseDTO</returns>
+        RecognizeShipmentResponseDTO NLPRecognizeShipment (RecognizeShipmentRequestDTO body);
 
         /// <summary>
         /// Identifies shipment-related entities (names, address parts, package dimensions, weight, insurance options, etc.) in unstructured text 
@@ -64,8 +64,8 @@ namespace ShipEngine.ApiClient.Api
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> NLPRecognizeShipmentWithHttpInfo (RecognizeShipmentRequestDTO body);
+        /// <returns>ApiResponse of RecognizeShipmentResponseDTO</returns>
+        ApiResponse<RecognizeShipmentResponseDTO> NLPRecognizeShipmentWithHttpInfo (RecognizeShipmentRequestDTO body);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -76,8 +76,8 @@ namespace ShipEngine.ApiClient.Api
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of InlineResponse200</returns>
-        System.Threading.Tasks.Task<InlineResponse200> NLPRecognizeAddressAsync (RecognizeAddressRequestDTO body);
+        /// <returns>Task of RecognizeAddressResponseDTO</returns>
+        System.Threading.Tasks.Task<RecognizeAddressResponseDTO> NLPRecognizeAddressAsync (RecognizeAddressRequestDTO body);
 
         /// <summary>
         /// Identifies address-related entities (name, line1, line2, city, postal code, etc.) in unstructured text 
@@ -87,8 +87,8 @@ namespace ShipEngine.ApiClient.Api
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> NLPRecognizeAddressAsyncWithHttpInfo (RecognizeAddressRequestDTO body);
+        /// <returns>Task of ApiResponse (RecognizeAddressResponseDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RecognizeAddressResponseDTO>> NLPRecognizeAddressAsyncWithHttpInfo (RecognizeAddressRequestDTO body);
         /// <summary>
         /// Identifies shipment-related entities (names, address parts, package dimensions, weight, insurance options, etc.) in unstructured text 
         /// </summary>
@@ -97,8 +97,8 @@ namespace ShipEngine.ApiClient.Api
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> NLPRecognizeShipmentAsync (RecognizeShipmentRequestDTO body);
+        /// <returns>Task of RecognizeShipmentResponseDTO</returns>
+        System.Threading.Tasks.Task<RecognizeShipmentResponseDTO> NLPRecognizeShipmentAsync (RecognizeShipmentRequestDTO body);
 
         /// <summary>
         /// Identifies shipment-related entities (names, address parts, package dimensions, weight, insurance options, etc.) in unstructured text 
@@ -108,8 +108,8 @@ namespace ShipEngine.ApiClient.Api
         /// </remarks>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> NLPRecognizeShipmentAsyncWithHttpInfo (RecognizeShipmentRequestDTO body);
+        /// <returns>Task of ApiResponse (RecognizeShipmentResponseDTO)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RecognizeShipmentResponseDTO>> NLPRecognizeShipmentAsyncWithHttpInfo (RecognizeShipmentRequestDTO body);
         #endregion Asynchronous Operations
     }
 
@@ -215,10 +215,10 @@ namespace ShipEngine.ApiClient.Api
         /// </summary>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>InlineResponse200</returns>
-        public InlineResponse200 NLPRecognizeAddress (RecognizeAddressRequestDTO body)
+        /// <returns>RecognizeAddressResponseDTO</returns>
+        public RecognizeAddressResponseDTO NLPRecognizeAddress (RecognizeAddressRequestDTO body)
         {
-             ApiResponse<InlineResponse200> localVarResponse = NLPRecognizeAddressWithHttpInfo(body);
+             ApiResponse<RecognizeAddressResponseDTO> localVarResponse = NLPRecognizeAddressWithHttpInfo(body);
              return localVarResponse.Data;
         }
 
@@ -227,8 +227,8 @@ namespace ShipEngine.ApiClient.Api
         /// </summary>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        public ApiResponse< InlineResponse200 > NLPRecognizeAddressWithHttpInfo (RecognizeAddressRequestDTO body)
+        /// <returns>ApiResponse of RecognizeAddressResponseDTO</returns>
+        public ApiResponse< RecognizeAddressResponseDTO > NLPRecognizeAddressWithHttpInfo (RecognizeAddressRequestDTO body)
         {
             // verify the required parameter 'body' is set
             if (body == null)
@@ -286,9 +286,9 @@ namespace ShipEngine.ApiClient.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+            return new ApiResponse<RecognizeAddressResponseDTO>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+                (RecognizeAddressResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RecognizeAddressResponseDTO)));
         }
 
         /// <summary>
@@ -296,10 +296,10 @@ namespace ShipEngine.ApiClient.Api
         /// </summary>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of InlineResponse200</returns>
-        public async System.Threading.Tasks.Task<InlineResponse200> NLPRecognizeAddressAsync (RecognizeAddressRequestDTO body)
+        /// <returns>Task of RecognizeAddressResponseDTO</returns>
+        public async System.Threading.Tasks.Task<RecognizeAddressResponseDTO> NLPRecognizeAddressAsync (RecognizeAddressRequestDTO body)
         {
-             ApiResponse<InlineResponse200> localVarResponse = await NLPRecognizeAddressAsyncWithHttpInfo(body);
+             ApiResponse<RecognizeAddressResponseDTO> localVarResponse = await NLPRecognizeAddressAsyncWithHttpInfo(body);
              return localVarResponse.Data;
 
         }
@@ -309,8 +309,8 @@ namespace ShipEngine.ApiClient.Api
         /// </summary>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> NLPRecognizeAddressAsyncWithHttpInfo (RecognizeAddressRequestDTO body)
+        /// <returns>Task of ApiResponse (RecognizeAddressResponseDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RecognizeAddressResponseDTO>> NLPRecognizeAddressAsyncWithHttpInfo (RecognizeAddressRequestDTO body)
         {
             // verify the required parameter 'body' is set
             if (body == null)
@@ -368,9 +368,9 @@ namespace ShipEngine.ApiClient.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+            return new ApiResponse<RecognizeAddressResponseDTO>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+                (RecognizeAddressResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RecognizeAddressResponseDTO)));
         }
 
         /// <summary>
@@ -378,10 +378,10 @@ namespace ShipEngine.ApiClient.Api
         /// </summary>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 NLPRecognizeShipment (RecognizeShipmentRequestDTO body)
+        /// <returns>RecognizeShipmentResponseDTO</returns>
+        public RecognizeShipmentResponseDTO NLPRecognizeShipment (RecognizeShipmentRequestDTO body)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = NLPRecognizeShipmentWithHttpInfo(body);
+             ApiResponse<RecognizeShipmentResponseDTO> localVarResponse = NLPRecognizeShipmentWithHttpInfo(body);
              return localVarResponse.Data;
         }
 
@@ -390,8 +390,8 @@ namespace ShipEngine.ApiClient.Api
         /// </summary>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse< InlineResponse2001 > NLPRecognizeShipmentWithHttpInfo (RecognizeShipmentRequestDTO body)
+        /// <returns>ApiResponse of RecognizeShipmentResponseDTO</returns>
+        public ApiResponse< RecognizeShipmentResponseDTO > NLPRecognizeShipmentWithHttpInfo (RecognizeShipmentRequestDTO body)
         {
             // verify the required parameter 'body' is set
             if (body == null)
@@ -449,9 +449,9 @@ namespace ShipEngine.ApiClient.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<RecognizeShipmentResponseDTO>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (RecognizeShipmentResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RecognizeShipmentResponseDTO)));
         }
 
         /// <summary>
@@ -459,10 +459,10 @@ namespace ShipEngine.ApiClient.Api
         /// </summary>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> NLPRecognizeShipmentAsync (RecognizeShipmentRequestDTO body)
+        /// <returns>Task of RecognizeShipmentResponseDTO</returns>
+        public async System.Threading.Tasks.Task<RecognizeShipmentResponseDTO> NLPRecognizeShipmentAsync (RecognizeShipmentRequestDTO body)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await NLPRecognizeShipmentAsyncWithHttpInfo(body);
+             ApiResponse<RecognizeShipmentResponseDTO> localVarResponse = await NLPRecognizeShipmentAsyncWithHttpInfo(body);
              return localVarResponse.Data;
 
         }
@@ -472,8 +472,8 @@ namespace ShipEngine.ApiClient.Api
         /// </summary>
         /// <exception cref="ShipEngine.ApiClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> NLPRecognizeShipmentAsyncWithHttpInfo (RecognizeShipmentRequestDTO body)
+        /// <returns>Task of ApiResponse (RecognizeShipmentResponseDTO)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RecognizeShipmentResponseDTO>> NLPRecognizeShipmentAsyncWithHttpInfo (RecognizeShipmentRequestDTO body)
         {
             // verify the required parameter 'body' is set
             if (body == null)
@@ -531,9 +531,9 @@ namespace ShipEngine.ApiClient.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<RecognizeShipmentResponseDTO>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (RecognizeShipmentResponseDTO) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RecognizeShipmentResponseDTO)));
         }
 
     }

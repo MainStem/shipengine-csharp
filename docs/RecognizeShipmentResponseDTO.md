@@ -1,4 +1,4 @@
-# ShipEngine.ApiClient.Model.InlineResponse2001
+# ShipEngine.ApiClient.Model.RecognizeShipmentResponseDTO
 ## Properties
 
 Name | Type | Description | Notes

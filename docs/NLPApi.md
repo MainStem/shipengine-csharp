@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="nlprecognizeaddress"></a>
 # **NLPRecognizeAddress**
-> InlineResponse200 NLPRecognizeAddress (RecognizeAddressRequestDTO body)
+> RecognizeAddressResponseDTO NLPRecognizeAddress (RecognizeAddressRequestDTO body)
 
 Identifies address-related entities (name, line1, line2, city, postal code, etc.) in unstructured text 
 
@@ -39,7 +39,7 @@ namespace Example
             try
             {
                 // Identifies address-related entities (name, line1, line2, city, postal code, etc.) in unstructured text 
-                InlineResponse200 result = apiInstance.NLPRecognizeAddress(body);
+                RecognizeAddressResponseDTO result = apiInstance.NLPRecognizeAddress(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**RecognizeAddressResponseDTO**](RecognizeAddressResponseDTO.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 <a name="nlprecognizeshipment"></a>
 # **NLPRecognizeShipment**
-> InlineResponse2001 NLPRecognizeShipment (RecognizeShipmentRequestDTO body)
+> RecognizeShipmentResponseDTO NLPRecognizeShipment (RecognizeShipmentRequestDTO body)
 
 Identifies shipment-related entities (names, address parts, package dimensions, weight, insurance options, etc.) in unstructured text 
 
@@ -103,7 +103,7 @@ namespace Example
             try
             {
                 // Identifies shipment-related entities (names, address parts, package dimensions, weight, insurance options, etc.) in unstructured text 
-                InlineResponse2001 result = apiInstance.NLPRecognizeShipment(body);
+                RecognizeShipmentResponseDTO result = apiInstance.NLPRecognizeShipment(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**RecognizeShipmentResponseDTO**](RecognizeShipmentResponseDTO.md)
 
 ### Authorization
 

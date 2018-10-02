@@ -73,7 +73,7 @@ namespace ShipEngine.ApiClient.Test
             // TODO uncomment below to test the method and replace null with proper value
             //RecognizeAddressRequestDTO body = null;
             //var response = instance.NLPRecognizeAddress(body);
-            //Assert.IsInstanceOf<InlineResponse200> (response, "response is InlineResponse200");
+            //Assert.IsInstanceOf<RecognizeAddressResponseDTO> (response, "response is RecognizeAddressResponseDTO");
         }
         
         /// <summary>
@@ -85,7 +85,7 @@ namespace ShipEngine.ApiClient.Test
             // TODO uncomment below to test the method and replace null with proper value
             //RecognizeShipmentRequestDTO body = null;
             //var response = instance.NLPRecognizeShipment(body);
-            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
+            //Assert.IsInstanceOf<RecognizeShipmentResponseDTO> (response, "response is RecognizeShipmentResponseDTO");
         }
         
     }

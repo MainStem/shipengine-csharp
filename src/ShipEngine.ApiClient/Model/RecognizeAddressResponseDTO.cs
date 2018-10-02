@@ -25,21 +25,21 @@ using SwaggerDateConverter = ShipEngine.ApiClient.Client.SwaggerDateConverter;
 namespace ShipEngine.ApiClient.Model
 {
     /// <summary>
-    /// InlineResponse2001
+    /// RecognizeAddressResponseDTO
     /// </summary>
     [DataContract]
-    public partial class InlineResponse2001 :  IEquatable<InlineResponse2001>, IValidatableObject
+    public partial class RecognizeAddressResponseDTO :  IEquatable<RecognizeAddressResponseDTO>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="InlineResponse2001" /> class.
+        /// Initializes a new instance of the <see cref="RecognizeAddressResponseDTO" /> class.
         /// </summary>
         /// <param name="score">A confidence score between zero and one that indicates how certain the API is that it understood the text.</param>
-        /// <param name="shipment">shipment.</param>
+        /// <param name="address">address.</param>
         /// <param name="entities">An array containing all of the entities that were recognized..</param>
-        public InlineResponse2001(double? score = default(double?), Shipment shipment = default(Shipment), List<RecognizedEntity> entities = default(List<RecognizedEntity>))
+        public RecognizeAddressResponseDTO(double? score = default(double?), AddressDTO address = default(AddressDTO), List<RecognizedEntity> entities = default(List<RecognizedEntity>))
         {
             this.Score = score;
-            this.Shipment = shipment;
+            this.Address = address;
             this.Entities = entities;
         }
         
@@ -51,10 +51,10 @@ namespace ShipEngine.ApiClient.Model
         public double? Score { get; set; }
 
         /// <summary>
-        /// Gets or Sets Shipment
+        /// Gets or Sets Address
         /// </summary>
-        [DataMember(Name="shipment", EmitDefaultValue=false)]
-        public Shipment Shipment { get; set; }
+        [DataMember(Name="address", EmitDefaultValue=false)]
+        public AddressDTO Address { get; set; }
 
         /// <summary>
         /// An array containing all of the entities that were recognized.
@@ -70,9 +70,9 @@ namespace ShipEngine.ApiClient.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class InlineResponse2001 {\n");
+            sb.Append("class RecognizeAddressResponseDTO {\n");
             sb.Append("  Score: ").Append(Score).Append("\n");
-            sb.Append("  Shipment: ").Append(Shipment).Append("\n");
+            sb.Append("  Address: ").Append(Address).Append("\n");
             sb.Append("  Entities: ").Append(Entities).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -94,15 +94,15 @@ namespace ShipEngine.ApiClient.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as InlineResponse2001);
+            return this.Equals(input as RecognizeAddressResponseDTO);
         }
 
         /// <summary>
-        /// Returns true if InlineResponse2001 instances are equal
+        /// Returns true if RecognizeAddressResponseDTO instances are equal
         /// </summary>
-        /// <param name="input">Instance of InlineResponse2001 to be compared</param>
+        /// <param name="input">Instance of RecognizeAddressResponseDTO to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(InlineResponse2001 input)
+        public bool Equals(RecognizeAddressResponseDTO input)
         {
             if (input == null)
                 return false;
@@ -114,9 +114,9 @@ namespace ShipEngine.ApiClient.Model
                     this.Score.Equals(input.Score))
                 ) && 
                 (
-                    this.Shipment == input.Shipment ||
-                    (this.Shipment != null &&
-                    this.Shipment.Equals(input.Shipment))
+                    this.Address == input.Address ||
+                    (this.Address != null &&
+                    this.Address.Equals(input.Address))
                 ) && 
                 (
                     this.Entities == input.Entities ||
@@ -136,8 +136,8 @@ namespace ShipEngine.ApiClient.Model
                 int hashCode = 41;
                 if (this.Score != null)
                     hashCode = hashCode * 59 + this.Score.GetHashCode();
-                if (this.Shipment != null)
-                    hashCode = hashCode * 59 + this.Shipment.GetHashCode();
+                if (this.Address != null)
+                    hashCode = hashCode * 59 + this.Address.GetHashCode();
                 if (this.Entities != null)
                     hashCode = hashCode * 59 + this.Entities.GetHashCode();
                 return hashCode;
