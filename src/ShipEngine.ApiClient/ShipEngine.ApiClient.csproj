@@ -12,7 +12,7 @@ OpenAPI spec version: v1
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D20375BA-F7C8-4965-83AC-DC070345F016}</ProjectGuid>
+    <ProjectGuid>{4977078C-51A8-47E8-BFA1-7D4748E4DE6A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ShipEngine.ApiClient</RootNamespace>

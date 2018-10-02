@@ -81,7 +81,7 @@ OpenAPI spec version: v1
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\ShipEngine.ApiClient\ShipEngine.ApiClient.csproj">
-          <Project>{D20375BA-F7C8-4965-83AC-DC070345F016}</Project>
+          <Project>{4977078C-51A8-47E8-BFA1-7D4748E4DE6A}</Project>
           <Name>ShipEngine.ApiClient</Name>
       </ProjectReference>
   </ItemGroup>

@@ -52,7 +52,6 @@ namespace ShipEngine.ApiClient.Client
         /// </summary>
         public ApiClient()
         {
-            EnsureSecurityProtocol();
             Configuration = ShipEngine.ApiClient.Client.Configuration.Default;
             RestClient = new RestClient("https://api.shipengine.com");
         }
@@ -64,8 +63,8 @@ namespace ShipEngine.ApiClient.Client
         /// <param name="config">An instance of Configuration.</param>
         public ApiClient(Configuration config)
         {
-            EnsureSecurityProtocol();
             Configuration = config ?? ShipEngine.ApiClient.Client.Configuration.Default;
+
             RestClient = new RestClient(Configuration.BasePath);
         }
 
@@ -79,7 +78,6 @@ namespace ShipEngine.ApiClient.Client
            if (String.IsNullOrEmpty(basePath))
                 throw new ArgumentException("basePath cannot be empty");
 
-            EnsureSecurityProtocol();
             RestClient = new RestClient(basePath);
             Configuration = Client.Configuration.Default;
         }
