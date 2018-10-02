@@ -18,6 +18,11 @@ namespace ShipEngine.ApiClient.Client
     /// </summary>
     public partial class ApiClient
     {
+        public static ApiClient()
+        {
+            EnsureSecurityProtocol();
+        }
+
         /// <summary>
         /// Ensures that TLS 1.2 or greater is enabled, which is required by ShipEngine
         /// </summary>
